@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Sansation Light';
+    src: url('src/fonts/SansationLight.eot');
+    src: url('src/fonts/SansationLight.eot?#iefix') format('embedded-opentype'),
+    url('src/fonts/SansationLight.woff') format('woff'),
+    url('src/fonts/SansationLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+* {
+	font-family: 'Sansation Light', sans-serif;
+	padding: 0;
+	margin: 0;
+}

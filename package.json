@@ -1,0 +1,25 @@
+{
+  "name": "danayakit",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "sass": "^1.49.0",
+    "svelte": "^3.44.0",
+    "svelte-preprocess": "^4.10.2"
+  },
+  "type": "module",
+  "dependencies": {
+    "@fontsource/fira-mono": "^4.5.0",
+    "@lukeed/uuid": "^2.0.0",
+    "cookie": "^0.4.1",
+    "svelte-carousel": "^1.0.17-rc4",
+    "svelte-hamburgers": "^3.0.1"
+  }
+}
