@@ -31,7 +31,7 @@ import { fade } from 'svelte/transition';
         min-height: 77vh;
         max-width: 1400px;
         width: 80%;
-        margin: 0 auto;
+        margin: 1% auto;
         &__item {
             list-style-type: none;
             max-height: 210px;

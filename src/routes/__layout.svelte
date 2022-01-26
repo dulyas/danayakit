@@ -40,10 +40,8 @@
 
 	main {
 		box-sizing: border-box;
-		transition: 1s all;
 		font-size: 24px;
 		color: #FFFFFF;
-		padding: 25px;
 		
 	}
 

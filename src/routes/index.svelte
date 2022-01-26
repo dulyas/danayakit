@@ -82,12 +82,20 @@ h1 {
 }
 
 @media (max-width: 350px) {
+
+    .home {
+        justify-content: center;
+    }
+
     h1 {
         font-size: 35px;
         text-align: center;
+        margin: 0;
+        padding: 0;
     }
     .buttons {
         .main-btn-item {
+            margin-top: 20px;
             font-size: 18px;
             height: 60px;
         }

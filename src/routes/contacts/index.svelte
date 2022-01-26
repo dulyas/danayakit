@@ -33,6 +33,7 @@
     .contacts-wrapper {
         display: flex;
         justify-content: space-between;
+        margin: 3% auto;
     }
 
     .contacts {
