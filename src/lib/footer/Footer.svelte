@@ -1,3 +1,9 @@
+<script>
+    import vkSrc from '$lib/footer/vk.svg';
+    import instSrc from '../../img/icons/inst.svg';
+</script>
+
+
 <div class="footer">
     <div class="footer-info">
         ИНН: 212411347999 ОГРНИП: 318774600060521 ООО “Даная” г. Челябинск, ул. Клары Цеткин, д. 11 тел.: +7 900 555 35 35  © 2020-2022
@@ -8,10 +14,10 @@
             сб-вс, 9:00-19:00
         </div>
         <a href="https://vk.com/danayajaluzi">
-            <img src="src/img/icons/vk.svg" class="header__icon" alt="vk">
+            <img src={vkSrc} class="header__icon" alt="vk">
         </a>
         <a href="https://vk.com/danayajaluzi">
-            <img src="src/img/icons/inst.svg" class="header__icon" alt="instagram">
+            <img src={instSrc} class="header__icon" alt="instagram">
     </div>
 </div>
 
@@ -62,4 +68,10 @@
             display: none;
         }
     }
+    @media (max-width: 480px) {
+        .footer {
+            height: 12vh;
+        }
+    }
+
 </style>

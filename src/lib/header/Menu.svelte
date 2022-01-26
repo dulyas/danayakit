@@ -3,20 +3,7 @@
     import { quadOut } from 'svelte/easing';
     export let open;
 
-    const menu = [
-        {name: 'Главная',
-        url: '/'},
-        {name: 'Контакты',
-        url: '/contacts'},
-        {name: 'Каталог',
-        url: '/catalog'},
-        {name: 'О компании',
-        url: '/company'},
-        {name: 'Галерея',
-        url: '/gallery'},
-        {name: 'Вызвать замерщика',
-        url: '/call'},
-        ]
+    export let menu;
 
 
     
@@ -53,12 +40,14 @@
         align-items: center;
         transition: 1s all;
         border-bottom: black;
+        backdrop-filter: blur(44px);
     }
 
     @media (max-width: 1000px) {
         div {
-            font-size: 0.9rem;
+            font-size: 1.3rem;
             height: 10%;
+            backdrop-filter: blur(44px);
         }
     }
 
@@ -75,7 +64,7 @@
             align-items: center;
             justify-content: start;
             background: rgba(0, 0, 0, 0.336);
-            backdrop-filter: blur(4px);
+            backdrop-filter: blur(44px);
         }
         p {
         margin-top: 35px;

@@ -8,7 +8,7 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "sass": "^1.49.0",
     "svelte": "^3.44.0",

@@ -1,10 +1,11 @@
 <script>
     import CatalogItem from "$lib/catalogItem/catalogItem.svelte";
+    import zebraSrc from '../rolled/zebra__bg.png';
     const types = [
     {
         name: 'Олень',
         descr: 'LALALALALAL',
-        url: "/src/img/zebra__bg.png",
+        url: zebraSrc,
     },
     {
         name: 'Собака',

@@ -2,6 +2,7 @@
 	import Footer from '$lib/footer/Footer.svelte';
 	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
+
 </script>
 
 <div class="bg">
@@ -20,19 +21,9 @@
 
 <style lang="scss">
 
-@font-face {
-    font-family: 'Sansation Light';
-    src: url('src/fonts/SansationLight.eot');
-    src: url('src/fonts/SansationLight.eot?#iefix') format('embedded-opentype'),
-    url('src/fonts/SansationLight.woff') format('woff'),
-    url('src/fonts/SansationLight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
 
 
 * {
-	font-family: 'Sansation Light', sans-serif;
 	padding: 0;
 	margin: 0;
 	transition: 1s all;
@@ -40,7 +31,7 @@
 
 
 	.bg {
-		background: url('src/img/bg.jpg') center center / cover no-repeat;
+		background: url('../img/bg.jpg') center center / cover no-repeat;
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
@@ -52,7 +43,7 @@
 		transition: 1s all;
 		font-size: 24px;
 		color: #FFFFFF;
-		padding: 2rem;
+		padding: 25px;
 		
 	}
 
@@ -67,7 +58,7 @@
 	}
 
 	:global(.button) {
-		background: rgba(0, 0, 0, 0.25);
+		background: rgba(0, 0, 0, 0.50);
 		border-radius: 35px;
 		display: flex;
 		align-items: center;

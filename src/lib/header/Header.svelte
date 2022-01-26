@@ -2,14 +2,43 @@
 import Hamburger from 'svelte-hamburgers';
 let open = false;
 import Menu from './Menu.svelte';
-import { createEventDispatcher } from 'svelte';
+import { browser } from '$app/env';
+
+$:  if (browser) {
+        if (open) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        }
 
 
+const menu = [
+        {name: 'Главная',
+        url: '/'},
+        {name: 'Контакты',
+        url: '/contacts'},
+        {name: 'Каталог',
+        url: '/catalog'},
+        {name: 'О компании',
+        url: '/about'},
+        {name: 'Галерея',
+        url: '/gallery'},
+        {name: 'Вызвать замерщика',
+        url: '/call'},
+        ]
 
 
 function handleMenu() {
-    console.log(open);
+    if (browser) {
+        if (open) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
+    }
 }
+
 </script>
 
 <svelte:head>
@@ -21,33 +50,20 @@ function handleMenu() {
     <a href="/" class="">
         <h2 class="nav__logo">Фирма <span>Даная</span></h2>
     </a>
-    <div class="burger" on:click={handleMenu}>
-        <div class="menu">
-            Меню
-        </div>
+    <div class="burger">
         <Hamburger
         bind:open
         --color="white" />
     </div>
     <nav class="nav">
+        {#each menu as item, i}
         <div class="nav-item">
-            <a href="/catalog">Каталог</a>
+            <a href={item.url}>{item.name}</a>
         </div>
-        <div class="nav-item">
-            <a href="/catalog">Галерея</a>
-        </div>
-        <div class="nav-item">
-            <a href="/catalog">О компании</a>
-        </div>        
-        <div class="nav-item">
-            <a href="/catalog">Контакты</a>
-        </div>
-        <div class="nav-item">
-            <a href="/catalog">Вызвать замерщика</a>
-        </div>
+        {/each}
     </nav>
 </div>
-<Menu bind:open />
+<Menu menu={menu} bind:open />
 
 <style lang="scss">
 

@@ -4,7 +4,6 @@
 
 <script>
     import { fade } from 'svelte/transition';
-
 </script>
 
 
@@ -14,7 +13,7 @@
         <a href="/catalog" class="button main-btn-item">
             Перейти в каталог
         </a>
-        <a href="#" class="button main-btn-item">
+        <a href="/call" class="button main-btn-item">
             Вызвать замерщика
         </a>
     </div>
@@ -24,12 +23,16 @@
 
 <style lang='scss'>
 
-
+.home {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 h1 {
     font-size: 120px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 15%;
 }
 
 
@@ -37,7 +40,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    margin-top: 8%;
 }
 
 .main-btn-item {
@@ -47,6 +49,9 @@ h1 {
 }
 
 @media (max-width: 1246px) {
+    h1 {
+        font-size: 100px;
+    }
     .home {
         text-align: center;
     }
@@ -64,15 +69,28 @@ h1 {
     h1 {
         font-size: 50px;
         margin: 50px;
+        text-align: center;
     }
     .main-btn-item {
             font-size: 25px;
         }
+        .buttons {
+        .main-btn-item {
+            margin-top: 8px;
+        }
+    }    
 }
 
 @media (max-width: 350px) {
     h1 {
-        font-size: 30px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .buttons {
+        .main-btn-item {
+            font-size: 18px;
+            height: 60px;
+        }
     }
 }
 

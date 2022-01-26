@@ -1,16 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Sansation Light', sans-serif;
+}
+
 @font-face {
     font-family: 'Sansation Light';
-    src: url('src/fonts/SansationLight.eot');
-    src: url('src/fonts/SansationLight.eot?#iefix') format('embedded-opentype'),
-    url('src/fonts/SansationLight.woff') format('woff'),
-    url('src/fonts/SansationLight.ttf') format('truetype');
+    src: url('./fonts/SansationLight.eot');
+    src: url('./fonts/SansationLight.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/SansationLight.woff') format('woff'),
+    url('./fonts/SansationLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
-
-
-* {
-	font-family: 'Sansation Light', sans-serif;
-	padding: 0;
-	margin: 0;
-}
