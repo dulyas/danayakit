@@ -59,19 +59,28 @@ const menu = [
 
 <style lang="scss">
 
-	.header {
+.header {
 		min-height: 8vh;
 		background: rgba(0, 0, 0, 0.5);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        backdrop-filter: blur(4px);
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
 	}
 
     .nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
         &-item {
             font-style: normal;
             font-weight: 300;
@@ -92,6 +101,8 @@ const menu = [
                 height: 1px; /*задаём ширину линии*/
                 background-color: #ffffff; /*задаём цвет линии*/
                 content: "";
+                -webkit-transition: width 0.3s ease-out;
+                -o-transition: width 0.3s ease-out;
                 transition: width 0.3s ease-out; /*задаём время анимации*/
             }
                 &:hover:after, &:focus:after {
@@ -106,6 +117,8 @@ const menu = [
     right: -80px;
     font-size: 25px;
     font-weight: normal;
+    -webkit-transition: 1s all;
+    -o-transition: 1s all;
     transition: 1s all;
     span {
         font-family: "CorridaCTT";
@@ -114,7 +127,9 @@ const menu = [
         top: 22px;
     }
     &:hover {
-        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05);
     }
 }
 
@@ -129,8 +144,12 @@ const menu = [
         display: none;
     }
     .burger {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         position: absolute;
         right: 15px;
     }

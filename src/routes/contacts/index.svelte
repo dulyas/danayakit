@@ -31,19 +31,33 @@
 
 <style lang="scss">
     .contacts-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin: 3% auto;
     }
 
     .contacts {
         width: 40%;
         background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 30px;
         text-align: center;
         padding: 0 15px;
@@ -51,8 +65,12 @@
             font-size: 56px;
         }
         &__soc {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             img {
                 margin-right: 5px;
             }
@@ -65,19 +83,36 @@
 
     @media (max-width: 800px) {
         .contacts-wrapper {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         }
         .contacts {
         width: 80%;
         height: 60vh;
         background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         font-size: 30px;
         text-align: center;
         padding: 0 15px;
@@ -85,8 +120,12 @@
             font-size: 56px;
         }
         &__soc {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             img {
                 margin-right: 5px;
             }
@@ -110,5 +149,4 @@
             }
         }
     }
-
 </style>

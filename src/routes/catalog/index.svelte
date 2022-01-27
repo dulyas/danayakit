@@ -24,10 +24,19 @@ import { fade } from 'svelte/transition';
 
 <style lang='scss'>
     .catalog {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         min-height: 77vh;
         max-width: 1400px;
         width: 80%;
@@ -38,15 +47,26 @@ import { fade } from 'svelte/transition';
             height: 27%;
             width: 100%;
             background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+                    backdrop-filter: blur(4px);
             padding: 13px 68px;
+            -webkit-transition: 1s all;
+            -o-transition: 1s all;
             transition: 1s all;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
-            align-items: center; 
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; 
             &:nth-child(2n) {
                 .catalog__item-name {
-                    order: 1;
+                    -webkit-box-ordinal-group: 2;
+                        -ms-flex-order: 1;
+                            order: 1;
                     text-align: right;
                 }
                 .catalog__item-descr {
@@ -108,12 +128,20 @@ import { fade } from 'svelte/transition';
             &__item {
                 height: 25%;
                 width: 80%;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 &:nth-child(2n) {
                 .catalog__item-name {
-                    order: 0;
+                    -webkit-box-ordinal-group: 1;
+                        -ms-flex-order: 0;
+                            order: 0;
                     text-align: center;
                 }
                 .catalog__item-descr {
@@ -139,7 +167,9 @@ import { fade } from 'svelte/transition';
                 width: 60%;
                 &:nth-child(2n) {
                 .catalog__item-name {
-                    order: 0;
+                    -webkit-box-ordinal-group: 1;
+                        -ms-flex-order: 0;
+                            order: 0;
                     text-align: center;
                 }
                 .catalog__item-descr {
@@ -157,6 +187,5 @@ import { fade } from 'svelte/transition';
             }
         }
     }
-
 
 </style>

@@ -20,7 +20,6 @@
     let current = photos[0];
     
     function handleClick(i) {
-        console.log(this);
         visible = false;
         setTimeout(() => {
         current = photos[i];
@@ -47,17 +46,20 @@
 
 <style lang='scss'>
     .gallery {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
         background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
         &__current {
             min-height: 60vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             padding: 25px 0 15px 0;
             img {
                 max-height: 60vh;
@@ -66,8 +68,12 @@
         }
         &__items {
             margin: 0 auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             max-width: 95%;
             overflow-x: scroll;
             min-height: 15vh;
@@ -95,6 +101,5 @@
 
     .active {
 		border: 2px solid rgb(255, 0, 0);
-        // transform: scale(1.05);
 	}
 </style>

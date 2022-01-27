@@ -65,7 +65,7 @@ error => {
             <input bind:value={mail.phone} name='phone' id='phone' type="text" required>
         </label>
         <label class="form-input" for="message">Комментарий<br>
-            <textarea on:input={console.log(mail)} bind:value={mail.message} name="message" id='message' cols="30" rows="10"></textarea>
+            <textarea bind:value={mail.message} name="message" id='message' cols="30" rows="10"></textarea>
         </label>
         <button class="form__button button">Отправить</button>
         {#if msg}
@@ -100,24 +100,40 @@ error => {
         height: 70vh;
         max-width: 1400px;
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: left;
         font-size: 15px;
 
     }
     .form {
         background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
         padding: 20px;
         border-radius: 8%;
         width: 280px;
         height: 250px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         color: rgba(255, 255, 255, 0.685);
         &-input {
             display: block;

@@ -1,77 +1,82 @@
 
 <script>
 import { fade, blur, fly, slide, scale, draw, crossfade } from 'svelte/transition';
-let visible = true;
+
 import PrevButton from './prevButton.svelte';
 import NextButton from './nextButton.svelte';
 
 export let types;
 let index = 0;
+let current = types[0].name;
 
 
 function next() {
-    visible = false;
-    setTimeout(() => {
+
         if (index < types.length-1) {
         index++;
     } else {
         index = 0;
     }
-    visible = true;
-    }, 400)
+
 }
 
 function prev() {
-    visible = false;
-    setTimeout(() => {
+
         if (index > 0) {
         index--;
     } else {
         index = types.length-1;
-    }
-    visible = true;
-    }, 400)
+}
 }
 
 
 </script>
 
-
-<div in:fade="{{duration: 1000}}" class="product">
+{#each types as type, i}
+<div 
+in:fade="{{duration: 1000}}" 
+class="product"
+style="display: {i === index ? 'flex' : 'none'}">
     <div class="product__text">
         <h2 class="product__name">Рулонные жалюзи</h2>
-        {#if visible}
-        <div transition:fade|local="{{duration: 300}}" class="product__subname">{types[index].name}</div>
-        <div transition:fade|local="{{duration: 300}}" class="product__descr">{types[index].descr}</div>
-        {/if}
+    
+        <div transition:fade|local class="product__subname">{type.name}</div>
+        <div transition:fade|local class="product__descr">{type.descr}</div>
+    
     </div>
     <div class="product__photo">
-        {#if visible}
-        <img transition:fade|local="{{duration: 300}}" src={types[index].url} alt="">
-        <div transition:fade|local="{{duration: 300}}" class="product__buttons">
+    
+        <img transition:fade|local src={type.url} alt="">
+        <div transition:fade|local class="product__buttons">
             <PrevButton on:click={prev}/>
             <NextButton on:click={next}/>
         </div>
-        {/if}
-    </div>
-
+    </div>   
 </div>
-
+{/each}
 
 <style lang='scss'>
-    .product {
-        max-width: 1400px;
+
+   .product {
+        max-width: 80vw;
         height: 70vh;
-        transition: 1s all;
+        -webkit-transition: 1s all ease;
+        -o-transition: 1s all ease;
+        transition: 1s all ease;
         margin: 0 auto;
         margin-top: 1.3rem;
-        display: flex;
-        justify-content: space-between;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
         &__text {
             padding: 50px;
+            max-width: 50%;
         }
         &__name {
             font-size: 56px;
@@ -93,22 +98,27 @@ function prev() {
             }
         }
         &__buttons {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             width: 100%;
-            justify-content: space-around;
-            align-items: center;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             position: absolute;
             bottom: 5%;
             right: 50%;
-            transform: translateX(50%);
+            -webkit-transform: translateX(50%);
+                -ms-transform: translateX(50%);
+                    transform: translateX(50%);
         }
     }
 
 
     @media (max-width: 1300px) {
         .product {
-            display: block;
-            height: auto;
            &__text {
         }
         &__name {
@@ -118,11 +128,10 @@ function prev() {
            font-size: 38px;
         }
         &__descr {
-           font-size: 18px;
+           font-size: 24px;
         }
         &__photo {
             img {
-            width: 100%;
             }
         }
         &__buttons {
@@ -134,16 +143,13 @@ function prev() {
     @media (max-width: 1050px) {
         .product {
            &__text {
-           
+
         }
         &__name {
-         font-size: 50px;
         }
         &__subname {
-           font-size: 38px;
         }
         &__descr {
-           font-size: 15px;
         }
         &__photo {
           
@@ -159,14 +165,13 @@ function prev() {
 
     @media (max-width: 800px) {
         .product {
+
            &__text {
 
         }
         &__name {
-            font-size: 30px;
         }
         &__subname {
-            font-size: 25px;
         }
         &__descr {
 
@@ -174,7 +179,7 @@ function prev() {
         &__photo {
 
             img {
-
+    
             }
         }
         &__buttons {
@@ -182,7 +187,6 @@ function prev() {
         }
     }
     }
-
 
     // @media (max-width: 1300px) {
     //     .product {

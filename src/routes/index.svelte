@@ -25,9 +25,16 @@
 
 .home {
     min-height: 70vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 h1 {
@@ -37,8 +44,12 @@ h1 {
 
 
 .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 80%;
 }
 
@@ -57,8 +68,11 @@ h1 {
     }
     .buttons {
         margin: 0 auto;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         .main-btn-item {
             margin-top: 25px;
         }
@@ -84,7 +98,9 @@ h1 {
 @media (max-width: 350px) {
 
     .home {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     h1 {
@@ -101,5 +117,4 @@ h1 {
         }
     }
 }
-
 </style>

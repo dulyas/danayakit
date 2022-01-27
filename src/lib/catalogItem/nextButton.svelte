@@ -21,32 +21,69 @@
 }
 .arrow-6 svg polygon, 
 .arrow-6 svg path {
+    -webkit-transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    -o-transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
     transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
     fill: #337AB7;
 }
 .arrow-6 svg:hover polygon, 
 .arrow-6 svg:hover path {
+    -webkit-transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    -o-transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
     transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
     fill: #000;
 }
 .arrow-6 svg:hover .arrow-6-pl {
-    animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+    -webkit-animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+            animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 .arrow-6 svg:hover .arrow-6-pl-fixed {
-    animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+    -webkit-animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+            animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+ 
+@-webkit-keyframes arrow-6-anim {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    5% {
+        -webkit-transform: translateX(-0.1rem);
+                transform: translateX(-0.1rem);
+    }
+    100% {
+        -webkit-transform: translateX(1rem);
+                transform: translateX(1rem);
+        opacity: 0;
+    }
 }
  
 @keyframes arrow-6-anim {
     0% {
         opacity: 1;
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
     5% {
-        transform: translateX(-0.1rem);
+        -webkit-transform: translateX(-0.1rem);
+                transform: translateX(-0.1rem);
     }
     100% {
-        transform: translateX(1rem);
+        -webkit-transform: translateX(1rem);
+                transform: translateX(1rem);
         opacity: 0;
+    }
+}
+@-webkit-keyframes arrow-6-fixed-anim {
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
     }
 }
 @keyframes arrow-6-fixed-anim {

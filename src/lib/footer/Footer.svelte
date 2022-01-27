@@ -26,17 +26,28 @@
 .footer {
     height: 8vh;
     background: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(4px);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
     &-info {
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
         line-height: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
 
         color: #FFFFFF;
@@ -48,9 +59,15 @@
 .soc__items {
     position: absolute;
     right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
         a {
             margin: 0 2px;
         }
@@ -71,8 +88,8 @@
     }
     @media (max-width: 480px) {
         .footer {
+            display: none;
             height: 12vh;
         }
     }
-
 </style>
