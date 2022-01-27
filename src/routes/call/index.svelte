@@ -1,22 +1,98 @@
 <script>
 import { fade } from 'svelte/transition';
 
+
+const Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
+
+let mail = {
+    name: null,
+    phone: null,
+    message: null,
+}
+
+let msg = null;
+
+function sendEmail () {
+    msg = 'Отправка...';
+    Email.send({
+    Host : "smtp.yandex.ru",
+    Username : "T.SAMOYLOVA998@yandex.ru",
+    Password : "Gosu100500",
+    To : 'd.str1ke@yandex.ru',
+    From : "T.SAMOYLOVA998@yandex.ru",
+    Subject : "Новый заказ на сайте",
+    Body : `Имя: ${mail.name}, Телефон: ${mail.phone}, Сообщение: ${mail.message}`
+}).then(
+message => {
+    msg = 'Спасибо, ожидайте звонка!';
+    setTimeout(() => {
+        msg = null;
+        mail = {
+            name: null,
+            phone: null,
+            message: null,
+        }
+    },
+    2500);
+    }
+).catch(
+error => {
+    msg = 'Что-то пошло не так, попробуйте еще раз или позвоните нам';
+    setTimeout(() => {
+        msg = null;
+        mail = {
+            name: null,
+            phone: null,
+            message: null,
+        }
+    },
+    2500);
+    }
+);
+}
+
+
+
+
 </script>
 
-<div in:fade="{{duration: 1000}}" class="call">
-    <form on:submit|preventDefault={() => console.log('211')} action="" class="form">
-        <label class="form-input" for="name">Ваше имя *<br>
-            <input id='name'  type="text">
+<div on:submit|preventDefault={sendEmail} in:fade="{{duration: 1000}}" class="call">
+    <form class="form">
+        <label class="form-input" for="name" >Ваше имя *<br>
+            <input bind:value={mail.name} name='name' id='name' type="text" required>
         </label>
-        <label class="form-input" for="phone">Контактный телефон *<br>
-            <input id='phone'  type="text">
+        <label class="form-input" for="phone" >Контактный телефон *<br>
+            <input bind:value={mail.phone} name='phone' id='phone' type="text" required>
         </label>
         <label class="form-input" for="message">Комментарий<br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea on:input={console.log(mail)} bind:value={mail.message} name="message" id='message' cols="30" rows="10"></textarea>
+        </label>
+        <button class="form__button button">Отправить</button>
+        {#if msg}
+            <div class="form-message">{msg}</div>
+        {/if}
+    </form>
+</div>
+
+
+<!-- 
+<div in:fade="{{duration: 1000}}" class="call">
+    <form action="https://formsubmit.co/ddulyas@gmail.com" class="form" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://localhost:3000/thank">
+        <input type="hidden" name="_subject" value="New submission!">
+        <label class="form-input" for="name" >Ваше имя *<br>
+            <input name='name'  type="text" required>
+        </label>
+        <label class="form-input" for="phone" >Контактный телефон *<br>
+            <input name='phone'  type="text" required>
+        </label>
+        <label class="form-input" for="message">Комментарий<br>
+            <textarea name="text" id="" cols="30" rows="10"></textarea>
         </label>
         <button class="form__button button">Отправить</button>
     </form>
-</div>
+</div> -->
 
 <style lang="scss">
     .call {
@@ -36,7 +112,7 @@ import { fade } from 'svelte/transition';
         backdrop-filter: blur(4px);
         padding: 20px;
         border-radius: 8%;
-        width: 300px;
+        width: 280px;
         height: 250px;
         display: flex;
         flex-direction: column;

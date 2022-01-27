@@ -42,6 +42,7 @@
 		box-sizing: border-box;
 		font-size: 24px;
 		color: #FFFFFF;
+		margin-top: 2%;
 		
 	}
 

@@ -29,15 +29,7 @@ const menu = [
         ]
 
 
-function handleMenu() {
-    if (browser) {
-        if (open) {
-        document.body.style.overflow = 'hidden';
-    } else {
-        document.body.style.overflow = '';
-    }
-    }
-}
+
 
 </script>
 
@@ -58,7 +50,7 @@ function handleMenu() {
     <nav class="nav">
         {#each menu as item, i}
         <div class="nav-item">
-            <a href={item.url}>{item.name}</a>
+            <a class='active' href={item.url}>{item.name}</a>
         </div>
         {/each}
     </nav>
@@ -67,12 +59,12 @@ function handleMenu() {
 
 <style lang="scss">
 
-
 	.header {
 		min-height: 8vh;
-		background: rgba(0, 0, 0, 0.35);
+		background: rgba(0, 0, 0, 0.5);
         display: flex;
         align-items: center;
+        backdrop-filter: blur(4px);
 	}
 
     .nav {
@@ -91,7 +83,7 @@ function handleMenu() {
             color: #ffffff; /*задаём цвет ссылки*/
             cursor: pointer;
             line-height: 1; /*задаём высоту строки*/
-            text-decoration: none; /*убираем подчёркивание*/
+            text-decoration: none;
                 &::after {
                 display: block;
                 position: absolute;
@@ -116,15 +108,16 @@ function handleMenu() {
     font-weight: normal;
     transition: 1s all;
     span {
-        font-family: 'Marck Script';
+        font-family: "CorridaCTT";
         font-size: 60px;
         position: relative;
         top: 22px;
     }
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.05);
     }
 }
+
 
 .burger {
     display: none;

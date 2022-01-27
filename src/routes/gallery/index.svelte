@@ -20,6 +20,7 @@
     let current = photos[0];
     
     function handleClick(i) {
+        console.log(this);
         visible = false;
         setTimeout(() => {
         current = photos[i];
@@ -37,32 +38,37 @@
     </div>
     <div class="gallery__items">
         {#each photos as photo, i}
-        <img on:click={() => handleClick(i)} src={photo} alt="">
+        <img 
+        class:active="{current === photos[i]}"
+        on:click={() => handleClick(i)} src={photo} alt="">
         {/each}
     </div>
 </div>
 
 <style lang='scss'>
     .gallery {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 60vh;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
         &__current {
+            min-height: 60vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 60vh;
+            padding: 25px 0 15px 0;
             img {
                 max-height: 60vh;
                 max-width: 80%;
             }
         }
         &__items {
+            margin: 0 auto;
             display: flex;
             align-items: center;
-            max-width: 80%;
+            max-width: 95%;
             overflow-x: scroll;
             min-height: 15vh;
             &::-webkit-scrollbar {
@@ -86,4 +92,9 @@
             }
         }
     }
+
+    .active {
+		border: 2px solid rgb(255, 0, 0);
+        // transform: scale(1.05);
+	}
 </style>

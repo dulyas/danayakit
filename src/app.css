@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,4 +15,17 @@
     url('./fonts/SansationLight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    }
+
+    @font-face {
+        font-family: "CorridaCTT";
+        src: url("./fonts/corridactt/corridactt.eot"); /* IE9 Compat Modes */
+        src: url("./fonts/corridactt/corridactt.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("./fonts/corridactt/corridactt.otf") format("opentype"), /* Open Type Font */
+            url("./fonts/corridactt/corridactt.svg") format("svg"), /* Legacy iOS */
+            url("./fonts/corridactt/corridactt.ttf") format("truetype"), /* Safari, Android, iOS */
+            url("./fonts/corridactt/corridactt.woff") format("woff"), /* Modern Browsers */
+            url("./fonts/corridactt/corridactt.woff2") format("woff2"); /* Modern Browsers */
+        font-weight: normal;
+        font-style: normal;
     }

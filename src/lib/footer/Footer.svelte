@@ -25,10 +25,11 @@
 <style lang='scss'>
 .footer {
     height: 8vh;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(4px);
     &-info {
         font-style: normal;
         font-weight: normal;
