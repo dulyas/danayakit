@@ -52,7 +52,7 @@
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
         &__current {
-            height: 60vh;
+            height: calc(60vh - 10px);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
