@@ -6010,7 +6010,7 @@ var init__4 = __esm({
     init_index_svelte2();
     entry4 = "pages/horizontal/index.svelte-f6cc2c7d.js";
     js4 = ["pages/horizontal/index.svelte-f6cc2c7d.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-44615fb2.css"];
+    css8 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
   }
 });
 
@@ -6121,7 +6121,7 @@ var init__6 = __esm({
     init_index_svelte4();
     entry6 = "pages/vertical/index.svelte-9cc24ba8.js";
     js6 = ["pages/vertical/index.svelte-9cc24ba8.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-44615fb2.css"];
+    css12 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
   }
 });
 
@@ -6135,7 +6135,7 @@ var init_index_svelte5 = __esm({
   ".svelte-kit/output/server/entries/pages/gallery/index.svelte.js"() {
     init_index_13c0de55();
     css13 = {
-      code: ".gallery.svelte-aa94ir.svelte-aa94ir{padding:5px 1px;box-sizing:border-box;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__current.svelte-aa94ir.svelte-aa94ir{height:60vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-aa94ir img.svelte-aa94ir{max-height:60vh;max-width:100%}.gallery__items.svelte-aa94ir.svelte-aa94ir{margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:95%;overflow-x:scroll;min-height:15vh}.gallery__items.svelte-aa94ir.svelte-aa94ir::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-aa94ir.svelte-aa94ir::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-aa94ir.svelte-aa94ir::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-aa94ir img.svelte-aa94ir{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-aa94ir.svelte-aa94ir{border:2px solid red}",
+      code: ".gallery.svelte-esv9vf.svelte-esv9vf{padding:5px 1px;box-sizing:border-box;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__current.svelte-esv9vf.svelte-esv9vf{height:calc(60vh - 10px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-esv9vf img.svelte-esv9vf{max-height:calc(60vh - 10px);max-width:100%}.gallery__items.svelte-esv9vf.svelte-esv9vf{margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:95%;overflow-x:scroll;min-height:15vh}.gallery__items.svelte-esv9vf.svelte-esv9vf::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-esv9vf.svelte-esv9vf::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-esv9vf.svelte-esv9vf::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-esv9vf img.svelte-esv9vf{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-esv9vf.svelte-esv9vf{border:2px solid red}",
       map: null
     };
     Gallery = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6157,9 +6157,9 @@ var init_index_svelte5 = __esm({
       ];
       let current = photos[0];
       $$result.css.add(css13);
-      return `<div class="${"container"}"><div class="${"gallery svelte-aa94ir"}"><div class="${"gallery__current svelte-aa94ir"}">${`<img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-aa94ir"}">`}</div>
-        <div class="${"gallery__items svelte-aa94ir"}">${each(photos, (photo, i2) => {
-        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-aa94ir", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
+      return `<div class="${"container"}"><div class="${"gallery svelte-esv9vf"}"><div class="${"gallery__current svelte-esv9vf"}">${`<img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-esv9vf"}">`}</div>
+        <div class="${"gallery__items svelte-esv9vf"}">${each(photos, (photo, i2) => {
+        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-esv9vf", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
       })}</div></div>
 </div>`;
     });
@@ -6178,9 +6178,9 @@ var entry7, js7, css14;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_index_svelte5();
-    entry7 = "pages/gallery/index.svelte-57957255.js";
-    js7 = ["pages/gallery/index.svelte-57957255.js", "chunks/vendor-2576046e.js"];
-    css14 = ["assets/pages/gallery/index.svelte-e15df8c9.css"];
+    entry7 = "pages/gallery/index.svelte-91cf12e1.js";
+    js7 = ["pages/gallery/index.svelte-91cf12e1.js", "chunks/vendor-2576046e.js"];
+    css14 = ["assets/pages/gallery/index.svelte-decf452c.css"];
   }
 });
 
@@ -6238,7 +6238,7 @@ var init__8 = __esm({
     init_index_svelte6();
     entry8 = "pages/rolled/index.svelte-e166b627.js";
     js8 = ["pages/rolled/index.svelte-e166b627.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js"];
-    css16 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-44615fb2.css"];
+    css16 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
   }
 });
 
@@ -7790,7 +7790,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-cb5006ff.js", "js": ["start-cb5006ff.js", "chunks/vendor-2576046e.js"], "css": [] },
+    entry: { "file": "start-88b54693.js", "js": ["start-88b54693.js", "chunks/vendor-2576046e.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

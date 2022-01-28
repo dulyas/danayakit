@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-cb5006ff.js",
+    "file": "start-88b54693.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -90,7 +90,7 @@
       "_zebra__bg-b755d45f.js"
     ],
     "css": [
-      "assets/pages/vertical/index.svelte-0b91f264.css"
+      "assets/pages/rolled/index.svelte-be2c813f.css"
     ]
   },
   "src/routes/contacts/index.svelte": {
@@ -120,7 +120,7 @@
       "_zebra__bg-b755d45f.js"
     ],
     "css": [
-      "assets/pages/vertical/index.svelte-0b91f264.css"
+      "assets/pages/rolled/index.svelte-be2c813f.css"
     ]
   },
   "src/routes/catalog/index.svelte": {
@@ -136,7 +136,7 @@
     ]
   },
   "src/routes/gallery/index.svelte": {
-    "file": "pages/gallery/index.svelte-57957255.js",
+    "file": "pages/gallery/index.svelte-91cf12e1.js",
     "src": "src/routes/gallery/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -144,7 +144,7 @@
       "_vendor-2576046e.js"
     ],
     "css": [
-      "assets/pages/gallery/index.svelte-e15df8c9.css"
+      "assets/pages/gallery/index.svelte-decf452c.css"
     ]
   },
   "src/routes/rolled/index.svelte": {
@@ -157,7 +157,7 @@
       "_catalogItem-c3e21583.js"
     ],
     "css": [
-      "assets/pages/vertical/index.svelte-0b91f264.css"
+      "assets/pages/rolled/index.svelte-be2c813f.css"
     ],
     "assets": [
       "assets/zebra__bg-23d49d80.png"

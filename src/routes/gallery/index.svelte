@@ -54,7 +54,7 @@
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
         &__current {
-            height: 60vh;
+            height: calc(60vh - 10px);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -65,7 +65,7 @@
                 -ms-flex-align: center;
                     align-items: center;
             img {
-                max-height: 60vh;
+                max-height: calc(60vh - 10px);
                 max-width: 100%;
             }
         }
