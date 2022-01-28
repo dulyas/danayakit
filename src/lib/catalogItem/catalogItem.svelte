@@ -2,7 +2,6 @@
 import { fade, blur, fly, slide, scale, draw, crossfade } from 'svelte/transition';
 import PrevButton from './prevButton.svelte';
 import NextButton from './nextButton.svelte';
-import 'animate.css';
 
 
 export let products;
@@ -30,27 +29,33 @@ if (index > 0) {
 </script>
 
 {#each products as product, i}
-    <div style='display: {i === index ? "flex" : "none"}' class="product container animate__animated animate__fadeIn">
-        <div class="product__text">
-            <div class="product__name">{name}</div>
-            <div class="product__subname">{product.name}</div>
-            <div class="product__descr">{product.descr}</div>
-        </div>
-        <div class="product__wrapper">
-            <img class="product__img" src={product.url} alt="">
-            <div class="product__buttons">
-                <PrevButton on:click={prev}/>
-                <NextButton on:click={next}/>
+    <div class="container">
+        {#key index}
+            <div in:fade style='display: {i === index ? "flex" : "none"}' class="product">
+                <div class="product__text">
+                    <div class="product__name">{name}</div>
+                    <div class="product__subname">{product.name}</div>
+                    <div class="product__descr">{product.descr}</div>
+                </div>
+                <div class="product__wrapper">
+                    <img class="product__img" src={product.url} alt="">
+                    <div class="product__buttons">
+                        <PrevButton on:click={prev}/>
+                        <NextButton on:click={next}/>
+                    </div>
+                </div>
             </div>
-        </div>
+        {/key}
     </div>
 {/each}
+
+
 <style lang='scss'>
 
 
 .product {
     transition: 1s all;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -61,11 +66,10 @@ if (index > 0) {
             backdrop-filter: blur(4px);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     &__text {
-        width: 45%;
+        width: 43%;
     } 
     &__img {
         width: 100%;
-        object-fit: contain;
     }
     &__name {
         font-size: 40px;
@@ -88,7 +92,7 @@ if (index > 0) {
     }
     &__wrapper {
     position: relative;
-    width: 50%;
+    width: 53%;
     align-self: center;
     }
 }

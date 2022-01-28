@@ -25,7 +25,7 @@
     -webkit-transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
     -o-transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
     transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
-    fill: rgba(255, 255, 255, 0.4);
+    fill: rgba(255, 255, 255, 0.5);
 }
 .arrow-6 svg:hover polygon, 
 .arrow-6 svg:hover path {
@@ -73,7 +73,7 @@
     100% {
         -webkit-transform: translateX(1rem);
                 transform: translateX(1rem);
-        opacity: 1;
+        opacity: 0;
     }
 }
 @-webkit-keyframes arrow-6-fixed-anim {
@@ -102,6 +102,6 @@
 @media (max-width: 768px) {
     .arrow-6 svg {
     width: 50px;
-    }
+}
 }
 </style>

@@ -5789,8 +5789,8 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-956acd6a.js";
-    js = ["pages/__layout.svelte-956acd6a.js", "chunks/vendor-2576046e.js", "chunks/vk-8a4f1086.js"];
+    entry = "pages/__layout.svelte-eb1eb8bd.js";
+    js = ["pages/__layout.svelte-eb1eb8bd.js", "chunks/vendor-77a73e11.js", "chunks/vk-8a4f1086.js"];
     css2 = ["assets/pages/__layout.svelte-82a39546.css"];
   }
 });
@@ -5839,8 +5839,8 @@ var entry2, js2, css3;
 var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     init_error_svelte();
-    entry2 = "error.svelte-044404e6.js";
-    js2 = ["error.svelte-044404e6.js", "chunks/vendor-2576046e.js"];
+    entry2 = "error.svelte-7d4370ff.js";
+    js2 = ["error.svelte-7d4370ff.js", "chunks/vendor-77a73e11.js"];
     css3 = [];
   }
 });
@@ -5888,24 +5888,24 @@ var entry3, js3, css5;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_index_svelte();
-    entry3 = "pages/vyzov-zamershika/index.svelte-7b3c8687.js";
-    js3 = ["pages/vyzov-zamershika/index.svelte-7b3c8687.js", "chunks/vendor-2576046e.js"];
+    entry3 = "pages/vyzov-zamershika/index.svelte-d3152ceb.js";
+    js3 = ["pages/vyzov-zamershika/index.svelte-d3152ceb.js", "chunks/vendor-77a73e11.js"];
     css5 = ["assets/pages/vyzov-zamershika/index.svelte-dfdfe06f.css"];
   }
 });
 
-// .svelte-kit/output/server/chunks/catalogItem-026eb6e1.js
+// .svelte-kit/output/server/chunks/catalogItem-ed5c2123.js
 var css$22, PrevButton, css$12, NextButton, css6, CatalogItem;
-var init_catalogItem_026eb6e1 = __esm({
-  ".svelte-kit/output/server/chunks/catalogItem-026eb6e1.js"() {
+var init_catalogItem_ed5c2123 = __esm({
+  ".svelte-kit/output/server/chunks/catalogItem-ed5c2123.js"() {
     init_index_13c0de55();
     css$22 = {
-      code: ".arrow-6.svelte-140sutj.svelte-140sutj{margin:20px}.arrow-6.svelte-140sutj svg.svelte-140sutj{width:80px;height:auto;margin:0 2rem;cursor:pointer;overflow:visible}.arrow-6.svelte-140sutj svg polygon.svelte-140sutj,.arrow-6.svelte-140sutj svg path.svelte-140sutj{-webkit-transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);-o-transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);fill:rgba(255, 255, 255, 0.4)}.arrow-6.svelte-140sutj svg:hover polygon.svelte-140sutj,.arrow-6.svelte-140sutj svg:hover path.svelte-140sutj{-webkit-transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);-o-transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);fill:rgb(255, 255, 255, 0.9)}.arrow-6.svelte-140sutj svg:hover .arrow-6-pl.svelte-140sutj{-webkit-animation:svelte-140sutj-arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;animation:svelte-140sutj-arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite}.arrow-6.svelte-140sutj svg:hover .arrow-6-pl-fixed.svelte-140sutj{-webkit-animation:svelte-140sutj-arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;animation:svelte-140sutj-arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite}@-webkit-keyframes svelte-140sutj-arrow-6-anim{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}5%{-webkit-transform:translateX(-0.1rem);transform:translateX(-0.1rem)}100%{-webkit-transform:translateX(1rem);transform:translateX(1rem);opacity:0}}@keyframes svelte-140sutj-arrow-6-anim{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}5%{-webkit-transform:translateX(-0.1rem);transform:translateX(-0.1rem)}100%{-webkit-transform:translateX(1rem);transform:translateX(1rem);opacity:1}}@-webkit-keyframes svelte-140sutj-arrow-6-fixed-anim{5%{opacity:0}20%{opacity:0.4}100%{opacity:1}}@keyframes svelte-140sutj-arrow-6-fixed-anim{5%{opacity:0}20%{opacity:0.4}100%{opacity:1}}@media(max-width: 768px){.arrow-6.svelte-140sutj svg.svelte-140sutj{width:50px}}",
+      code: ".arrow-6.svelte-1vjjrx5.svelte-1vjjrx5{margin:20px}.arrow-6.svelte-1vjjrx5 svg.svelte-1vjjrx5{width:80px;height:auto;margin:0 2rem;cursor:pointer;overflow:visible}.arrow-6.svelte-1vjjrx5 svg polygon.svelte-1vjjrx5,.arrow-6.svelte-1vjjrx5 svg path.svelte-1vjjrx5{-webkit-transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);-o-transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);fill:rgba(255, 255, 255, 0.5)}.arrow-6.svelte-1vjjrx5 svg:hover polygon.svelte-1vjjrx5,.arrow-6.svelte-1vjjrx5 svg:hover path.svelte-1vjjrx5{-webkit-transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);-o-transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);fill:rgb(255, 255, 255, 0.9)}.arrow-6.svelte-1vjjrx5 svg:hover .arrow-6-pl.svelte-1vjjrx5{-webkit-animation:svelte-1vjjrx5-arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;animation:svelte-1vjjrx5-arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite}.arrow-6.svelte-1vjjrx5 svg:hover .arrow-6-pl-fixed.svelte-1vjjrx5{-webkit-animation:svelte-1vjjrx5-arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;animation:svelte-1vjjrx5-arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite}@-webkit-keyframes svelte-1vjjrx5-arrow-6-anim{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}5%{-webkit-transform:translateX(-0.1rem);transform:translateX(-0.1rem)}100%{-webkit-transform:translateX(1rem);transform:translateX(1rem);opacity:0}}@keyframes svelte-1vjjrx5-arrow-6-anim{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}5%{-webkit-transform:translateX(-0.1rem);transform:translateX(-0.1rem)}100%{-webkit-transform:translateX(1rem);transform:translateX(1rem);opacity:0}}@-webkit-keyframes svelte-1vjjrx5-arrow-6-fixed-anim{5%{opacity:0}20%{opacity:0.4}100%{opacity:1}}@keyframes svelte-1vjjrx5-arrow-6-fixed-anim{5%{opacity:0}20%{opacity:0.4}100%{opacity:1}}@media(max-width: 768px){.arrow-6.svelte-1vjjrx5 svg.svelte-1vjjrx5{width:50px}}",
       map: null
     };
     PrevButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$22);
-      return `<div class="${"arrow-6 svelte-140sutj"}"><svg width="${"18px"}" height="${"17px"}" viewBox="${"0 0 18 17"}" version="${"1.1"}" xmlns="${"http://www.w3.org/2000/svg"}" xmlns:xlink="${"http://www.w3.org/1999/xlink"}" class="${"svelte-140sutj"}"><g transform="${"translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)"}"><polygon class="${"arrow-6-pl svelte-140sutj"}" points="${"16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"}"></polygon><polygon class="${"arrow-6-pl-fixed svelte-140sutj"}" points="${"16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"}"></polygon><path d="${"M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"}" class="${"svelte-140sutj"}"></path></g></svg>
+      return `<div class="${"arrow-6 svelte-1vjjrx5"}"><svg width="${"18px"}" height="${"17px"}" viewBox="${"0 0 18 17"}" version="${"1.1"}" xmlns="${"http://www.w3.org/2000/svg"}" xmlns:xlink="${"http://www.w3.org/1999/xlink"}" class="${"svelte-1vjjrx5"}"><g transform="${"translate(8.500000, 8.500000) scale(-1, 1) translate(-8.500000, -8.500000)"}"><polygon class="${"arrow-6-pl svelte-1vjjrx5"}" points="${"16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"}"></polygon><polygon class="${"arrow-6-pl-fixed svelte-1vjjrx5"}" points="${"16.3746667 8.33860465 7.76133333 15.3067621 6.904 14.3175671 14.2906667 8.34246869 6.908 2.42790698 7.76 1.43613596"}"></polygon><path d="${"M-1.48029737e-15,0.56157424 L-1.48029737e-15,16.1929159 L9.708,8.33860465 L-2.66453526e-15,0.56157424 L-1.48029737e-15,0.56157424 Z M1.33333333,3.30246869 L7.62533333,8.34246869 L1.33333333,13.4327013 L1.33333333,3.30246869 L1.33333333,3.30246869 Z"}" class="${"svelte-1vjjrx5"}"></path></g></svg>
 </div>`;
     });
     css$12 = {
@@ -5918,7 +5918,7 @@ var init_catalogItem_026eb6e1 = __esm({
 </div>`;
     });
     css6 = {
-      code: ".product.svelte-utoitd{transition:1s all;width:90%;display:flex;justify-content:space-between;margin:0 auto;position:relative;padding:30px;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)}.product__text.svelte-utoitd{width:45%}.product__img.svelte-utoitd{width:100%;object-fit:contain}.product__name.svelte-utoitd{font-size:40px}.product__subname.svelte-utoitd{margin-top:15px;font-size:30px}.product__descr.svelte-utoitd{margin-top:15px;font-size:23px}.product__buttons.svelte-utoitd{position:absolute;display:flex;bottom:0;left:50%;transform:translateX(-50%);justify-content:center}.product__wrapper.svelte-utoitd{position:relative;width:50%;align-self:center}@media(max-width: 1060px){.product.svelte-utoitd{flex-direction:column;align-items:center}.product__text.svelte-utoitd{width:95%}.product__name.svelte-utoitd{font-size:30px}.product__subname.svelte-utoitd{font-size:20px}.product__descr.svelte-utoitd{font-size:15px}.product__wrapper.svelte-utoitd{margin-top:2%;width:95%}}@media(max-width: 450px){.product.svelte-utoitd{flex-direction:column;align-items:center;padding:5px}.product__text.svelte-utoitd{width:95%}.product__wrapper.svelte-utoitd{margin-top:5%;width:95%}}",
+      code: ".product.svelte-ld2hri{transition:1s all;width:100%;display:flex;justify-content:space-between;margin:0 auto;position:relative;padding:30px;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)}.product__text.svelte-ld2hri{width:43%}.product__img.svelte-ld2hri{width:100%}.product__name.svelte-ld2hri{font-size:40px}.product__subname.svelte-ld2hri{margin-top:15px;font-size:30px}.product__descr.svelte-ld2hri{margin-top:15px;font-size:23px}.product__buttons.svelte-ld2hri{position:absolute;display:flex;bottom:0;left:50%;transform:translateX(-50%);justify-content:center}.product__wrapper.svelte-ld2hri{position:relative;width:53%;align-self:center}@media(max-width: 1060px){.product.svelte-ld2hri{flex-direction:column;align-items:center}.product__text.svelte-ld2hri{width:95%}.product__name.svelte-ld2hri{font-size:30px}.product__subname.svelte-ld2hri{font-size:20px}.product__descr.svelte-ld2hri{font-size:15px}.product__wrapper.svelte-ld2hri{margin-top:2%;width:95%}}@media(max-width: 450px){.product.svelte-ld2hri{flex-direction:column;align-items:center;padding:5px}.product__text.svelte-ld2hri{width:95%}.product__wrapper.svelte-ld2hri{margin-top:5%;width:95%}}",
       map: null
     };
     CatalogItem = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5931,13 +5931,14 @@ var init_catalogItem_026eb6e1 = __esm({
         $$bindings.name(name);
       $$result.css.add(css6);
       return `${each(products, (product, i2) => {
-        return `<div style="${"display: " + escape(i2 === index ? "flex" : "none")}" class="${"product container animate__animated animate__fadeIn svelte-utoitd"}"><div class="${"product__text svelte-utoitd"}"><div class="${"product__name svelte-utoitd"}">${escape(name)}</div>
-            <div class="${"product__subname svelte-utoitd"}">${escape(product.name)}</div>
-            <div class="${"product__descr svelte-utoitd"}">${escape(product.descr)}</div></div>
-        <div class="${"product__wrapper svelte-utoitd"}"><img class="${"product__img svelte-utoitd"}"${add_attribute("src", product.url, 0)} alt="${""}">
-            <div class="${"product__buttons svelte-utoitd"}">${validate_component(PrevButton, "PrevButton").$$render($$result, {}, {}, {})}
-                ${validate_component(NextButton, "NextButton").$$render($$result, {}, {}, {})}
-            </div></div>
+        return `<div class="${"container"}"><div style="${"display: " + escape(i2 === index ? "flex" : "none")}" class="${"product svelte-ld2hri"}"><div class="${"product__text svelte-ld2hri"}"><div class="${"product__name svelte-ld2hri"}">${escape(name)}</div>
+                    <div class="${"product__subname svelte-ld2hri"}">${escape(product.name)}</div>
+                    <div class="${"product__descr svelte-ld2hri"}">${escape(product.descr)}</div></div>
+                <div class="${"product__wrapper svelte-ld2hri"}"><img class="${"product__img svelte-ld2hri"}"${add_attribute("src", product.url, 0)} alt="${""}">
+                    <div class="${"product__buttons svelte-ld2hri"}">${validate_component(PrevButton, "PrevButton").$$render($$result, {}, {}, {})}
+                        ${validate_component(NextButton, "NextButton").$$render($$result, {}, {}, {})}
+                    </div></div>
+            </div>
     </div>`;
       })}`;
     });
@@ -5965,7 +5966,7 @@ var css7, Horizontal;
 var init_index_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/horizontal/index.svelte.js"() {
     init_index_13c0de55();
-    init_catalogItem_026eb6e1();
+    init_catalogItem_ed5c2123();
     init_zebra_bg_png();
     css7 = {
       code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
@@ -6008,9 +6009,9 @@ var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_index_svelte2();
-    entry4 = "pages/horizontal/index.svelte-f6cc2c7d.js";
-    js4 = ["pages/horizontal/index.svelte-f6cc2c7d.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
+    entry4 = "pages/horizontal/index.svelte-9849e94a.js";
+    js4 = ["pages/horizontal/index.svelte-9849e94a.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js", "chunks/zebra__bg-b755d45f.js"];
+    css8 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -6061,8 +6062,8 @@ var entry5, js5, css10;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_index_svelte3();
-    entry5 = "pages/contacts/index.svelte-dcc0d38d.js";
-    js5 = ["pages/contacts/index.svelte-dcc0d38d.js", "chunks/vendor-2576046e.js", "chunks/vk-8a4f1086.js"];
+    entry5 = "pages/contacts/index.svelte-8d93cdf8.js";
+    js5 = ["pages/contacts/index.svelte-8d93cdf8.js", "chunks/vendor-77a73e11.js", "chunks/vk-8a4f1086.js"];
     css10 = ["assets/pages/contacts/index.svelte-146ff057.css"];
   }
 });
@@ -6076,7 +6077,7 @@ var css11, Vertical;
 var init_index_svelte4 = __esm({
   ".svelte-kit/output/server/entries/pages/vertical/index.svelte.js"() {
     init_index_13c0de55();
-    init_catalogItem_026eb6e1();
+    init_catalogItem_ed5c2123();
     init_zebra_bg_png();
     css11 = {
       code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
@@ -6119,9 +6120,9 @@ var entry6, js6, css12;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_index_svelte4();
-    entry6 = "pages/vertical/index.svelte-9cc24ba8.js";
-    js6 = ["pages/vertical/index.svelte-9cc24ba8.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
+    entry6 = "pages/vertical/index.svelte-49571bbc.js";
+    js6 = ["pages/vertical/index.svelte-49571bbc.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js", "chunks/zebra__bg-b755d45f.js"];
+    css12 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -6135,7 +6136,7 @@ var init_index_svelte5 = __esm({
   ".svelte-kit/output/server/entries/pages/gallery/index.svelte.js"() {
     init_index_13c0de55();
     css13 = {
-      code: ".gallery.svelte-esv9vf.svelte-esv9vf{padding:5px 1px;box-sizing:border-box;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__current.svelte-esv9vf.svelte-esv9vf{height:calc(60vh - 10px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-esv9vf img.svelte-esv9vf{max-height:calc(60vh - 10px);max-width:100%}.gallery__items.svelte-esv9vf.svelte-esv9vf{margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:95%;overflow-x:scroll;min-height:15vh}.gallery__items.svelte-esv9vf.svelte-esv9vf::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-esv9vf.svelte-esv9vf::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-esv9vf.svelte-esv9vf::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-esv9vf img.svelte-esv9vf{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-esv9vf.svelte-esv9vf{border:2px solid red}",
+      code: ".gallery__current.svelte-ppfiro.svelte-ppfiro{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-ppfiro img.svelte-ppfiro{border-radius:3px;max-height:60vh;max-width:95%}.gallery__items.svelte-ppfiro.svelte-ppfiro{border-radius:3px;margin:15px auto 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;overflow-x:scroll;min-height:15vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__items.svelte-ppfiro.svelte-ppfiro::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-ppfiro.svelte-ppfiro::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-ppfiro.svelte-ppfiro::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-ppfiro img.svelte-ppfiro{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-ppfiro.svelte-ppfiro{border:2px solid red}",
       map: null
     };
     Gallery = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6157,9 +6158,9 @@ var init_index_svelte5 = __esm({
       ];
       let current = photos[0];
       $$result.css.add(css13);
-      return `<div class="${"container"}"><div class="${"gallery svelte-esv9vf"}"><div class="${"gallery__current svelte-esv9vf"}">${`<img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-esv9vf"}">`}</div>
-        <div class="${"gallery__items svelte-esv9vf"}">${each(photos, (photo, i2) => {
-        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-esv9vf", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
+      return `<div class="${"container"}"><div class="${"gallery"}"><div class="${"gallery__current svelte-ppfiro"}"><img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-ppfiro"}"></div>
+        <div class="${"gallery__items svelte-ppfiro"}">${each(photos, (photo, i2) => {
+        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-ppfiro", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
       })}</div></div>
 </div>`;
     });
@@ -6178,9 +6179,9 @@ var entry7, js7, css14;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_index_svelte5();
-    entry7 = "pages/gallery/index.svelte-91cf12e1.js";
-    js7 = ["pages/gallery/index.svelte-91cf12e1.js", "chunks/vendor-2576046e.js"];
-    css14 = ["assets/pages/gallery/index.svelte-decf452c.css"];
+    entry7 = "pages/gallery/index.svelte-18f338db.js";
+    js7 = ["pages/gallery/index.svelte-18f338db.js", "chunks/vendor-77a73e11.js"];
+    css14 = ["assets/pages/gallery/index.svelte-805c8d98.css"];
   }
 });
 
@@ -6193,7 +6194,7 @@ var zebraSrc2, css15, Rolled;
 var init_index_svelte6 = __esm({
   ".svelte-kit/output/server/entries/pages/rolled/index.svelte.js"() {
     init_index_13c0de55();
-    init_catalogItem_026eb6e1();
+    init_catalogItem_ed5c2123();
     zebraSrc2 = "/_app/assets/zebra__bg-23d49d80.png";
     css15 = {
       code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
@@ -6236,9 +6237,9 @@ var entry8, js8, css16;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_index_svelte6();
-    entry8 = "pages/rolled/index.svelte-e166b627.js";
-    js8 = ["pages/rolled/index.svelte-e166b627.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js"];
-    css16 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
+    entry8 = "pages/rolled/index.svelte-9aa1a231.js";
+    js8 = ["pages/rolled/index.svelte-9aa1a231.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js"];
+    css16 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -6269,8 +6270,8 @@ var entry9, js9, css17;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
     init_index_svelte7();
-    entry9 = "pages/about/index.svelte-6718cbe0.js";
-    js9 = ["pages/about/index.svelte-6718cbe0.js", "chunks/vendor-2576046e.js"];
+    entry9 = "pages/about/index.svelte-5f0147da.js";
+    js9 = ["pages/about/index.svelte-5f0147da.js", "chunks/vendor-77a73e11.js"];
     css17 = [];
   }
 });
@@ -7790,7 +7791,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-e9bfb427.js", "js": ["start-e9bfb427.js", "chunks/vendor-2576046e.js"], "css": [] },
+    entry: { "file": "start-781c985c.js", "js": ["start-781c985c.js", "chunks/vendor-77a73e11.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

@@ -18,24 +18,19 @@
         'https://sun9-51.userapi.com/impg/G03OI2SibWNT5wYXwjTQJZabuQGpXfnubhqWJg/gasMCJxd-BM.jpg?size=747x769&quality=95&sign=58064bc35a6c3728a8d4fc19690d75a0&type=album',
     ];
     let current = photos[0];
-    
     function handleClick(i) {
-        visible = false;
-        setTimeout(() => {
         current = photos[i];
-        visible = true;
-        }, 350)
     }
 </script>
 
 
 <div class="container">
     <div in:fade="{{duration: 1000}}" class="gallery">
-        <div class="gallery__current">
-            {#if visible}
-            <img transition:fade|local="{{duration: 300}}" src={current} alt="">
-            {/if}
+        {#key current}
+        <div in:fade class="gallery__current">
+            <img  src={current} alt="">
         </div>
+        {/key}
         <div class="gallery__items">
             {#each photos as photo, i}
             <img 
@@ -48,13 +43,7 @@
 
 <style lang='scss'>
     .gallery {
-        padding: 5px 1px;
-        box-sizing: border-box;
-        background: rgba(0, 0, 0, 0.5);
-        -webkit-backdrop-filter: blur(4px);
-                backdrop-filter: blur(4px);
         &__current {
-            height: calc(60vh - 10px);
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -65,21 +54,26 @@
                 -ms-flex-align: center;
                     align-items: center;
             img {
-                max-height: calc(60vh - 10px);
-                max-width: 100%;
+                border-radius: 3px;
+                max-height: 60vh;
+                max-width: 95%;
             }
         }
         &__items {
-            margin: 0 auto;
+            border-radius: 3px;
+            margin: 15px auto 0;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            max-width: 95%;
+            max-width: 100%;
             overflow-x: scroll;
             min-height: 15vh;
+            background: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
             &::-webkit-scrollbar {
                 width: 7px;
                 background-color: rgba(0, 0, 0, 0.5);
