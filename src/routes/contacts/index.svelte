@@ -99,7 +99,7 @@
         }
         .contacts {
         width: 80%;
-        height: 60vh;
+        height: 36vh;
         background: rgba(0, 0, 0, 0.5);
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
@@ -119,8 +119,9 @@
         font-size: 30px;
         text-align: center;
         padding: 0 15px;
+        font-size: 25px;
         &__phone {
-            font-size: 56px;
+            font-size: 43px;
         }
         &__soc {
             display: -webkit-box;
@@ -134,8 +135,9 @@
             }
         }
         &__map {
-            height: 60vh;
-            width: calc(80% + 25px);
+            margin-top: 15px;
+            height: 36vh;
+            width: 80%;
         }
     }
     }
@@ -143,12 +145,13 @@
     @media (max-width: 632px) {
         .contacts {
             font-size: 15px;
-            height: 50vh;
+            height: 40vh;
             &__phone {
                 font-size: 25px;
             }
             &__map {
-                height: 50vh;
+                margin-top: 15px;
+                height: 40vh;
             }
         }
     }
