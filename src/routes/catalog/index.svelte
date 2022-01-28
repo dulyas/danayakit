@@ -39,7 +39,7 @@ import { fade } from 'svelte/transition';
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        min-height: 76vh;
+        min-height: 70vh;
         margin: 0 auto;
         &__item {
             background: rgba(0, 0, 0, 0.5);

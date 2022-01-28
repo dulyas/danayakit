@@ -6011,7 +6011,7 @@ var init__4 = __esm({
     init_index_svelte2();
     entry4 = "pages/horizontal/index.svelte-9849e94a.js";
     js4 = ["pages/horizontal/index.svelte-9849e94a.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-5e941fed.css"];
+    css8 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -6122,7 +6122,7 @@ var init__6 = __esm({
     init_index_svelte4();
     entry6 = "pages/vertical/index.svelte-49571bbc.js";
     js6 = ["pages/vertical/index.svelte-49571bbc.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-5e941fed.css"];
+    css12 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -6239,7 +6239,7 @@ var init__8 = __esm({
     init_index_svelte6();
     entry8 = "pages/rolled/index.svelte-9aa1a231.js";
     js8 = ["pages/rolled/index.svelte-9aa1a231.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js"];
-    css16 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-5e941fed.css"];
+    css16 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -7791,7 +7791,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-82ecc96d.js", "js": ["start-82ecc96d.js", "chunks/vendor-77a73e11.js"], "css": [] },
+    entry: { "file": "start-8e58a9ea.js", "js": ["start-8e58a9ea.js", "chunks/vendor-77a73e11.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
