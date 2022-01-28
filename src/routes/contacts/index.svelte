@@ -40,7 +40,7 @@
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        margin: 3% auto;
+        margin: 0 auto;
     }
 
     .contacts {

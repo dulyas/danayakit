@@ -5791,7 +5791,7 @@ var init__ = __esm({
     init_layout_svelte();
     entry = "pages/__layout.svelte-209ac444.js";
     js = ["pages/__layout.svelte-209ac444.js", "chunks/vendor-2576046e.js", "chunks/vk-8a4f1086.js"];
-    css2 = ["assets/pages/__layout.svelte-1e8b5ace.css"];
+    css2 = ["assets/pages/__layout.svelte-815d420a.css"];
   }
 });
 
@@ -6010,7 +6010,7 @@ var init__4 = __esm({
     init_index_svelte2();
     entry4 = "pages/horizontal/index.svelte-f6cc2c7d.js";
     js4 = ["pages/horizontal/index.svelte-f6cc2c7d.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
+    css8 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-44615fb2.css"];
   }
 });
 
@@ -6026,12 +6026,12 @@ var init_index_svelte3 = __esm({
     init_vk_8a4f1086();
     instSrc2 = "/_app/assets/inst-846e9848.svg";
     css9 = {
-      code: ".contacts-wrapper.svelte-15f6ocl.svelte-15f6ocl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:3% auto}.contacts.svelte-15f6ocl.svelte-15f6ocl{width:40%;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:30px;text-align:center;padding:0 15px}.contacts__phone.svelte-15f6ocl.svelte-15f6ocl{font-size:56px}.contacts__soc.svelte-15f6ocl.svelte-15f6ocl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__soc.svelte-15f6ocl img.svelte-15f6ocl{margin-right:5px}.contacts__map.svelte-15f6ocl.svelte-15f6ocl{height:70vh;width:55%}@media(max-width: 800px){.contacts-wrapper.svelte-15f6ocl.svelte-15f6ocl{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.contacts.svelte-15f6ocl.svelte-15f6ocl{width:80%;height:60vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:30px;text-align:center;padding:0 15px}.contacts__phone.svelte-15f6ocl.svelte-15f6ocl{font-size:56px}.contacts__soc.svelte-15f6ocl.svelte-15f6ocl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__soc.svelte-15f6ocl img.svelte-15f6ocl{margin-right:5px}.contacts__map.svelte-15f6ocl.svelte-15f6ocl{height:60vh;width:calc(80% + 25px)}}@media(max-width: 632px){.contacts.svelte-15f6ocl.svelte-15f6ocl{font-size:15px;height:50vh}.contacts__phone.svelte-15f6ocl.svelte-15f6ocl{font-size:25px}.contacts__map.svelte-15f6ocl.svelte-15f6ocl{height:50vh}}",
+      code: ".contacts-wrapper.svelte-aeg5a5.svelte-aeg5a5{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto}.contacts.svelte-aeg5a5.svelte-aeg5a5{width:40%;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:30px;text-align:center;padding:0 15px}.contacts__phone.svelte-aeg5a5.svelte-aeg5a5{font-size:56px}.contacts__soc.svelte-aeg5a5.svelte-aeg5a5{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__soc.svelte-aeg5a5 img.svelte-aeg5a5{margin-right:5px}.contacts__map.svelte-aeg5a5.svelte-aeg5a5{height:70vh;width:55%}@media(max-width: 800px){.contacts-wrapper.svelte-aeg5a5.svelte-aeg5a5{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.contacts.svelte-aeg5a5.svelte-aeg5a5{width:80%;height:60vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:30px;text-align:center;padding:0 15px}.contacts__phone.svelte-aeg5a5.svelte-aeg5a5{font-size:56px}.contacts__soc.svelte-aeg5a5.svelte-aeg5a5{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__soc.svelte-aeg5a5 img.svelte-aeg5a5{margin-right:5px}.contacts__map.svelte-aeg5a5.svelte-aeg5a5{height:60vh;width:calc(80% + 25px)}}@media(max-width: 632px){.contacts.svelte-aeg5a5.svelte-aeg5a5{font-size:15px;height:50vh}.contacts__phone.svelte-aeg5a5.svelte-aeg5a5{font-size:25px}.contacts__map.svelte-aeg5a5.svelte-aeg5a5{height:50vh}}",
       map: null
     };
     Contacts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css9);
-      return `<div class="${"container contacts-wrapper svelte-15f6ocl"}"><div class="${"contacts svelte-15f6ocl"}"><div class="${"contacts__phone svelte-15f6ocl"}">+7 (351) 231 55 00
+      return `<div class="${"container contacts-wrapper svelte-aeg5a5"}"><div class="${"contacts svelte-aeg5a5"}"><div class="${"contacts__phone svelte-aeg5a5"}">+7 (351) 231 55 00
         </div>
         <div class="${"contacts__email"}">danaya.74@mail.ru
         </div>
@@ -6041,9 +6041,9 @@ var init_index_svelte3 = __esm({
             \u041F\u043D-\u041F\u0442
             \u0441 9:00 \u0434\u043E 18:00
         </div>
-        <a href="${"https://vk.com/danayajaluzi"}" class="${"contacts__soc svelte-15f6ocl"}"><img${add_attribute("src", vkSrc, 0)} alt="${""}" class="${"svelte-15f6ocl"}"><span>/danayajaluzi</span></a>
-        <a href="${"https://https://www.instagram.com/jaluzi174"}" class="${"contacts__soc svelte-15f6ocl"}"><img${add_attribute("src", instSrc2, 0)} alt="${""}" class="${"svelte-15f6ocl"}"><span>/jaluzi174</span></a></div>
-        <div class="${"contacts__map svelte-15f6ocl"}" style="${"position:relative;overflow:hidden;"}"><a href="${"https://yandex.ru/maps/org/danaya/1072479778/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:0px;"}">\u0414\u0430\u043D\u0430\u044F</a><a href="${"https://yandex.ru/maps/56/chelyabinsk/category/jalousies_shutters_and_roller_blinds/184107989/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:14px;"}">\u0416\u0430\u043B\u044E\u0437\u0438 \u0438 \u0440\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B \u0432 \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A\u0435</a><a href="${"https://yandex.ru/maps/56/chelyabinsk/category/shutters/184107733/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:28px;"}">\u0420\u043E\u043B\u044C\u0441\u0442\u0430\u0432\u043D\u0438 \u0432 \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A\u0435</a><iframe src="${"https://yandex.ru/map-widget/v1/-/CCU5ILU6CC"}" width="${"100%"}" height="${"100%"}" frameborder="${"0"}" allowfullscreen="${"true"}" style="${"position:relative;"}"></iframe></div>
+        <a href="${"https://vk.com/danayajaluzi"}" class="${"contacts__soc svelte-aeg5a5"}"><img${add_attribute("src", vkSrc, 0)} alt="${""}" class="${"svelte-aeg5a5"}"><span>/danayajaluzi</span></a>
+        <a href="${"https://https://www.instagram.com/jaluzi174"}" class="${"contacts__soc svelte-aeg5a5"}"><img${add_attribute("src", instSrc2, 0)} alt="${""}" class="${"svelte-aeg5a5"}"><span>/jaluzi174</span></a></div>
+        <div class="${"contacts__map svelte-aeg5a5"}" style="${"position:relative;overflow:hidden;"}"><a href="${"https://yandex.ru/maps/org/danaya/1072479778/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:0px;"}">\u0414\u0430\u043D\u0430\u044F</a><a href="${"https://yandex.ru/maps/56/chelyabinsk/category/jalousies_shutters_and_roller_blinds/184107989/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:14px;"}">\u0416\u0430\u043B\u044E\u0437\u0438 \u0438 \u0440\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B \u0432 \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A\u0435</a><a href="${"https://yandex.ru/maps/56/chelyabinsk/category/shutters/184107733/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:28px;"}">\u0420\u043E\u043B\u044C\u0441\u0442\u0430\u0432\u043D\u0438 \u0432 \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A\u0435</a><iframe src="${"https://yandex.ru/map-widget/v1/-/CCU5ILU6CC"}" width="${"100%"}" height="${"100%"}" frameborder="${"0"}" allowfullscreen="${"true"}" style="${"position:relative;"}"></iframe></div>
 </div>`;
     });
   }
@@ -6061,9 +6061,9 @@ var entry5, js5, css10;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_index_svelte3();
-    entry5 = "pages/contacts/index.svelte-e2ef0481.js";
-    js5 = ["pages/contacts/index.svelte-e2ef0481.js", "chunks/vendor-2576046e.js", "chunks/vk-8a4f1086.js"];
-    css10 = ["assets/pages/contacts/index.svelte-9bf86014.css"];
+    entry5 = "pages/contacts/index.svelte-048a5edc.js";
+    js5 = ["pages/contacts/index.svelte-048a5edc.js", "chunks/vendor-2576046e.js", "chunks/vk-8a4f1086.js"];
+    css10 = ["assets/pages/contacts/index.svelte-8e466dba.css"];
   }
 });
 
@@ -6121,7 +6121,7 @@ var init__6 = __esm({
     init_index_svelte4();
     entry6 = "pages/vertical/index.svelte-9cc24ba8.js";
     js6 = ["pages/vertical/index.svelte-9cc24ba8.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
+    css12 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-44615fb2.css"];
   }
 });
 
@@ -6135,7 +6135,7 @@ var init_index_svelte5 = __esm({
   ".svelte-kit/output/server/entries/pages/gallery/index.svelte.js"() {
     init_index_13c0de55();
     css13 = {
-      code: ".gallery.svelte-13fs1jk.svelte-13fs1jk{padding:5px;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__current.svelte-13fs1jk.svelte-13fs1jk{height:60vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-13fs1jk img.svelte-13fs1jk{max-height:60vh;max-width:100%}.gallery__items.svelte-13fs1jk.svelte-13fs1jk{margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:95%;overflow-x:scroll;min-height:15vh}.gallery__items.svelte-13fs1jk.svelte-13fs1jk::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-13fs1jk.svelte-13fs1jk::-webkit-scrollbar-thumb{background-color:#ffffff70;border-radius:8px}.gallery__items.svelte-13fs1jk.svelte-13fs1jk::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-13fs1jk img.svelte-13fs1jk{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-13fs1jk.svelte-13fs1jk{border:2px solid red}",
+      code: ".gallery.svelte-wf4j3k.svelte-wf4j3k{padding:5px 1px;box-sizing:border-box;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__current.svelte-wf4j3k.svelte-wf4j3k{height:60vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-wf4j3k img.svelte-wf4j3k{max-height:60vh;max-width:100%}.gallery__items.svelte-wf4j3k.svelte-wf4j3k{margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:95%;overflow-x:scroll;min-height:15vh}.gallery__items.svelte-wf4j3k.svelte-wf4j3k::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-wf4j3k.svelte-wf4j3k::-webkit-scrollbar-thumb{background-color:#ffffff70;border-radius:8px}.gallery__items.svelte-wf4j3k.svelte-wf4j3k::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-wf4j3k img.svelte-wf4j3k{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-wf4j3k.svelte-wf4j3k{border:2px solid red}",
       map: null
     };
     Gallery = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6157,9 +6157,9 @@ var init_index_svelte5 = __esm({
       ];
       let current = photos[0];
       $$result.css.add(css13);
-      return `<div class="${"container gallery svelte-13fs1jk"}"><div class="${"gallery__current svelte-13fs1jk"}">${`<img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-13fs1jk"}">`}</div>
-    <div class="${"gallery__items svelte-13fs1jk"}">${each(photos, (photo, i2) => {
-        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-13fs1jk", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
+      return `<div class="${"container gallery svelte-wf4j3k"}"><div class="${"gallery__current svelte-wf4j3k"}">${`<img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-wf4j3k"}">`}</div>
+    <div class="${"gallery__items svelte-wf4j3k"}">${each(photos, (photo, i2) => {
+        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-wf4j3k", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
       })}</div>
 </div>`;
     });
@@ -6178,9 +6178,9 @@ var entry7, js7, css14;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_index_svelte5();
-    entry7 = "pages/gallery/index.svelte-295be236.js";
-    js7 = ["pages/gallery/index.svelte-295be236.js", "chunks/vendor-2576046e.js"];
-    css14 = ["assets/pages/gallery/index.svelte-9da6967a.css"];
+    entry7 = "pages/gallery/index.svelte-7d834ea5.js";
+    js7 = ["pages/gallery/index.svelte-7d834ea5.js", "chunks/vendor-2576046e.js"];
+    css14 = ["assets/pages/gallery/index.svelte-9c2d98c1.css"];
   }
 });
 
@@ -6238,7 +6238,7 @@ var init__8 = __esm({
     init_index_svelte6();
     entry8 = "pages/rolled/index.svelte-e166b627.js";
     js8 = ["pages/rolled/index.svelte-e166b627.js", "chunks/vendor-2576046e.js", "chunks/catalogItem-c3e21583.js"];
-    css16 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-44615fb2.css"];
+    css16 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-44615fb2.css"];
   }
 });
 
@@ -7790,7 +7790,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-dc960739.js", "js": ["start-dc960739.js", "chunks/vendor-2576046e.js"], "css": [] },
+    entry: { "file": "start-54cba1bd.js", "js": ["start-54cba1bd.js", "chunks/vendor-2576046e.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

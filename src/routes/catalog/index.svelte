@@ -39,7 +39,7 @@ import { fade } from 'svelte/transition';
                 flex-direction: column;
         min-height: 76vh;
         width: 80%;
-        margin: 1% auto;
+        margin: 0 auto;
         &__item {
             list-style-type: none;
             max-height: 210px;

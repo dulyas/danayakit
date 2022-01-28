@@ -46,7 +46,8 @@
 
 <style lang='scss'>
     .gallery {
-        padding: 5px;
+        padding: 5px 1px;
+        box-sizing: border-box;
         background: rgba(0, 0, 0, 0.5);
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
