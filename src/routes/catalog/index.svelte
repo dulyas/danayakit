@@ -7,20 +7,22 @@ import { fade } from 'svelte/transition';
 </script>
 
 
-<ul in:fade="{{duration: 1000}}" class="catalog container">
-    <a href="/vertical" class="catalog__item">
-        <div class="catalog__item-name">Вертикальные жалюзи</div>
-        <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
-    </a>
-    <a href="/rolled" class="catalog__item">
-        <div class="catalog__item-name">Рулонные <br> жалюзи</div>
-        <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-    </a>
-    <a href="/horizontal" class="catalog__item">
-        <div class="catalog__item-name">Горизонтальные жалюзи</div>
-        <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <div>
-    </a>
-</ul>
+<div class="container">
+    <div in:fade="{{duration: 1000}}" class="catalog">
+        <a href="/vertical" class="catalog__item">
+            <div class="catalog__item-name">Вертикальные жалюзи</div>
+            <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
+        </a>
+        <a href="/rolled" class="catalog__item">
+            <div class="catalog__item-name">Рулонные жалюзи</div>
+            <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+        </a>
+        <a href="/horizontal" class="catalog__item">
+            <div class="catalog__item-name">Горизонтальные жалюзи</div>
+            <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <div>
+        </a>
+    </div>
+</div>
 
 <style lang='scss'>
     .catalog {
@@ -38,17 +40,12 @@ import { fade } from 'svelte/transition';
             -ms-flex-direction: column;
                 flex-direction: column;
         min-height: 76vh;
-        width: 80%;
         margin: 0 auto;
         &__item {
-            list-style-type: none;
-            max-height: 210px;
-            height: 27%;
-            width: 100%;
             background: rgba(0, 0, 0, 0.5);
             -webkit-backdrop-filter: blur(4px);
                     backdrop-filter: blur(4px);
-            padding: 13px 68px;
+            padding: 15px 40px;
             -webkit-transition: 1s all;
             -o-transition: 1s all;
             transition: 1s all;
@@ -83,7 +80,7 @@ import { fade } from 'svelte/transition';
                 font-size: 23px;
                 color: #FFFFFF;
                 text-align: right;
-                width: 65%;
+                width: 60%;
             }
             &:hover {
                 background: rgba(0, 0, 0, 0.75);
@@ -94,7 +91,6 @@ import { fade } from 'svelte/transition';
     @media (max-width: 1400px) {
         .catalog {
             &__item {
-                text-align: center;
                 &-name {
                     font-size: 35px;
                 }
@@ -125,8 +121,9 @@ import { fade } from 'svelte/transition';
     @media (max-width: 768px) {
         .catalog {
             &__item {
-                height: 25%;
-                width: 60%;
+                width: 75%;
+                min-height: 100px;
+                padding: 2%;
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -136,6 +133,7 @@ import { fade } from 'svelte/transition';
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;
+
                 &:nth-child(2n) {
                 .catalog__item-name {
                     -webkit-box-ordinal-group: 1;
@@ -162,7 +160,6 @@ import { fade } from 'svelte/transition';
     @media (max-width: 320px) {
         .catalog {
             &__item {
-                height: 25%;
 
                 &:nth-child(2n) {
                 .catalog__item-name {

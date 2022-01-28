@@ -29,18 +29,20 @@
 </script>
 
 
-<div in:fade="{{duration: 1000}}" class="container gallery">
-    <div class="gallery__current">
-        {#if visible}
-        <img transition:fade|local="{{duration: 300}}" src={current} alt="">
-        {/if}
-    </div>
-    <div class="gallery__items">
-        {#each photos as photo, i}
-        <img 
-        class:active="{current === photos[i]}"
-        on:click={() => handleClick(i)} src={photo} alt="">
-        {/each}
+<div class="container">
+    <div in:fade="{{duration: 1000}}" class="gallery">
+        <div class="gallery__current">
+            {#if visible}
+            <img transition:fade|local="{{duration: 300}}" src={current} alt="">
+            {/if}
+        </div>
+        <div class="gallery__items">
+            {#each photos as photo, i}
+            <img 
+            class:active="{current === photos[i]}"
+            on:click={() => handleClick(i)} src={photo} alt="">
+            {/each}
+        </div>
     </div>
 </div>
 
@@ -52,7 +54,7 @@
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
         &__current {
-            height: calc(60vh - 10px);
+            height: 60vh;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -85,7 +87,7 @@
                 height: 19px;
             }
             &::-webkit-scrollbar-thumb {
-                background-color: #ffffff70;
+                background-color: #ffffff2d;
                 border-radius: 8px;
             }
             &::-webkit-scrollbar-track {
