@@ -59,13 +59,18 @@ h1 {
     font-size: 35px;
 }
 
-
-
-
-@media (max-width: 1050px) {
+@media (max-width: 1450px) {
     h1 {
         font-size: 100px;
     }
+    .home {
+    }
+
+}
+
+
+@media (max-width: 1050px) {
+
     .home {
         text-align: center;
     }
@@ -86,7 +91,7 @@ h1 {
 @media (max-width: 668px) {
     h1 {
         font-size: 50px;
-        margin: 50px;
+        margin-top: 50px;
         text-align: center;
     }
     .main-btn-item {
@@ -94,7 +99,7 @@ h1 {
         }
         .buttons {
         .main-btn-item {
-            margin-top: 8px;
+            height: 65px;
         }
     }    
 }

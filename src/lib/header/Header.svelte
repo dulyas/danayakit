@@ -50,7 +50,7 @@ const menu = [
     <nav class="nav">
         {#each menu as item, i}
         <div class="nav-item">
-            <a class='active' href={item.url}>{item.name}</a>
+            <a class='' href={item.url}>{item.name}</a>
         </div>
         {/each}
     </nav>
@@ -65,6 +65,7 @@ const menu = [
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        justify-content: space-between;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -76,16 +77,15 @@ const menu = [
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
+        align-items: center;
+        -ms-flex-align: center;
+                align-items: center;
+        position: relative;
+        right: 15%;
         &-item {
-            font-style: normal;
-            font-weight: 300;
             font-size: 18px;
             margin: 0 25px;
+            text-align: center;
         }
         a {
             position: relative;
@@ -114,7 +114,7 @@ const menu = [
     .nav__logo {
     position: relative;
     bottom: 15px;
-    right: -80px;
+    left: 110%;
     font-size: 25px;
     font-weight: normal;
     -webkit-transition: 1s all;
@@ -138,33 +138,38 @@ const menu = [
     display: none;
 }
 
-
-@media (max-width: 1663px) {
-    .nav {
-        display: none;
+@media (max-width: 1470px) {
+    .header {
+        .nav {
+            right: 0;
+        }
+        .nav__logo {
+        position: relative;
+        left: 5%;
+        }
     }
+}
+
+@media (max-width: 1260px) {
+    .header {
+        .nav {
+            display: none;
+        }
+    }
+
     .burger {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        position: absolute;
-        right: 15px;
+        display: block;
+        position: relative;
+        right: 2%;
     }
 }
 
-@media (max-width: 526px) {
-    .nav__logo {
-        right: -15px;
-    }
-}
-@media (max-width: 407px) {
+@media (max-width: 360px) {
     .nav__logo {
         font-size: 0;
     }
-
 }
+
+
 
 </style>

@@ -13,7 +13,7 @@ import { fade } from 'svelte/transition';
         <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
     </a>
     <a href="/rolled" class="catalog__item">
-        <div class="catalog__item-name">Рулонные жалюзи</div>
+        <div class="catalog__item-name">Рулонные <br> жалюзи</div>
         <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
     </a>
     <a href="/horizontal" class="catalog__item">
@@ -83,7 +83,7 @@ import { fade } from 'svelte/transition';
                 font-size: 23px;
                 color: #FFFFFF;
                 text-align: right;
-                width: 50%;
+                width: 65%;
             }
             &:hover {
                 background: rgba(0, 0, 0, 0.75);
