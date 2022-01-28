@@ -1,7 +1,7 @@
 <script>
     import CatalogItem from "$lib/catalogItem/catalogItem.svelte";
     import zebraSrc from '../rolled/zebra__bg.png';
-    const types = [
+    const products = [
     {
         name: 'Олень',
         descr: 'LALALALALAL',
@@ -21,5 +21,15 @@
     </script>
     
     <div>
-        <CatalogItem types={types}/>
+        <CatalogItem name='Вертикальные жалюзи' products={products}/>
     </div>
+
+    <style lang='scss'>
+        div {
+            display: flex;
+            flex-direction: column;
+            min-height: 74vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>

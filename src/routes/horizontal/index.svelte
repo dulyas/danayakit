@@ -1,25 +1,38 @@
 <script>
     import CatalogItem from "$lib/catalogItem/catalogItem.svelte";
     import zebraSrc from '../rolled/zebra__bg.png';
-    const types = [
+    const products = [
     {
         name: 'Олень',
-        descr: 'LALALALALAL',
+        descr: 'Рулонные шторы зебра сочитают в себе функциолнал горизонтальных жалюзи по управлению световым потоком и эстетическую составляющую классических рулонных штор. В готовом изделии используется двойное полотно ткани "зебра", позволяющее закрыться от посторонних глаз и регулировать поступление света в помещение за счет смещения чередующихся полос плотной ткани и прзрачной сетки-вуали относительно друг друга.',
+        // url: 'https://images.wallpaperscraft.ru/image/single/zhaliuzi_okno_gradient_181210_1920x1080.jpg',
         url: zebraSrc,
     },
     {
         name: 'Собака',
-        descr: 'LALALALALALfdsf',
-        url: "https://designmyhome.ru/sites/default/files/styles/large/public/field/image/45/zhalyuzi_na_kuhnyu.jpg",
+        descr: 'Рулонные шторы зfsdafasfasdfasdfсочитают в себе функциолнал горизонтальных жалюзи по управлению световым потоком и эстетическую составляющую классических рулонных штор. В готовом изделии используется двойное полотно ткани "зебра", позволяющее закрыться от посторонних глаз и регулировать поступление света в помещение за счет смещения чередующихся полос плотной ткани и прзрачной сетки-вуали относительно друг друга.',
+        url: "https://storge.pic2.me/cm/1920x1080/653/5280dcd7d0bdd.jpg",
     },
     {
         name: 'Лань',
-        descr: 'LALALALALALfsadfa',
-        url: "https://designmyhome.ru/sites/default/files/images/vertikalnye_zhalyuzi_na_kuhnyu_1_0.jpg",
+        descr: 'ffdsafsadfasd функциолнал горизонтальных жалюзи по управлению световым потоком и эстетическую составляющую классических рулонных штор. В готовом изделии используется двойное полотно ткани "зебра", позволяющее закрыться от посторонних глаз и регулировать поступление света в помещение за счет смещения чередующихся полос плотной ткани и прзрачной сетки-вуали относительно друг друга.',
+       
+        url: "https://images.wallpaperscraft.ru/image/single/zhalyuzi_tekstura_okno_106167_1920x1080.jpg",
     },
 ];
     </script>
     
     <div>
-        <CatalogItem types={types}/>
+        <CatalogItem name='Горизонтальные жалюзи' products={products}/>
     </div>
+
+
+<style lang='scss'>
+    div {
+        display: flex;
+        flex-direction: column;
+        min-height: 74vh;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

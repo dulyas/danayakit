@@ -13,7 +13,7 @@
         <a href="/catalog" class="button main-btn-item">
             Перейти в каталог
         </a>
-        <a href="/call" class="button main-btn-item">
+        <a href="/vyzov-zamershika" class="button main-btn-item">
             Вызвать замерщика
         </a>
     </div>
@@ -56,10 +56,13 @@ h1 {
 .main-btn-item {
     width: 425px;
 	height: 87px;
-    font-size: 40px;
+    font-size: 35px;
 }
 
-@media (max-width: 1246px) {
+
+
+
+@media (max-width: 1050px) {
     h1 {
         font-size: 100px;
     }
@@ -75,6 +78,7 @@ h1 {
                 justify-content: space-evenly;
         .main-btn-item {
             margin-top: 25px;
+            font-size: 25px;
         }
     }
 }

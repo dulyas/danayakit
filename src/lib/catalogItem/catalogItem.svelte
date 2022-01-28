@@ -1,218 +1,157 @@
-
 <script>
 import { fade, blur, fly, slide, scale, draw, crossfade } from 'svelte/transition';
-
 import PrevButton from './prevButton.svelte';
 import NextButton from './nextButton.svelte';
+import 'animate.css';
 
-export let types;
+
+export let products;
+export let name;
 let index = 0;
-let current = types[0].name;
-
 
 function next() {
 
-        if (index < types.length-1) {
+if (index < products.length-1) {
         index++;
     } else {
         index = 0;
     }
-
 }
 
 function prev() {
 
-        if (index > 0) {
+if (index > 0) {
         index--;
     } else {
-        index = types.length-1;
+    index = products.length-1;
+    }
 }
-}
-
 
 </script>
 
-{#each types as type, i}
-<div 
-in:fade="{{duration: 1000}}" 
-class="product"
-style="display: {i === index ? 'flex' : 'none'}">
-    <div class="product__text">
-        <h2 class="product__name">Рулонные жалюзи</h2>
-    
-        <div transition:fade|local class="product__subname">{type.name}</div>
-        <div transition:fade|local class="product__descr">{type.descr}</div>
-    
-    </div>
-    <div class="product__photo">
-    
-        <img transition:fade|local src={type.url} alt="">
-        <div transition:fade|local class="product__buttons">
-            <PrevButton on:click={prev}/>
-            <NextButton on:click={next}/>
+{#each products as product, i}
+    <div style='display: {i === index ? "flex" : "none"}' class="product container animate__animated animate__fadeIn">
+        <div class="product__text">
+            <div class="product__name">{name}</div>
+            <div class="product__subname">{product.name}</div>
+            <div class="product__descr">{product.descr}</div>
         </div>
-    </div>   
-</div>
+        <div class="product__wrapper">
+            <img class="product__img" src={product.url} alt="">
+            <div class="product__buttons">
+                <PrevButton on:click={prev}/>
+                <NextButton on:click={next}/>
+            </div>
+        </div>
+    </div>
 {/each}
-
 <style lang='scss'>
 
-   .product {
-        max-width: 80vw;
-        height: 70vh;
-        -webkit-transition: 1s all ease;
-        -o-transition: 1s all ease;
-        transition: 1s all ease;
-        margin: 0 auto;
-        margin-top: 1.3rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        background: rgba(0, 0, 0, 0.5);
-        -webkit-backdrop-filter: blur(4px);
-                backdrop-filter: blur(4px);
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-        &__text {
-            padding: 50px;
-            max-width: 50%;
-        }
-        &__name {
-            font-size: 56px;
-        }
-        &__subname {
-            font-size: 45px;
-            margin-top: 25px;
-        }
-        &__descr {
-            margin-top: 30px;
-            font-size: 23px;
-            line-height: 28px;
-            color: #FFFFFF;
-        }
-        &__photo {
-            position: relative;
-            img {
-                height: 100%;
-            }
-        }
-        &__buttons {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            width: 100%;
-            -ms-flex-pack: distribute;
-                justify-content: space-around;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            position: absolute;
-            bottom: 5%;
-            right: 50%;
-            -webkit-transform: translateX(50%);
-                -ms-transform: translateX(50%);
-                    transform: translateX(50%);
-        }
+
+.product {
+    transition: 1s all;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &__text {
+        width: 45%;
+    } 
+    &__img {
+        width: 100%;
+        object-fit: contain;
     }
-
-
-    @media (max-width: 1300px) {
-        .product {
-           &__text {
-        }
-        &__name {
-         font-size: 50px;
-        }
-        &__subname {
-           font-size: 38px;
-        }
-        &__descr {
-           font-size: 24px;
-        }
-        &__photo {
-            img {
-            }
-        }
-        &__buttons {
-           
-        }
+    &__name {
+        font-size: 40px;
     }
+    &__subname {
+        margin-top: 15px;
+        font-size: 30px;
     }
-
-    @media (max-width: 1050px) {
-        .product {
-           &__text {
-
-        }
-        &__name {
-        }
-        &__subname {
-        }
-        &__descr {
-        }
-        &__photo {
-          
-            img {
-              
-            }
-        }
-        &__buttons {
-           
-        }
+    &__descr {
+        margin-top: 15px;
+        font-size: 23px;
     }
+    &__buttons {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: center;
     }
-
-    @media (max-width: 800px) {
-        .product {
-
-           &__text {
-
-        }
-        &__name {
-        }
-        &__subname {
-        }
-        &__descr {
-
-        }
-        &__photo {
-
-            img {
+    &__wrapper {
+    position: relative;
+    width: 50%;
+    align-self: center;
+    }
+}
+@media (max-width: 1060px) {
     
-            }
+.product {
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        width: 95%;
+    } 
+    &__img {
+
+    }
+    &__name {
+        font-size: 30px;
+    }
+    &__subname {
+        font-size: 20px;
+    }
+    &__descr {
+        font-size: 15px;
+    }
+    &__buttons {
+
+    }
+    &__wrapper {
+        margin-top: 2%;
+        width: 95%;
+    }
+}
+}
+
+@media (max-width: 450px) {
+    
+    .product {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        &__text {
+            width: 95%;
+        } 
+        &__img {
+    
+        }
+        &__name {
+    
+        }
+        &__subname {
+    
+        }
+        &__descr {
+    
         }
         &__buttons {
-
+    
+        }
+        &__wrapper {
+            margin-top: 5%;
+            width: 95%;
         }
     }
     }
-
-    // @media (max-width: 1300px) {
-    //     .product {
-    //        &__text {
-           
-    //     }
-    //     &__name {
-         
-    //     }
-    //     &__subname {
-           
-    //     }
-    //     &__descr {
-           
-    //     }
-    //     &__photo {
-          
-    //         img {
-              
-    //         }
-    //     }
-    //     &__buttons {
-           
-    //     }
-    // }
-    // }
-
+    
 
 </style>

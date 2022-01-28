@@ -7,7 +7,7 @@ import { fade } from 'svelte/transition';
 </script>
 
 
-<ul in:fade="{{duration: 1000}}" class="catalog">
+<ul in:fade="{{duration: 1000}}" class="catalog container">
     <a href="/vertical" class="catalog__item">
         <div class="catalog__item-name">Вертикальные жалюзи</div>
         <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
@@ -38,7 +38,6 @@ import { fade } from 'svelte/transition';
             -ms-flex-direction: column;
                 flex-direction: column;
         min-height: 77vh;
-        max-width: 1400px;
         width: 80%;
         margin: 1% auto;
         &__item {
@@ -127,7 +126,7 @@ import { fade } from 'svelte/transition';
         .catalog {
             &__item {
                 height: 25%;
-                width: 80%;
+                width: 60%;
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -164,7 +163,7 @@ import { fade } from 'svelte/transition';
         .catalog {
             &__item {
                 height: 25%;
-                width: 60%;
+
                 &:nth-child(2n) {
                 .catalog__item-name {
                     -webkit-box-ordinal-group: 1;

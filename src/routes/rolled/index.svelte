@@ -2,7 +2,7 @@
 import CatalogItem from "$lib/catalogItem/catalogItem.svelte";
 import zebraSrc from '../../img/zebra__bg.png';
 
-const types = [
+const products = [
     {
         name: 'Зебра',
         descr: 'Рулонные шторы зебра сочитают в себе функциолнал горизонтальных жалюзи по управлению световым потоком и эстетическую составляющую классических рулонных штор. В готовом изделии используется двойное полотно ткани "зебра", позволяющее закрыться от посторонних глаз и регулировать поступление света в помещение за счет смещения чередующихся полос плотной ткани и прзрачной сетки-вуали относительно друг друга.',
@@ -22,6 +22,15 @@ const types = [
 </script>
 
 <div>
-    <CatalogItem types={types}/>
+    <CatalogItem name='Рулонные жалюзи' products={products}/>
 </div>
 
+<style lang='scss'>
+    div {
+        display: flex;
+        flex-direction: column;
+        min-height: 74vh;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

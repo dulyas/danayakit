@@ -28,7 +28,8 @@
 <style lang="scss">
 
 div {
-        width: 100%;
+        width: 100vw;
+        height: 10%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;

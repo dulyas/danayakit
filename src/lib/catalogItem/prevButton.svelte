@@ -14,7 +14,7 @@
     margin:20px;
 }
 .arrow-6 svg {
-    width: 100px;
+    width: 80px;
     height: auto;
     margin: 0 2rem;
     cursor: pointer;
@@ -25,14 +25,14 @@
     -webkit-transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
     -o-transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
     transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
-    fill: #337AB7;
+    fill: rgba(255, 255, 255, 0.4);
 }
 .arrow-6 svg:hover polygon, 
 .arrow-6 svg:hover path {
     -webkit-transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
     -o-transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
     transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
-    fill: #000;
+    fill: rgb(255, 255, 255, 0.9);
 }
 .arrow-6 svg:hover .arrow-6-pl {
     -webkit-animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
@@ -73,7 +73,7 @@
     100% {
         -webkit-transform: translateX(1rem);
                 transform: translateX(1rem);
-        opacity: 0;
+        opacity: 1;
     }
 }
 @-webkit-keyframes arrow-6-fixed-anim {

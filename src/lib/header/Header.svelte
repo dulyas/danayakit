@@ -25,7 +25,7 @@ const menu = [
         {name: 'Галерея',
         url: '/gallery'},
         {name: 'Вызвать замерщика',
-        url: '/call'},
+        url: '/vyzov-zamershika'},
         ]
 
 
