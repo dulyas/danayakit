@@ -6011,7 +6011,7 @@ var init__4 = __esm({
     init_index_svelte2();
     entry4 = "pages/horizontal/index.svelte-9849e94a.js";
     js4 = ["pages/horizontal/index.svelte-9849e94a.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
+    css8 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -6122,7 +6122,7 @@ var init__6 = __esm({
     init_index_svelte4();
     entry6 = "pages/vertical/index.svelte-49571bbc.js";
     js6 = ["pages/vertical/index.svelte-49571bbc.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
+    css12 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -6136,7 +6136,7 @@ var init_index_svelte5 = __esm({
   ".svelte-kit/output/server/entries/pages/gallery/index.svelte.js"() {
     init_index_13c0de55();
     css13 = {
-      code: ".gallery__current.svelte-ppfiro.svelte-ppfiro{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-ppfiro img.svelte-ppfiro{border-radius:3px;max-height:60vh;max-width:95%}.gallery__items.svelte-ppfiro.svelte-ppfiro{border-radius:3px;margin:15px auto 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;overflow-x:scroll;min-height:15vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__items.svelte-ppfiro.svelte-ppfiro::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-ppfiro.svelte-ppfiro::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-ppfiro.svelte-ppfiro::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-ppfiro img.svelte-ppfiro{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-ppfiro.svelte-ppfiro{border:2px solid red}",
+      code: ".gallery__current.svelte-9frpsl.svelte-9frpsl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-9frpsl img.svelte-9frpsl{border-radius:3px;max-height:calc(60vh - 15px);max-width:95%}.gallery__items.svelte-9frpsl.svelte-9frpsl{border-radius:3px;margin:15px auto 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;overflow-x:scroll;min-height:15vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-9frpsl img.svelte-9frpsl{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-9frpsl.svelte-9frpsl{border:2px solid red}",
       map: null
     };
     Gallery = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6158,9 +6158,9 @@ var init_index_svelte5 = __esm({
       ];
       let current = photos[0];
       $$result.css.add(css13);
-      return `<div class="${"container"}"><div class="${"gallery"}"><div class="${"gallery__current svelte-ppfiro"}"><img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-ppfiro"}"></div>
-        <div class="${"gallery__items svelte-ppfiro"}">${each(photos, (photo, i2) => {
-        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-ppfiro", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
+      return `<div class="${"container"}"><div class="${"gallery"}"><div class="${"gallery__current svelte-9frpsl"}"><img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-9frpsl"}"></div>
+        <div class="${"gallery__items svelte-9frpsl"}">${each(photos, (photo, i2) => {
+        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-9frpsl", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
       })}</div></div>
 </div>`;
     });
@@ -6179,9 +6179,9 @@ var entry7, js7, css14;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_index_svelte5();
-    entry7 = "pages/gallery/index.svelte-18f338db.js";
-    js7 = ["pages/gallery/index.svelte-18f338db.js", "chunks/vendor-77a73e11.js"];
-    css14 = ["assets/pages/gallery/index.svelte-805c8d98.css"];
+    entry7 = "pages/gallery/index.svelte-2cde91ab.js";
+    js7 = ["pages/gallery/index.svelte-2cde91ab.js", "chunks/vendor-77a73e11.js"];
+    css14 = ["assets/pages/gallery/index.svelte-1127529f.css"];
   }
 });
 
@@ -6239,7 +6239,7 @@ var init__8 = __esm({
     init_index_svelte6();
     entry8 = "pages/rolled/index.svelte-9aa1a231.js";
     js8 = ["pages/rolled/index.svelte-9aa1a231.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js"];
-    css16 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
+    css16 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-5e941fed.css"];
   }
 });
 
@@ -7791,7 +7791,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-781c985c.js", "js": ["start-781c985c.js", "chunks/vendor-77a73e11.js"], "css": [] },
+    entry: { "file": "start-82ecc96d.js", "js": ["start-82ecc96d.js", "chunks/vendor-77a73e11.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
