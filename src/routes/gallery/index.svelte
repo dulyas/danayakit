@@ -46,11 +46,12 @@
 
 <style lang='scss'>
     .gallery {
+        padding: 5px;
         background: rgba(0, 0, 0, 0.5);
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
         &__current {
-            min-height: 60vh;
+            height: 60vh;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -60,10 +61,9 @@
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            padding: 25px 0 15px 0;
             img {
                 max-height: 60vh;
-                max-width: 80%;
+                max-width: 100%;
             }
         }
         &__items {
@@ -81,10 +81,10 @@
                 width: 7px;
                 background-color: rgba(0, 0, 0, 0.5);
                 border-radius: 8px;
-                height: 25px;
+                height: 19px;
             }
             &::-webkit-scrollbar-thumb {
-                background-color: #000000a4;
+                background-color: #ffffff70;
                 border-radius: 8px;
             }
             &::-webkit-scrollbar-track {
@@ -98,7 +98,6 @@
             }
         }
     }
-
     .active {
 		border: 2px solid rgb(255, 0, 0);
 	}

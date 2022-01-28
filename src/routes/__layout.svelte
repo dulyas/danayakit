@@ -29,6 +29,7 @@
 	-webkit-transition: 1s all;
 	-o-transition: 1s all;
 	transition: 1s all;
+	box-sizing: border-box;
 }
 
 
@@ -51,7 +52,7 @@
 		font-size: 24px;
 		color: #FFFFFF;
 		margin-top: 2%;
-		
+
 	}
 
 	:global(.container) {

@@ -62,6 +62,7 @@ h1 {
 @media (max-width: 1450px) {
     h1 {
         font-size: 100px;
+        width: 70%;
     }
     .home {
     }
@@ -70,6 +71,9 @@ h1 {
 
 
 @media (max-width: 1050px) {
+    h1 {
+        width: auto;
+    }
 
     .home {
         text-align: center;
@@ -99,7 +103,7 @@ h1 {
         }
         .buttons {
         .main-btn-item {
-            height: 65px;
+            height: 55px;
         }
     }    
 }
@@ -120,9 +124,9 @@ h1 {
     }
     .buttons {
         .main-btn-item {
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 18px;
-            height: 60px;
+            height: 55px;
         }
     }
 }
