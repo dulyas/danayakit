@@ -106,7 +106,7 @@ error => {
                 backdrop-filter: blur(4px);
         padding: 20px;
         width: 508px;
-        font-size: 20px;
+        font-size: 18px;
         color: rgba(255, 255, 255, 0.685);
         &__descr {
             margin-bottom: 10px;

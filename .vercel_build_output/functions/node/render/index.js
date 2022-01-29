@@ -5769,14 +5769,14 @@ ${validate_component(Menu, "Menu").$$render($$result, { menu, open }, {
       return $$rendered;
     });
     css = {
-      code: '.svelte-1h1kg8q{padding:0;margin:0;-webkit-transition:1s all;-o-transition:1s all;transition:1s all}.bg.svelte-1h1kg8q{background:url("../img/bg.jpg") center center/cover no-repeat;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:white}main.svelte-1h1kg8q{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:24px;color:#FFFFFF;margin-top:2%}.container{max-width:1300px;margin:0 auto;padding:0 4%}a{text-decoration:none;color:white}.button{background:rgba(0, 0, 0, 0.5);border-radius:35px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:1s all;-o-transition:1s all;transition:1s all}.button:hover{background:rgba(0, 0, 0, 0.75)}.content.svelte-1h1kg8q{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;padding-bottom:25px}.footer.svelte-1h1kg8q{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto}',
+      code: '.svelte-wbxd2f{padding:0;margin:0;-webkit-transition:1s all;-o-transition:1s all;transition:1s all}.bg.svelte-wbxd2f{background:url("../img/bg.jpg") center center/cover no-repeat;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:white}main.svelte-wbxd2f{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:24px;color:#FFFFFF;margin-top:2%}.container{max-width:1300px;margin:0 auto;padding:0 4%}a{text-decoration:none;color:white}.button{background:rgba(0, 0, 0, 0.5);border-radius:35px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:1s all;-o-transition:1s all;transition:1s all}.button:hover{background:rgba(0, 0, 0, 0.75)}.content.svelte-wbxd2f{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;padding-bottom:15px}.footer.svelte-wbxd2f{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto}',
       map: null
     };
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css);
-      return `<div class="${"bg svelte-1h1kg8q"}"><div class="${"content svelte-1h1kg8q"}"><header class="${"svelte-1h1kg8q"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}</header>
-	<main class="${"svelte-1h1kg8q"}">${slots.default ? slots.default({}) : ``}</main></div>
-<footer class="${"footer svelte-1h1kg8q"}">${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</footer>
+      return `<div class="${"bg svelte-wbxd2f"}"><div class="${"content svelte-wbxd2f"}"><header class="${"svelte-wbxd2f"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}</header>
+	<main class="${"svelte-wbxd2f"}">${slots.default ? slots.default({}) : ``}</main></div>
+<footer class="${"footer svelte-wbxd2f"}">${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</footer>
 </div>`;
     });
   }
@@ -5794,9 +5794,9 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-658fbd4e.js";
-    js = ["pages/__layout.svelte-658fbd4e.js", "chunks/vendor-77a73e11.js", "chunks/inst-46799f41.js"];
-    css2 = ["assets/pages/__layout.svelte-666da6ef.css"];
+    entry = "pages/__layout.svelte-47444309.js";
+    js = ["pages/__layout.svelte-47444309.js", "chunks/vendor-77a73e11.js", "chunks/inst-46799f41.js"];
+    css2 = ["assets/pages/__layout.svelte-5d298d40.css"];
   }
 });
 
@@ -5860,22 +5860,22 @@ var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vyzov-zamershika/index.svelte.js"() {
     init_index_13c0de55();
     css4 = {
-      code: ".call.svelte-1434po2.svelte-1434po2{max-width:1400px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:left;font-size:15px}.form.svelte-1434po2.svelte-1434po2{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:20px;width:508px;font-size:20px;color:rgba(255, 255, 255, 0.685)}.form__descr.svelte-1434po2.svelte-1434po2{margin-bottom:10px;color:rgba(255, 255, 255, 0.9)}.form-input.svelte-1434po2.svelte-1434po2{display:block;margin-top:17px;width:100%}.form-input.svelte-1434po2.svelte-1434po2:focus-within{color:white}.form-input.svelte-1434po2 input.svelte-1434po2,.form-input.svelte-1434po2 textarea.svelte-1434po2{margin-top:5px;background-color:rgba(255, 255, 255, 0.295);border:none;color:white;height:30px;outline:none;padding:0 5px;width:100%;background:rgba(143, 143, 143, 0.23);backdrop-filter:blur(50px)}.form-input.svelte-1434po2 textarea.svelte-1434po2{resize:none;height:90px;padding:5px}.form__button.svelte-1434po2.svelte-1434po2{margin:15px auto 0;width:200px;height:40px;color:rgba(255, 255, 255, 0.774);font-size:27px;border:none;border-radius:9px;cursor:pointer}.form__button.svelte-1434po2.svelte-1434po2:hover{background-color:black;color:white}",
+      code: ".call.svelte-umtr2h.svelte-umtr2h{max-width:1400px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:left;font-size:15px}.form.svelte-umtr2h.svelte-umtr2h{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:20px;width:508px;font-size:18px;color:rgba(255, 255, 255, 0.685)}.form__descr.svelte-umtr2h.svelte-umtr2h{margin-bottom:10px;color:rgba(255, 255, 255, 0.9)}.form-input.svelte-umtr2h.svelte-umtr2h{display:block;margin-top:17px;width:100%}.form-input.svelte-umtr2h.svelte-umtr2h:focus-within{color:white}.form-input.svelte-umtr2h input.svelte-umtr2h,.form-input.svelte-umtr2h textarea.svelte-umtr2h{margin-top:5px;background-color:rgba(255, 255, 255, 0.295);border:none;color:white;height:30px;outline:none;padding:0 5px;width:100%;background:rgba(143, 143, 143, 0.23);backdrop-filter:blur(50px)}.form-input.svelte-umtr2h textarea.svelte-umtr2h{resize:none;height:90px;padding:5px}.form__button.svelte-umtr2h.svelte-umtr2h{margin:15px auto 0;width:200px;height:40px;color:rgba(255, 255, 255, 0.774);font-size:27px;border:none;border-radius:9px;cursor:pointer}.form__button.svelte-umtr2h.svelte-umtr2h:hover{background-color:black;color:white}",
       map: null
     };
     Vyzov_zamershika = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let mail = { name: null, phone: null, message: null };
       $$result.css.add(css4);
-      return `<div class="${"call svelte-1434po2"}"><form class="${"form svelte-1434po2"}"><div class="${"form__descr svelte-1434po2"}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quam magnam provident? Non, corrupti placeat eum minima numquam fuga accusamus earum voluptatibus quidem quibusdam ab nulla nisi maiores, voluptate tempore?
+      return `<div class="${"call svelte-umtr2h"}"><form class="${"form svelte-umtr2h"}"><div class="${"form__descr svelte-umtr2h"}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quam magnam provident? Non, corrupti placeat eum minima numquam fuga accusamus earum voluptatibus quidem quibusdam ab nulla nisi maiores, voluptate tempore?
         </div>
 
-        <label class="${"form-input svelte-1434po2"}" for="${"name"}">\u0412\u0430\u0448\u0435 \u0438\u043C\u044F *<br>
-            <input name="${"name"}" id="${"name"}" type="${"text"}" required class="${"svelte-1434po2"}"${add_attribute("value", mail.name, 0)}></label>
-        <label class="${"form-input svelte-1434po2"}" for="${"phone"}">\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D *<br>
-            <input name="${"phone"}" id="${"phone"}" type="${"text"}" required class="${"svelte-1434po2"}"${add_attribute("value", mail.phone, 0)}></label>
-        <label class="${"form-input svelte-1434po2"}" for="${"message"}">\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439<br>
-            <textarea name="${"message"}" id="${"message"}" cols="${"30"}" rows="${"10"}" class="${"svelte-1434po2"}">${""}</textarea></label>
-        <button class="${"form__button button svelte-1434po2"}">\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C</button>
+        <label class="${"form-input svelte-umtr2h"}" for="${"name"}">\u0412\u0430\u0448\u0435 \u0438\u043C\u044F *<br>
+            <input name="${"name"}" id="${"name"}" type="${"text"}" required class="${"svelte-umtr2h"}"${add_attribute("value", mail.name, 0)}></label>
+        <label class="${"form-input svelte-umtr2h"}" for="${"phone"}">\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D *<br>
+            <input name="${"phone"}" id="${"phone"}" type="${"text"}" required class="${"svelte-umtr2h"}"${add_attribute("value", mail.phone, 0)}></label>
+        <label class="${"form-input svelte-umtr2h"}" for="${"message"}">\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439<br>
+            <textarea name="${"message"}" id="${"message"}" cols="${"30"}" rows="${"10"}" class="${"svelte-umtr2h"}">${""}</textarea></label>
+        <button class="${"form__button button svelte-umtr2h"}">\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C</button>
         ${``}</form>
 </div>`;
     });
@@ -5894,9 +5894,9 @@ var entry3, js3, css5;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_index_svelte();
-    entry3 = "pages/vyzov-zamershika/index.svelte-692b3ad3.js";
-    js3 = ["pages/vyzov-zamershika/index.svelte-692b3ad3.js", "chunks/vendor-77a73e11.js"];
-    css5 = ["assets/pages/vyzov-zamershika/index.svelte-95ef0a66.css"];
+    entry3 = "pages/vyzov-zamershika/index.svelte-9d281d1e.js";
+    js3 = ["pages/vyzov-zamershika/index.svelte-9d281d1e.js", "chunks/vendor-77a73e11.js"];
+    css5 = ["assets/pages/vyzov-zamershika/index.svelte-2857cc4c.css"];
   }
 });
 
@@ -6017,7 +6017,7 @@ var init__4 = __esm({
     init_index_svelte2();
     entry4 = "pages/horizontal/index.svelte-5616cd84.js";
     js4 = ["pages/horizontal/index.svelte-5616cd84.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
+    css8 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -6127,7 +6127,7 @@ var init__6 = __esm({
     init_index_svelte4();
     entry6 = "pages/vertical/index.svelte-cf9ba8f6.js";
     js6 = ["pages/vertical/index.svelte-cf9ba8f6.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
+    css12 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -6141,7 +6141,7 @@ var init_index_svelte5 = __esm({
   ".svelte-kit/output/server/entries/pages/catalog/index.svelte.js"() {
     init_index_13c0de55();
     css13 = {
-      code: ".catalog.svelte-1hyf4zs.svelte-1hyf4zs{margin:0 auto}.catalog__item.svelte-1hyf4zs.svelte-1hyf4zs{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:15px 40px;margin-bottom:3vh;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-name.svelte-1hyf4zs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;text-align:right}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-descr.svelte-1hyf4zs{text-align:left}.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{width:30%;font-size:50px;color:#FFFFFF}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{font-size:23px;color:#FFFFFF;text-align:right;width:60%}.catalog__item.svelte-1hyf4zs.svelte-1hyf4zs:hover{background:rgba(0, 0, 0, 0.75)}@media(max-width: 1400px){.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{font-size:35px}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{font-size:20px}}@media(max-width: 1024px){.catalog__item.svelte-1hyf4zs.svelte-1hyf4zs{height:25%}.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{font-size:25px}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{font-size:14px}}@media(max-width: 768px){.catalog__item.svelte-1hyf4zs.svelte-1hyf4zs{margin:5vh auto 0;width:75%;min-height:100px;padding:2%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-name.svelte-1hyf4zs{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-descr.svelte-1hyf4zs{display:none}.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{font-size:25px;text-align:center;width:100%}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{display:none}}@media(max-width: 320px){.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-name.svelte-1hyf4zs{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-descr.svelte-1hyf4zs{display:none}.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{font-size:20px;text-align:center;width:100%}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{display:none}}",
+      code: ".catalog.svelte-10u16lm.svelte-10u16lm{margin:0 auto}.catalog__item.svelte-10u16lm.svelte-10u16lm{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:15px 40px;margin-bottom:3vh;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-name.svelte-10u16lm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;text-align:right}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-descr.svelte-10u16lm{text-align:left}.catalog__item-name.svelte-10u16lm.svelte-10u16lm{width:30%;font-size:50px;color:#FFFFFF}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{font-size:21px;color:#FFFFFF;text-align:right;width:60%}.catalog__item.svelte-10u16lm.svelte-10u16lm:hover{background:rgba(0, 0, 0, 0.75)}@media(max-width: 1400px){.catalog__item-name.svelte-10u16lm.svelte-10u16lm{font-size:35px}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{font-size:20px}}@media(max-width: 1024px){.catalog__item.svelte-10u16lm.svelte-10u16lm{height:25%}.catalog__item-name.svelte-10u16lm.svelte-10u16lm{font-size:25px}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{font-size:14px}}@media(max-width: 768px){.catalog__item.svelte-10u16lm.svelte-10u16lm{margin:5vh auto 0;width:75%;min-height:100px;padding:2%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-name.svelte-10u16lm{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-descr.svelte-10u16lm{display:none}.catalog__item-name.svelte-10u16lm.svelte-10u16lm{font-size:25px;text-align:center;width:100%}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{display:none}}@media(max-width: 320px){.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-name.svelte-10u16lm{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-descr.svelte-10u16lm{display:none}.catalog__item-name.svelte-10u16lm.svelte-10u16lm{font-size:20px;text-align:center;width:100%}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{display:none}}",
       map: null
     };
     Catalog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6163,9 +6163,9 @@ var init_index_svelte5 = __esm({
         }
       ];
       $$result.css.add(css13);
-      return `<div class="${"container"}"><div class="${"catalog svelte-1hyf4zs"}">${each(catalogItems, (item) => {
-        return `<a${add_attribute("href", item.url, 0)} class="${"catalog__item svelte-1hyf4zs"}"><div class="${"catalog__item-name svelte-1hyf4zs"}">${escape(item.name)}</div>
-                <div class="${"catalog__item-descr svelte-1hyf4zs"}">${escape(item.descr)}</div>
+      return `<div class="${"container"}"><div class="${"catalog svelte-10u16lm"}">${each(catalogItems, (item) => {
+        return `<a${add_attribute("href", item.url, 0)} class="${"catalog__item svelte-10u16lm"}"><div class="${"catalog__item-name svelte-10u16lm"}">${escape(item.name)}</div>
+                <div class="${"catalog__item-descr svelte-10u16lm"}">${escape(item.descr)}</div>
             </a>`;
       })}</div>
 </div>`;
@@ -6185,9 +6185,9 @@ var entry7, js7, css14;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_index_svelte5();
-    entry7 = "pages/catalog/index.svelte-53208f49.js";
-    js7 = ["pages/catalog/index.svelte-53208f49.js", "chunks/vendor-77a73e11.js"];
-    css14 = ["assets/pages/catalog/index.svelte-4cee9209.css"];
+    entry7 = "pages/catalog/index.svelte-b04885a6.js";
+    js7 = ["pages/catalog/index.svelte-b04885a6.js", "chunks/vendor-77a73e11.js"];
+    css14 = ["assets/pages/catalog/index.svelte-58cae145.css"];
   }
 });
 
@@ -6201,7 +6201,7 @@ var init_index_svelte6 = __esm({
   ".svelte-kit/output/server/entries/pages/gallery/index.svelte.js"() {
     init_index_13c0de55();
     css15 = {
-      code: ".gallery__current.svelte-9frpsl.svelte-9frpsl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-9frpsl img.svelte-9frpsl{border-radius:3px;max-height:calc(60vh - 15px);max-width:95%}.gallery__items.svelte-9frpsl.svelte-9frpsl{border-radius:3px;margin:15px auto 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;overflow-x:scroll;min-height:15vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-9frpsl img.svelte-9frpsl{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-9frpsl.svelte-9frpsl{border:2px solid red}",
+      code: ".gallery__current.svelte-d2g3fb.svelte-d2g3fb{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-d2g3fb img.svelte-d2g3fb{border-radius:3px;max-height:calc(60vh - 35px);max-width:95%}.gallery__items.svelte-d2g3fb.svelte-d2g3fb{border-radius:3px;margin:15px auto 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;overflow-x:scroll;min-height:15vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__items.svelte-d2g3fb.svelte-d2g3fb::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-d2g3fb.svelte-d2g3fb::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-d2g3fb.svelte-d2g3fb::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-d2g3fb img.svelte-d2g3fb{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-d2g3fb.svelte-d2g3fb{border:2px solid red}",
       map: null
     };
     Gallery = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6223,9 +6223,9 @@ var init_index_svelte6 = __esm({
       ];
       let current = photos[0];
       $$result.css.add(css15);
-      return `<div class="${"container"}"><div class="${"gallery"}"><div class="${"gallery__current svelte-9frpsl"}"><img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-9frpsl"}"></div>
-        <div class="${"gallery__items svelte-9frpsl"}">${each(photos, (photo, i2) => {
-        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-9frpsl", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
+      return `<div class="${"container"}"><div class="${"gallery"}"><div class="${"gallery__current svelte-d2g3fb"}"><img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-d2g3fb"}"></div>
+        <div class="${"gallery__items svelte-d2g3fb"}">${each(photos, (photo, i2) => {
+        return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-d2g3fb", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
       })}</div></div>
 </div>`;
     });
@@ -6244,9 +6244,9 @@ var entry8, js8, css16;
 var init__8 = __esm({
   ".svelte-kit/output/server/nodes/8.js"() {
     init_index_svelte6();
-    entry8 = "pages/gallery/index.svelte-2cde91ab.js";
-    js8 = ["pages/gallery/index.svelte-2cde91ab.js", "chunks/vendor-77a73e11.js"];
-    css16 = ["assets/pages/gallery/index.svelte-1127529f.css"];
+    entry8 = "pages/gallery/index.svelte-85279472.js";
+    js8 = ["pages/gallery/index.svelte-85279472.js", "chunks/vendor-77a73e11.js"];
+    css16 = ["assets/pages/gallery/index.svelte-32e50542.css"];
   }
 });
 
@@ -6314,7 +6314,7 @@ var init__9 = __esm({
     init_index_svelte7();
     entry9 = "pages/rolled/index.svelte-42e639b6.js";
     js9 = ["pages/rolled/index.svelte-42e639b6.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js"];
-    css18 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
+    css18 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -7866,7 +7866,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-869707dd.js", "js": ["start-869707dd.js", "chunks/vendor-77a73e11.js"], "css": [] },
+    entry: { "file": "start-87a56bd1.js", "js": ["start-87a56bd1.js", "chunks/vendor-77a73e11.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
