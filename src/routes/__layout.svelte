@@ -89,7 +89,7 @@
 		-webkit-box-flex: 1;
 		    -ms-flex: 1 0 auto;
 		        flex: 1 0 auto;
-				padding-bottom: 25px;
+				padding-bottom: 15px;
 		}
 	.footer {
 		-webkit-box-flex: 0;

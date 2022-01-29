@@ -73,7 +73,7 @@ import { fade } from 'svelte/transition';
 
             }
             &-descr {
-                font-size: 23px;
+                font-size: 21px;
                 color: #FFFFFF;
                 text-align: right;
                 width: 60%;

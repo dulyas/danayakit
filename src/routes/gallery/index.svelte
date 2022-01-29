@@ -55,7 +55,7 @@
                     align-items: center;
             img {
                 border-radius: 3px;
-                max-height: calc(60vh - 15px);
+                max-height: calc(60vh - 35px);
                 max-width: 95%;
             }
         }
