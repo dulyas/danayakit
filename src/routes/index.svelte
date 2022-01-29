@@ -24,26 +24,17 @@
 <style lang='scss'>
 
 .home {
-    min-height: 70vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+
 }
 
 h1 {
     font-size: 120px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 15vh;
 }
 
 
 .buttons {
+    margin-top: 8vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -95,7 +86,7 @@ h1 {
 @media (max-width: 668px) {
     h1 {
         font-size: 50px;
-        margin-top: 50px;
+        margin-top: 15vh;
         text-align: center;
     }
     .main-btn-item {
@@ -111,15 +102,12 @@ h1 {
 @media (max-width: 350px) {
 
     .home {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+
     }
 
     h1 {
         font-size: 35px;
         text-align: center;
-        margin: 0;
         padding: 0;
     }
     .buttons {

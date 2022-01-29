@@ -56,8 +56,16 @@ error => {
 
 </script>
 
+
+
 <div on:submit|preventDefault={sendEmail} in:fade="{{duration: 1000}}" class="call">
+
     <form class="form">
+
+        <div class="descr">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quam magnam provident? Non, corrupti placeat eum minima numquam fuga accusamus earum voluptatibus quidem quibusdam ab nulla nisi maiores, voluptate tempore?
+        </div>
+
         <label class="form-input" for="name" >Ваше имя *<br>
             <input bind:value={mail.name} name='name' id='name' type="text" required>
         </label>
@@ -75,29 +83,8 @@ error => {
 </div>
 
 
-<!-- 
-<div in:fade="{{duration: 1000}}" class="call">
-    <form action="https://formsubmit.co/ddulyas@gmail.com" class="form" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="http://localhost:3000/thank">
-        <input type="hidden" name="_subject" value="New submission!">
-        <label class="form-input" for="name" >Ваше имя *<br>
-            <input name='name'  type="text" required>
-        </label>
-        <label class="form-input" for="phone" >Контактный телефон *<br>
-            <input name='phone'  type="text" required>
-        </label>
-        <label class="form-input" for="message">Комментарий<br>
-            <textarea name="text" id="" cols="30" rows="10"></textarea>
-        </label>
-        <button class="form__button button">Отправить</button>
-    </form>
-</div> -->
-
 <style lang="scss">
     .call {
-        min-height: 70vh;
-        height: 70vh;
         max-width: 1400px;
         margin: 0 auto;
         display: -webkit-box;
@@ -118,9 +105,9 @@ error => {
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
         padding: 20px;
-        border-radius: 8%;
+        border-radius: 8px;
         width: 280px;
-        height: 250px;
+        min-height: 250px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -139,7 +126,7 @@ error => {
             display: block;
             text-align: center;
             margin-top: 5px;
-            width: 90%;
+            width: 100%;
             &:focus-within {
                 color: white;
             }

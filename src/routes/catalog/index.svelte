@@ -1,51 +1,48 @@
-<script context="module">
-	export const prerender = true;
-</script>
-
 <script>
 import { fade } from 'svelte/transition';
+    const catalogItems = [
+        {
+            name: 'Вертикальные жалюзи',
+            descr: 'Вертикальные жалюзи являются самым экономичным вариантом декоративной солнцезащиты. Они идеально подходят для больших окон, визуально расширяют узкие и увеличивают по высоте широкие оконные проемы. Строгий внешний вид и многофункциональность позволяют использовать их повсеместно: в офисах, гостиницах, ресторанах, учебных заведениях, жилых помещениях.',
+            url: '/vertical',
+        },
+        {
+            name: 'Рулонные шторы',
+            descr: 'Современная альтернатива или дополнение к традиционным шторам - лаконичность форм, легкое управление, многообразие расцветок и фактур тканей для рулонных штор позволяет подобрать декор и степень солнцезащиты для любого помещения на самый взыскательный вкус.',
+            url: '/rolled',
+        },
+        {
+            name: 'Горизонтальные жалюзи',
+            descr: 'Горизонтальные жалюзи надежно, эффективно регулируют световой поток, обеспечиают оптимальную солнцезащиту и приватность. Простота в уходе и легкость эксплуатации являются неоспоримыми преимуществами горизонтальных жалюзи в любых помещениях.',
+            url: '/horizontal',
+        }
+    ]
+
 </script>
+
 
 
 <div class="container">
     <div in:fade="{{duration: 1000}}" class="catalog">
-        <a href="/vertical" class="catalog__item">
-            <div class="catalog__item-name">Вертикальные жалюзи</div>
-            <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </div>
-        </a>
-        <a href="/rolled" class="catalog__item">
-            <div class="catalog__item-name">Рулонные жалюзи</div>
-            <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-        </a>
-        <a href="/horizontal" class="catalog__item">
-            <div class="catalog__item-name">Горизонтальные жалюзи</div>
-            <div class="catalog__item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <div>
-        </a>
+
+        {#each catalogItems as item}
+            <a href={item.url} class="catalog__item">
+                <div class="catalog__item-name">{item.name}</div>
+                <div class="catalog__item-descr">{item.descr}</div>
+            </a>
+        {/each}
     </div>
 </div>
 
 <style lang='scss'>
     .catalog {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: space-evenly;
-            -ms-flex-pack: space-evenly;
-                justify-content: space-evenly;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        min-height: 70vh;
         margin: 0 auto;
         &__item {
             background: rgba(0, 0, 0, 0.5);
             -webkit-backdrop-filter: blur(4px);
                     backdrop-filter: blur(4px);
             padding: 15px 40px;
+            margin-top: 5vh;
             -webkit-transition: 1s all;
             -o-transition: 1s all;
             transition: 1s all;
@@ -73,8 +70,7 @@ import { fade } from 'svelte/transition';
                 width: 30%;
                 font-size: 50px;
                 color: #FFFFFF;
-                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
+
             }
             &-descr {
                 font-size: 23px;
@@ -121,6 +117,7 @@ import { fade } from 'svelte/transition';
     @media (max-width: 768px) {
         .catalog {
             &__item {
+                margin: 5vh auto 0;
                 width: 75%;
                 min-height: 100px;
                 padding: 2%;

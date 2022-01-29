@@ -65,7 +65,7 @@
         text-align: center;
         padding: 0 15px;
         &__phone {
-            font-size: 56px;
+            font-size: 50px;
         }
         &__soc {
             display: -webkit-box;
@@ -86,20 +86,13 @@
 
     @media (max-width: 800px) {
         .contacts-wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+            display: block;
+            width: 80vw;
+            margin: 0 auto;
         }
         .contacts {
-        width: 80%;
-        height: 36vh;
+        width: 100%;
+        min-height: 36vh;
         background: rgba(0, 0, 0, 0.5);
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
@@ -121,7 +114,7 @@
         padding: 0 15px;
         font-size: 25px;
         &__phone {
-            font-size: 43px;
+            font-size: 38px;
         }
         &__soc {
             display: -webkit-box;
@@ -137,7 +130,7 @@
         &__map {
             margin-top: 15px;
             height: 36vh;
-            width: 80%;
+            width: 100%;
         }
     }
     }

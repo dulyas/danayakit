@@ -35,7 +35,7 @@ if (index > 0) {
                 <div class="product__text">
                     <div class="product__name">{name}</div>
                     <div class="product__subname">{product.name}</div>
-                    <div class="product__descr">{product.descr}</div>
+                    <div class="product__descr">{@html product.descr}</div>
                 </div>
                 <div class="product__wrapper">
                     <img class="product__img" src={product.url} alt="">
@@ -79,7 +79,7 @@ if (index > 0) {
         font-size: 30px;
     }
     &__descr {
-        margin-top: 15px;
+        margin-top: 25px;
         font-size: 23px;
     }
     &__buttons {

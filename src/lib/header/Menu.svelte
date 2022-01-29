@@ -1,8 +1,10 @@
 <script>
     import { fly, scale } from 'svelte/transition';
     import { quadOut } from 'svelte/easing';
-    export let open;
+    import vkSrc from '$lib/footer/vk.svg';
+    import instSrc from '$lib/footer/inst.svg';
 
+    export let open;
     export let menu;
 
 
@@ -20,7 +22,17 @@
                 </a>
             </p>
         {/each}
+        <span class='soc-items'>
+            <a href="https://vk.com/danayajaluzi">
+                <img src={vkSrc} class="header__icon" alt="vk">
+            </a>
+            <a href="https://vk.com/danayajaluzi">
+                <img src={instSrc} class="header__icon" alt="instagram">
+            </a>
+        </span>
     </div>
+
+
 
     <hr transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
 {/if}
@@ -28,6 +40,7 @@
 <style lang="scss">
 
 div {
+        z-index: 999;
         width: 100vw;
         height: 10%;
         display: -webkit-box;
@@ -35,7 +48,6 @@ div {
         display: flex;
         text-align: center;
         background: rgba(0, 0, 0, 0.35);
-        z-index: 1000;
         font-size: 1.3rem;
         position: fixed;
         -ms-flex-pack: distribute;
@@ -49,6 +61,10 @@ div {
         border-bottom: black;
         -webkit-backdrop-filter: blur(44px);
                 backdrop-filter: blur(44px);
+    }
+
+    .soc-items {
+        display: none;
     }
 
     @media (max-width: 1000px) {
@@ -90,5 +106,12 @@ div {
         p {
         margin-top: 35px;
         }
+        
+        .soc-items {
+        display: flex;
+        margin-top: 8vh;
+        width: 30vw;
+        justify-content: space-between;
+    }
     }   
 </style>

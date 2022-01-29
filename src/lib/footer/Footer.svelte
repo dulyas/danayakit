@@ -18,6 +18,7 @@
         </a>
         <a href="https://vk.com/danayajaluzi">
             <img src={instSrc} class="header__icon" alt="instagram">
+        </a>
     </div>
 </div>
 
@@ -52,8 +53,7 @@
 
         color: #FFFFFF;
 
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+  }
 }
 
 .soc__items {
@@ -76,8 +76,7 @@
             font-weight: normal;
             font-size: 15px;
             line-height: 18px;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-            margin-right: 15px;
+     margin-right: 15px;
         }
     }
 

@@ -1641,10 +1641,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry10 = this._queue.shift();
-              this._queueTotalSize -= entry10.byteLength;
+              const entry11 = this._queue.shift();
+              this._queueTotalSize -= entry11.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry10.buffer, entry10.byteOffset, entry10.byteLength);
+              const view = new Uint8Array(entry11.buffer, entry11.byteOffset, entry11.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -5486,7 +5486,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css18) => css18.code).join("\n"),
+          code: Array.from(result.css).map((css20) => css20.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5654,11 +5654,12 @@ var require_cookie = __commonJS({
   }
 });
 
-// .svelte-kit/output/server/chunks/vk-8a4f1086.js
-var vkSrc;
-var init_vk_8a4f1086 = __esm({
-  ".svelte-kit/output/server/chunks/vk-8a4f1086.js"() {
+// .svelte-kit/output/server/chunks/inst-46799f41.js
+var vkSrc, instSrc;
+var init_inst_46799f41 = __esm({
+  ".svelte-kit/output/server/chunks/inst-46799f41.js"() {
     vkSrc = "/_app/assets/vk-c725211e.svg";
+    instSrc = "/_app/assets/inst-846e9848.svg";
   }
 });
 
@@ -5667,25 +5668,25 @@ var layout_svelte_exports = {};
 __export(layout_svelte_exports, {
   default: () => _layout
 });
-var instSrc, css$3, Footer, Hamburger, css$2, Menu, css$1, Header, css, _layout;
+var instSrc2, css$3, Footer, Hamburger, css$2, Menu, css$1, Header, css, _layout;
 var init_layout_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/__layout.svelte.js"() {
     init_index_13c0de55();
-    init_vk_8a4f1086();
-    instSrc = "/_app/assets/inst-846e9848.svg";
+    init_inst_46799f41();
+    instSrc2 = "/_app/assets/inst-846e9848.svg";
     css$3 = {
-      code: ".footer.svelte-14mel85.svelte-14mel85{height:8vh;background:rgba(0, 0, 0, 0.5);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.footer-info.svelte-14mel85.svelte-14mel85{font-style:normal;font-weight:normal;font-size:15px;line-height:18px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;color:#FFFFFF;text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)}.soc__items.svelte-14mel85.svelte-14mel85{position:absolute;right:15px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.soc__items.svelte-14mel85 a.svelte-14mel85{margin:0 2px}.soc__items-worktime.svelte-14mel85.svelte-14mel85{font-style:normal;font-weight:normal;font-size:15px;line-height:18px;text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);margin-right:15px}@media(max-width: 1400px){.footer-info.svelte-14mel85.svelte-14mel85{display:none}}@media(max-width: 480px){.footer.svelte-14mel85.svelte-14mel85{display:none;height:12vh}}",
+      code: ".footer.svelte-1m68dl.svelte-1m68dl{height:8vh;background:rgba(0, 0, 0, 0.5);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.footer-info.svelte-1m68dl.svelte-1m68dl{font-style:normal;font-weight:normal;font-size:15px;line-height:18px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;color:#FFFFFF}.soc__items.svelte-1m68dl.svelte-1m68dl{position:absolute;right:15px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.soc__items.svelte-1m68dl a.svelte-1m68dl{margin:0 2px}.soc__items-worktime.svelte-1m68dl.svelte-1m68dl{font-style:normal;font-weight:normal;font-size:15px;line-height:18px;margin-right:15px}@media(max-width: 1400px){.footer-info.svelte-1m68dl.svelte-1m68dl{display:none}}@media(max-width: 480px){.footer.svelte-1m68dl.svelte-1m68dl{display:none;height:12vh}}",
       map: null
     };
     Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$3);
-      return `<div class="${"footer svelte-14mel85"}"><div class="${"footer-info svelte-14mel85"}">\u0418\u041D\u041D: 212411347999 \u041E\u0413\u0420\u041D\u0418\u041F: 318774600060521 \u041E\u041E\u041E \u201C\u0414\u0430\u043D\u0430\u044F\u201D \u0433. \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A, \u0443\u043B. \u041A\u043B\u0430\u0440\u044B \u0426\u0435\u0442\u043A\u0438\u043D, \u0434. 11 \u0442\u0435\u043B.: +7 900 555 35 35  \xA9 2020-2022
+      return `<div class="${"footer svelte-1m68dl"}"><div class="${"footer-info svelte-1m68dl"}">\u0418\u041D\u041D: 212411347999 \u041E\u0413\u0420\u041D\u0418\u041F: 318774600060521 \u041E\u041E\u041E \u201C\u0414\u0430\u043D\u0430\u044F\u201D \u0433. \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A, \u0443\u043B. \u041A\u043B\u0430\u0440\u044B \u0426\u0435\u0442\u043A\u0438\u043D, \u0434. 11 \u0442\u0435\u043B.: +7 900 555 35 35  \xA9 2020-2022
     </div>
-    <div class="${"soc__items svelte-14mel85"}"><div class="${"soc__items-worktime svelte-14mel85"}">\u043F\u043D-\u043F\u0442, 9:00-21:00 <br>
+    <div class="${"soc__items svelte-1m68dl"}"><div class="${"soc__items-worktime svelte-1m68dl"}">\u043F\u043D-\u043F\u0442, 9:00-21:00 <br>
             \u0441\u0431-\u0432\u0441, 9:00-19:00
         </div>
-        <a href="${"https://vk.com/danayajaluzi"}" class="${"svelte-14mel85"}"><img${add_attribute("src", vkSrc, 0)} class="${"header__icon"}" alt="${"vk"}"></a>
-        <a href="${"https://vk.com/danayajaluzi"}" class="${"svelte-14mel85"}"><img${add_attribute("src", instSrc, 0)} class="${"header__icon"}" alt="${"instagram"}"></a></div>
+        <a href="${"https://vk.com/danayajaluzi"}" class="${"svelte-1m68dl"}"><img${add_attribute("src", vkSrc, 0)} class="${"header__icon"}" alt="${"vk"}"></a>
+        <a href="${"https://vk.com/danayajaluzi"}" class="${"svelte-1m68dl"}"><img${add_attribute("src", instSrc2, 0)} class="${"header__icon"}" alt="${"instagram"}"></a></div>
 </div>`;
     });
     Hamburger = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5701,7 +5702,7 @@ var init_layout_svelte = __esm({
 <button class="${"hamburger hamburger--" + escape(type) + " " + escape(open && "is-active")}"><span class="${"hamburger-box"}"><span class="${"hamburger-inner"}"></span></span></button>`;
     });
     css$2 = {
-      code: "div.svelte-1bv958d{width:100vw;height:10%;display:-webkit-box;display:-ms-flexbox;display:flex;text-align:center;background:rgba(0, 0, 0, 0.35);z-index:1000;font-size:1.3rem;position:fixed;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;border-bottom:black;-webkit-backdrop-filter:blur(44px);backdrop-filter:blur(44px)}@media(max-width: 1000px){div.svelte-1bv958d{font-size:1.3rem;height:10%;-webkit-backdrop-filter:blur(44px);backdrop-filter:blur(44px)}}@media(max-width: 500px){div.svelte-1bv958d{left:50%;font-size:1.5rem;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width:100%;height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:start;background:rgba(0, 0, 0, 0.336);-webkit-backdrop-filter:blur(44px);backdrop-filter:blur(44px)}p.svelte-1bv958d{margin-top:35px}}",
+      code: "div.svelte-1k6i54y{z-index:999;width:100vw;height:10%;display:-webkit-box;display:-ms-flexbox;display:flex;text-align:center;background:rgba(0, 0, 0, 0.35);font-size:1.3rem;position:fixed;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;border-bottom:black;-webkit-backdrop-filter:blur(44px);backdrop-filter:blur(44px)}.soc-items.svelte-1k6i54y{display:none}@media(max-width: 1000px){div.svelte-1k6i54y{font-size:1.3rem;height:10%;-webkit-backdrop-filter:blur(44px);backdrop-filter:blur(44px)}}@media(max-width: 500px){div.svelte-1k6i54y{left:50%;font-size:1.5rem;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width:100%;height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:start;background:rgba(0, 0, 0, 0.336);-webkit-backdrop-filter:blur(44px);backdrop-filter:blur(44px)}p.svelte-1k6i54y{margin-top:35px}.soc-items.svelte-1k6i54y{display:flex;margin-top:8vh;width:30vw;justify-content:space-between}}",
       map: null
     };
     Menu = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5712,10 +5713,14 @@ var init_layout_svelte = __esm({
       if ($$props.menu === void 0 && $$bindings.menu && menu !== void 0)
         $$bindings.menu(menu);
       $$result.css.add(css$2);
-      return `${open ? `<div class="${"svelte-1bv958d"}">${each(menu, (link, i2) => {
-        return `<p class="${"svelte-1bv958d"}"><a${add_attribute("href", link.url, 0)}>${escape(link.name)}</a>
+      return `${open ? `<div class="${"svelte-1k6i54y"}">${each(menu, (link, i2) => {
+        return `<p class="${"svelte-1k6i54y"}"><a${add_attribute("href", link.url, 0)}>${escape(link.name)}</a>
             </p>`;
-      })}</div>
+      })}
+        <span class="${"soc-items svelte-1k6i54y"}"><a href="${"https://vk.com/danayajaluzi"}"><img${add_attribute("src", vkSrc, 0)} class="${"header__icon"}" alt="${"vk"}"></a>
+            <a href="${"https://vk.com/danayajaluzi"}"><img${add_attribute("src", instSrc, 0)} class="${"header__icon"}" alt="${"instagram"}"></a></span></div>
+
+
 
     <hr>` : ``}`;
     });
@@ -5789,9 +5794,9 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-eb1eb8bd.js";
-    js = ["pages/__layout.svelte-eb1eb8bd.js", "chunks/vendor-77a73e11.js", "chunks/vk-8a4f1086.js"];
-    css2 = ["assets/pages/__layout.svelte-82a39546.css"];
+    entry = "pages/__layout.svelte-06a319e0.js";
+    js = ["pages/__layout.svelte-06a319e0.js", "chunks/vendor-77a73e11.js", "chunks/inst-46799f41.js"];
+    css2 = ["assets/pages/__layout.svelte-1c9163eb.css"];
   }
 });
 
@@ -5855,23 +5860,24 @@ var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vyzov-zamershika/index.svelte.js"() {
     init_index_13c0de55();
     css4 = {
-      code: ".call.svelte-1rb59f2.svelte-1rb59f2{min-height:70vh;height:70vh;max-width:1400px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:left;font-size:15px}.form.svelte-1rb59f2.svelte-1rb59f2{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:20px;border-radius:8%;width:280px;height:250px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:rgba(255, 255, 255, 0.685)}.form-input.svelte-1rb59f2.svelte-1rb59f2{display:block;text-align:center;margin-top:5px;width:90%}.form-input.svelte-1rb59f2.svelte-1rb59f2:focus-within{color:white}.form-input.svelte-1rb59f2 input.svelte-1rb59f2,.form-input.svelte-1rb59f2 textarea.svelte-1rb59f2{margin-top:5px;background-color:rgba(255, 255, 255, 0.295);border:none;color:white;height:30px;border-radius:8px;outline:none;padding:0 5px;width:100%}.form-input.svelte-1rb59f2 textarea.svelte-1rb59f2{resize:none;height:50px;padding:5px}.form__button.svelte-1rb59f2.svelte-1rb59f2{margin:15px auto 0;width:200px;height:40px;color:white;font-size:20px;border:none;cursor:pointer}.form__button.svelte-1rb59f2.svelte-1rb59f2:hover{background-color:black}",
+      code: ".call.svelte-1ax76j3.svelte-1ax76j3{max-width:1400px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:left;font-size:15px}.form.svelte-1ax76j3.svelte-1ax76j3{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:20px;border-radius:8px;width:280px;min-height:250px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:rgba(255, 255, 255, 0.685)}.form-input.svelte-1ax76j3.svelte-1ax76j3{display:block;text-align:center;margin-top:5px;width:100%}.form-input.svelte-1ax76j3.svelte-1ax76j3:focus-within{color:white}.form-input.svelte-1ax76j3 input.svelte-1ax76j3,.form-input.svelte-1ax76j3 textarea.svelte-1ax76j3{margin-top:5px;background-color:rgba(255, 255, 255, 0.295);border:none;color:white;height:30px;border-radius:8px;outline:none;padding:0 5px;width:100%}.form-input.svelte-1ax76j3 textarea.svelte-1ax76j3{resize:none;height:50px;padding:5px}.form__button.svelte-1ax76j3.svelte-1ax76j3{margin:15px auto 0;width:200px;height:40px;color:white;font-size:20px;border:none;cursor:pointer}.form__button.svelte-1ax76j3.svelte-1ax76j3:hover{background-color:black}",
       map: null
     };
     Vyzov_zamershika = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let mail = { name: null, phone: null, message: null };
       $$result.css.add(css4);
-      return `<div class="${"call svelte-1rb59f2"}"><form class="${"form svelte-1rb59f2"}"><label class="${"form-input svelte-1rb59f2"}" for="${"name"}">\u0412\u0430\u0448\u0435 \u0438\u043C\u044F *<br>
-            <input name="${"name"}" id="${"name"}" type="${"text"}" required class="${"svelte-1rb59f2"}"${add_attribute("value", mail.name, 0)}></label>
-        <label class="${"form-input svelte-1rb59f2"}" for="${"phone"}">\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D *<br>
-            <input name="${"phone"}" id="${"phone"}" type="${"text"}" required class="${"svelte-1rb59f2"}"${add_attribute("value", mail.phone, 0)}></label>
-        <label class="${"form-input svelte-1rb59f2"}" for="${"message"}">\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439<br>
-            <textarea name="${"message"}" id="${"message"}" cols="${"30"}" rows="${"10"}" class="${"svelte-1rb59f2"}">${""}</textarea></label>
-        <button class="${"form__button button svelte-1rb59f2"}">\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C</button>
-        ${``}</form></div>
+      return `<div class="${"call svelte-1ax76j3"}"><form class="${"form svelte-1ax76j3"}"><div class="${"descr"}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quam magnam provident? Non, corrupti placeat eum minima numquam fuga accusamus earum voluptatibus quidem quibusdam ab nulla nisi maiores, voluptate tempore?
+        </div>
 
-
-`;
+        <label class="${"form-input svelte-1ax76j3"}" for="${"name"}">\u0412\u0430\u0448\u0435 \u0438\u043C\u044F *<br>
+            <input name="${"name"}" id="${"name"}" type="${"text"}" required class="${"svelte-1ax76j3"}"${add_attribute("value", mail.name, 0)}></label>
+        <label class="${"form-input svelte-1ax76j3"}" for="${"phone"}">\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D *<br>
+            <input name="${"phone"}" id="${"phone"}" type="${"text"}" required class="${"svelte-1ax76j3"}"${add_attribute("value", mail.phone, 0)}></label>
+        <label class="${"form-input svelte-1ax76j3"}" for="${"message"}">\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439<br>
+            <textarea name="${"message"}" id="${"message"}" cols="${"30"}" rows="${"10"}" class="${"svelte-1ax76j3"}">${""}</textarea></label>
+        <button class="${"form__button button svelte-1ax76j3"}">\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C</button>
+        ${``}</form>
+</div>`;
     });
   }
 });
@@ -5888,16 +5894,16 @@ var entry3, js3, css5;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_index_svelte();
-    entry3 = "pages/vyzov-zamershika/index.svelte-d3152ceb.js";
-    js3 = ["pages/vyzov-zamershika/index.svelte-d3152ceb.js", "chunks/vendor-77a73e11.js"];
-    css5 = ["assets/pages/vyzov-zamershika/index.svelte-dfdfe06f.css"];
+    entry3 = "pages/vyzov-zamershika/index.svelte-fc7eb387.js";
+    js3 = ["pages/vyzov-zamershika/index.svelte-fc7eb387.js", "chunks/vendor-77a73e11.js"];
+    css5 = ["assets/pages/vyzov-zamershika/index.svelte-a8bbb583.css"];
   }
 });
 
-// .svelte-kit/output/server/chunks/catalogItem-ed5c2123.js
+// .svelte-kit/output/server/chunks/catalogItem-a92fd248.js
 var css$22, PrevButton, css$12, NextButton, css6, CatalogItem;
-var init_catalogItem_ed5c2123 = __esm({
-  ".svelte-kit/output/server/chunks/catalogItem-ed5c2123.js"() {
+var init_catalogItem_a92fd248 = __esm({
+  ".svelte-kit/output/server/chunks/catalogItem-a92fd248.js"() {
     init_index_13c0de55();
     css$22 = {
       code: ".arrow-6.svelte-1vjjrx5.svelte-1vjjrx5{margin:20px}.arrow-6.svelte-1vjjrx5 svg.svelte-1vjjrx5{width:80px;height:auto;margin:0 2rem;cursor:pointer;overflow:visible}.arrow-6.svelte-1vjjrx5 svg polygon.svelte-1vjjrx5,.arrow-6.svelte-1vjjrx5 svg path.svelte-1vjjrx5{-webkit-transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);-o-transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);fill:rgba(255, 255, 255, 0.5)}.arrow-6.svelte-1vjjrx5 svg:hover polygon.svelte-1vjjrx5,.arrow-6.svelte-1vjjrx5 svg:hover path.svelte-1vjjrx5{-webkit-transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);-o-transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);fill:rgb(255, 255, 255, 0.9)}.arrow-6.svelte-1vjjrx5 svg:hover .arrow-6-pl.svelte-1vjjrx5{-webkit-animation:svelte-1vjjrx5-arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;animation:svelte-1vjjrx5-arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite}.arrow-6.svelte-1vjjrx5 svg:hover .arrow-6-pl-fixed.svelte-1vjjrx5{-webkit-animation:svelte-1vjjrx5-arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;animation:svelte-1vjjrx5-arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite}@-webkit-keyframes svelte-1vjjrx5-arrow-6-anim{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}5%{-webkit-transform:translateX(-0.1rem);transform:translateX(-0.1rem)}100%{-webkit-transform:translateX(1rem);transform:translateX(1rem);opacity:0}}@keyframes svelte-1vjjrx5-arrow-6-anim{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}5%{-webkit-transform:translateX(-0.1rem);transform:translateX(-0.1rem)}100%{-webkit-transform:translateX(1rem);transform:translateX(1rem);opacity:0}}@-webkit-keyframes svelte-1vjjrx5-arrow-6-fixed-anim{5%{opacity:0}20%{opacity:0.4}100%{opacity:1}}@keyframes svelte-1vjjrx5-arrow-6-fixed-anim{5%{opacity:0}20%{opacity:0.4}100%{opacity:1}}@media(max-width: 768px){.arrow-6.svelte-1vjjrx5 svg.svelte-1vjjrx5{width:50px}}",
@@ -5918,7 +5924,7 @@ var init_catalogItem_ed5c2123 = __esm({
 </div>`;
     });
     css6 = {
-      code: ".product.svelte-ld2hri{transition:1s all;width:100%;display:flex;justify-content:space-between;margin:0 auto;position:relative;padding:30px;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)}.product__text.svelte-ld2hri{width:43%}.product__img.svelte-ld2hri{width:100%}.product__name.svelte-ld2hri{font-size:40px}.product__subname.svelte-ld2hri{margin-top:15px;font-size:30px}.product__descr.svelte-ld2hri{margin-top:15px;font-size:23px}.product__buttons.svelte-ld2hri{position:absolute;display:flex;bottom:0;left:50%;transform:translateX(-50%);justify-content:center}.product__wrapper.svelte-ld2hri{position:relative;width:53%;align-self:center}@media(max-width: 1060px){.product.svelte-ld2hri{flex-direction:column;align-items:center}.product__text.svelte-ld2hri{width:95%}.product__name.svelte-ld2hri{font-size:30px}.product__subname.svelte-ld2hri{font-size:20px}.product__descr.svelte-ld2hri{font-size:15px}.product__wrapper.svelte-ld2hri{margin-top:2%;width:95%}}@media(max-width: 450px){.product.svelte-ld2hri{flex-direction:column;align-items:center;padding:5px}.product__text.svelte-ld2hri{width:95%}.product__wrapper.svelte-ld2hri{margin-top:5%;width:95%}}",
+      code: ".product.svelte-1706ijh{transition:1s all;width:100%;display:flex;justify-content:space-between;margin:0 auto;position:relative;padding:30px;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)}.product__text.svelte-1706ijh{width:43%}.product__img.svelte-1706ijh{width:100%}.product__name.svelte-1706ijh{font-size:40px}.product__subname.svelte-1706ijh{margin-top:15px;font-size:30px}.product__descr.svelte-1706ijh{margin-top:25px;font-size:23px}.product__buttons.svelte-1706ijh{position:absolute;display:flex;bottom:0;left:50%;transform:translateX(-50%);justify-content:center}.product__wrapper.svelte-1706ijh{position:relative;width:53%;align-self:center}@media(max-width: 1060px){.product.svelte-1706ijh{flex-direction:column;align-items:center}.product__text.svelte-1706ijh{width:95%}.product__name.svelte-1706ijh{font-size:30px}.product__subname.svelte-1706ijh{font-size:20px}.product__descr.svelte-1706ijh{font-size:15px}.product__wrapper.svelte-1706ijh{margin-top:2%;width:95%}}@media(max-width: 450px){.product.svelte-1706ijh{flex-direction:column;align-items:center;padding:5px}.product__text.svelte-1706ijh{width:95%}.product__wrapper.svelte-1706ijh{margin-top:5%;width:95%}}",
       map: null
     };
     CatalogItem = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5931,11 +5937,11 @@ var init_catalogItem_ed5c2123 = __esm({
         $$bindings.name(name);
       $$result.css.add(css6);
       return `${each(products, (product, i2) => {
-        return `<div class="${"container"}"><div style="${"display: " + escape(i2 === index ? "flex" : "none")}" class="${"product svelte-ld2hri"}"><div class="${"product__text svelte-ld2hri"}"><div class="${"product__name svelte-ld2hri"}">${escape(name)}</div>
-                    <div class="${"product__subname svelte-ld2hri"}">${escape(product.name)}</div>
-                    <div class="${"product__descr svelte-ld2hri"}">${escape(product.descr)}</div></div>
-                <div class="${"product__wrapper svelte-ld2hri"}"><img class="${"product__img svelte-ld2hri"}"${add_attribute("src", product.url, 0)} alt="${""}">
-                    <div class="${"product__buttons svelte-ld2hri"}">${validate_component(PrevButton, "PrevButton").$$render($$result, {}, {}, {})}
+        return `<div class="${"container"}"><div style="${"display: " + escape(i2 === index ? "flex" : "none")}" class="${"product svelte-1706ijh"}"><div class="${"product__text svelte-1706ijh"}"><div class="${"product__name svelte-1706ijh"}">${escape(name)}</div>
+                    <div class="${"product__subname svelte-1706ijh"}">${escape(product.name)}</div>
+                    <div class="${"product__descr svelte-1706ijh"}"><!-- HTML_TAG_START -->${product.descr}<!-- HTML_TAG_END --></div></div>
+                <div class="${"product__wrapper svelte-1706ijh"}"><img class="${"product__img svelte-1706ijh"}"${add_attribute("src", product.url, 0)} alt="${""}">
+                    <div class="${"product__buttons svelte-1706ijh"}">${validate_component(PrevButton, "PrevButton").$$render($$result, {}, {}, {})}
                         ${validate_component(NextButton, "NextButton").$$render($$result, {}, {}, {})}
                     </div></div>
             </div>
@@ -5966,7 +5972,7 @@ var css7, Horizontal;
 var init_index_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/horizontal/index.svelte.js"() {
     init_index_13c0de55();
-    init_catalogItem_ed5c2123();
+    init_catalogItem_a92fd248();
     init_zebra_bg_png();
     css7 = {
       code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
@@ -6009,9 +6015,9 @@ var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_index_svelte2();
-    entry4 = "pages/horizontal/index.svelte-9849e94a.js";
-    js4 = ["pages/horizontal/index.svelte-9849e94a.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
+    entry4 = "pages/horizontal/index.svelte-f3fb9a48.js";
+    js4 = ["pages/horizontal/index.svelte-f3fb9a48.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-f982eba6.js", "chunks/zebra__bg-b755d45f.js"];
+    css8 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-116fa8b2.css"];
   }
 });
 
@@ -6020,19 +6026,18 @@ var index_svelte_exports3 = {};
 __export(index_svelte_exports3, {
   default: () => Contacts
 });
-var instSrc2, css9, Contacts;
+var css9, Contacts;
 var init_index_svelte3 = __esm({
   ".svelte-kit/output/server/entries/pages/contacts/index.svelte.js"() {
     init_index_13c0de55();
-    init_vk_8a4f1086();
-    instSrc2 = "/_app/assets/inst-846e9848.svg";
+    init_inst_46799f41();
     css9 = {
-      code: ".contacts-wrapper.svelte-1afiktu.svelte-1afiktu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto}.contacts.svelte-1afiktu.svelte-1afiktu{width:40%;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:30px;text-align:center;padding:0 15px}.contacts__phone.svelte-1afiktu.svelte-1afiktu{font-size:56px}.contacts__soc.svelte-1afiktu.svelte-1afiktu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__soc.svelte-1afiktu img.svelte-1afiktu{margin-right:5px}.contacts__map.svelte-1afiktu.svelte-1afiktu{height:70vh;width:55%}@media(max-width: 800px){.contacts-wrapper.svelte-1afiktu.svelte-1afiktu{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.contacts.svelte-1afiktu.svelte-1afiktu{width:80%;height:36vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:30px;text-align:center;padding:0 15px;font-size:25px}.contacts__phone.svelte-1afiktu.svelte-1afiktu{font-size:43px}.contacts__soc.svelte-1afiktu.svelte-1afiktu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__soc.svelte-1afiktu img.svelte-1afiktu{margin-right:5px}.contacts__map.svelte-1afiktu.svelte-1afiktu{margin-top:15px;height:36vh;width:80%}}@media(max-width: 632px){.contacts.svelte-1afiktu.svelte-1afiktu{font-size:15px;height:40vh}.contacts__phone.svelte-1afiktu.svelte-1afiktu{font-size:25px}.contacts__map.svelte-1afiktu.svelte-1afiktu{margin-top:15px;height:40vh}}",
+      code: ".contacts-wrapper.svelte-chv0ow.svelte-chv0ow{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;margin:0 auto}.contacts.svelte-chv0ow.svelte-chv0ow{width:40%;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:30px;text-align:center;padding:0 15px}.contacts__phone.svelte-chv0ow.svelte-chv0ow{font-size:50px}.contacts__soc.svelte-chv0ow.svelte-chv0ow{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__soc.svelte-chv0ow img.svelte-chv0ow{margin-right:5px}.contacts__map.svelte-chv0ow.svelte-chv0ow{height:70vh;width:55%}@media(max-width: 800px){.contacts-wrapper.svelte-chv0ow.svelte-chv0ow{display:block;width:80vw;margin:0 auto}.contacts.svelte-chv0ow.svelte-chv0ow{width:100%;min-height:36vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:30px;text-align:center;padding:0 15px;font-size:25px}.contacts__phone.svelte-chv0ow.svelte-chv0ow{font-size:38px}.contacts__soc.svelte-chv0ow.svelte-chv0ow{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.contacts__soc.svelte-chv0ow img.svelte-chv0ow{margin-right:5px}.contacts__map.svelte-chv0ow.svelte-chv0ow{margin-top:15px;height:36vh;width:100%}}@media(max-width: 632px){.contacts.svelte-chv0ow.svelte-chv0ow{font-size:15px;height:40vh}.contacts__phone.svelte-chv0ow.svelte-chv0ow{font-size:25px}.contacts__map.svelte-chv0ow.svelte-chv0ow{margin-top:15px;height:40vh}}",
       map: null
     };
     Contacts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css9);
-      return `<div class="${"container contacts-wrapper svelte-1afiktu"}"><div class="${"contacts svelte-1afiktu"}"><div class="${"contacts__phone svelte-1afiktu"}">+7 (351) 231 55 00
+      return `<div class="${"container contacts-wrapper svelte-chv0ow"}"><div class="${"contacts svelte-chv0ow"}"><div class="${"contacts__phone svelte-chv0ow"}">+7 (351) 231 55 00
         </div>
         <div class="${"contacts__email"}">danaya.74@mail.ru
         </div>
@@ -6042,9 +6047,9 @@ var init_index_svelte3 = __esm({
             \u041F\u043D-\u041F\u0442
             \u0441 9:00 \u0434\u043E 18:00
         </div>
-        <a href="${"https://vk.com/danayajaluzi"}" class="${"contacts__soc svelte-1afiktu"}"><img${add_attribute("src", vkSrc, 0)} alt="${""}" class="${"svelte-1afiktu"}"><span>/danayajaluzi</span></a>
-        <a href="${"https://https://www.instagram.com/jaluzi174"}" class="${"contacts__soc svelte-1afiktu"}"><img${add_attribute("src", instSrc2, 0)} alt="${""}" class="${"svelte-1afiktu"}"><span>/jaluzi174</span></a></div>
-        <div class="${"contacts__map svelte-1afiktu"}" style="${"position:relative;overflow:hidden;"}"><a href="${"https://yandex.ru/maps/org/danaya/1072479778/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:0px;"}">\u0414\u0430\u043D\u0430\u044F</a><a href="${"https://yandex.ru/maps/56/chelyabinsk/category/jalousies_shutters_and_roller_blinds/184107989/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:14px;"}">\u0416\u0430\u043B\u044E\u0437\u0438 \u0438 \u0440\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B \u0432 \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A\u0435</a><a href="${"https://yandex.ru/maps/56/chelyabinsk/category/shutters/184107733/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:28px;"}">\u0420\u043E\u043B\u044C\u0441\u0442\u0430\u0432\u043D\u0438 \u0432 \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A\u0435</a><iframe src="${"https://yandex.ru/map-widget/v1/-/CCU5ILU6CC"}" width="${"100%"}" height="${"100%"}" frameborder="${"0"}" allowfullscreen="${"true"}" style="${"position:relative;"}"></iframe></div>
+        <a href="${"https://vk.com/danayajaluzi"}" class="${"contacts__soc svelte-chv0ow"}"><img${add_attribute("src", vkSrc, 0)} alt="${""}" class="${"svelte-chv0ow"}"><span>/danayajaluzi</span></a>
+        <a href="${"https://https://www.instagram.com/jaluzi174"}" class="${"contacts__soc svelte-chv0ow"}"><img${add_attribute("src", instSrc, 0)} alt="${""}" class="${"svelte-chv0ow"}"><span>/jaluzi174</span></a></div>
+        <div class="${"contacts__map svelte-chv0ow"}" style="${"position:relative;overflow:hidden;"}"><a href="${"https://yandex.ru/maps/org/danaya/1072479778/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:0px;"}">\u0414\u0430\u043D\u0430\u044F</a><a href="${"https://yandex.ru/maps/56/chelyabinsk/category/jalousies_shutters_and_roller_blinds/184107989/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:14px;"}">\u0416\u0430\u043B\u044E\u0437\u0438 \u0438 \u0440\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B \u0432 \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A\u0435</a><a href="${"https://yandex.ru/maps/56/chelyabinsk/category/shutters/184107733/?utm_medium=mapframe&utm_source=maps"}" style="${"color:#eee;font-size:12px;position:absolute;top:28px;"}">\u0420\u043E\u043B\u044C\u0441\u0442\u0430\u0432\u043D\u0438 \u0432 \u0427\u0435\u043B\u044F\u0431\u0438\u043D\u0441\u043A\u0435</a><iframe src="${"https://yandex.ru/map-widget/v1/-/CCU5ILU6CC"}" width="${"100%"}" height="${"100%"}" frameborder="${"0"}" allowfullscreen="${"true"}" style="${"position:relative;"}"></iframe></div>
 </div>`;
     });
   }
@@ -6062,9 +6067,9 @@ var entry5, js5, css10;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
     init_index_svelte3();
-    entry5 = "pages/contacts/index.svelte-8d93cdf8.js";
-    js5 = ["pages/contacts/index.svelte-8d93cdf8.js", "chunks/vendor-77a73e11.js", "chunks/vk-8a4f1086.js"];
-    css10 = ["assets/pages/contacts/index.svelte-146ff057.css"];
+    entry5 = "pages/contacts/index.svelte-e5f619e3.js";
+    js5 = ["pages/contacts/index.svelte-e5f619e3.js", "chunks/vendor-77a73e11.js", "chunks/inst-46799f41.js"];
+    css10 = ["assets/pages/contacts/index.svelte-d3ef32a1.css"];
   }
 });
 
@@ -6077,7 +6082,7 @@ var css11, Vertical;
 var init_index_svelte4 = __esm({
   ".svelte-kit/output/server/entries/pages/vertical/index.svelte.js"() {
     init_index_13c0de55();
-    init_catalogItem_ed5c2123();
+    init_catalogItem_a92fd248();
     init_zebra_bg_png();
     css11 = {
       code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
@@ -6120,22 +6125,82 @@ var entry6, js6, css12;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_index_svelte4();
-    entry6 = "pages/vertical/index.svelte-49571bbc.js";
-    js6 = ["pages/vertical/index.svelte-49571bbc.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
+    entry6 = "pages/vertical/index.svelte-9ec9e5cd.js";
+    js6 = ["pages/vertical/index.svelte-9ec9e5cd.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-f982eba6.js", "chunks/zebra__bg-b755d45f.js"];
+    css12 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-116fa8b2.css"];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/catalog/index.svelte.js
+var index_svelte_exports5 = {};
+__export(index_svelte_exports5, {
+  default: () => Catalog
+});
+var css13, Catalog;
+var init_index_svelte5 = __esm({
+  ".svelte-kit/output/server/entries/pages/catalog/index.svelte.js"() {
+    init_index_13c0de55();
+    css13 = {
+      code: ".catalog.svelte-15dx4eq.svelte-15dx4eq{margin:0 auto}.catalog__item.svelte-15dx4eq.svelte-15dx4eq{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:15px 40px;margin-top:5vh;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-name.svelte-15dx4eq{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;text-align:right}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-descr.svelte-15dx4eq{text-align:left}.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{width:30%;font-size:50px;color:#FFFFFF}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{font-size:23px;color:#FFFFFF;text-align:right;width:60%}.catalog__item.svelte-15dx4eq.svelte-15dx4eq:hover{background:rgba(0, 0, 0, 0.75)}@media(max-width: 1400px){.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{font-size:35px}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{font-size:20px}}@media(max-width: 1024px){.catalog__item.svelte-15dx4eq.svelte-15dx4eq{height:25%}.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{font-size:25px}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{font-size:14px}}@media(max-width: 768px){.catalog__item.svelte-15dx4eq.svelte-15dx4eq{margin:5vh auto 0;width:75%;min-height:100px;padding:2%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-name.svelte-15dx4eq{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-descr.svelte-15dx4eq{display:none}.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{font-size:25px;text-align:center;width:100%}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{display:none}}@media(max-width: 320px){.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-name.svelte-15dx4eq{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-descr.svelte-15dx4eq{display:none}.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{font-size:20px;text-align:center;width:100%}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{display:none}}",
+      map: null
+    };
+    Catalog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      const catalogItems = [
+        {
+          name: "\u0412\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u0435 \u0436\u0430\u043B\u044E\u0437\u0438",
+          descr: "\u0412\u0435\u0440\u0442\u0438\u043A\u0430\u043B\u044C\u043D\u044B\u0435 \u0436\u0430\u043B\u044E\u0437\u0438 \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u0441\u0430\u043C\u044B\u043C \u044D\u043A\u043E\u043D\u043E\u043C\u0438\u0447\u043D\u044B\u043C \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u043E\u043C \u0434\u0435\u043A\u043E\u0440\u0430\u0442\u0438\u0432\u043D\u043E\u0439 \u0441\u043E\u043B\u043D\u0446\u0435\u0437\u0430\u0449\u0438\u0442\u044B. \u041E\u043D\u0438 \u0438\u0434\u0435\u0430\u043B\u044C\u043D\u043E \u043F\u043E\u0434\u0445\u043E\u0434\u044F\u0442 \u0434\u043B\u044F \u0431\u043E\u043B\u044C\u0448\u0438\u0445 \u043E\u043A\u043E\u043D, \u0432\u0438\u0437\u0443\u0430\u043B\u044C\u043D\u043E \u0440\u0430\u0441\u0448\u0438\u0440\u044F\u044E\u0442 \u0443\u0437\u043A\u0438\u0435 \u0438 \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0432\u0430\u044E\u0442 \u043F\u043E \u0432\u044B\u0441\u043E\u0442\u0435 \u0448\u0438\u0440\u043E\u043A\u0438\u0435 \u043E\u043A\u043E\u043D\u043D\u044B\u0435 \u043F\u0440\u043E\u0435\u043C\u044B. \u0421\u0442\u0440\u043E\u0433\u0438\u0439 \u0432\u043D\u0435\u0448\u043D\u0438\u0439 \u0432\u0438\u0434 \u0438 \u043C\u043D\u043E\u0433\u043E\u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0442 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C \u0438\u0445 \u043F\u043E\u0432\u0441\u0435\u043C\u0435\u0441\u0442\u043D\u043E: \u0432 \u043E\u0444\u0438\u0441\u0430\u0445, \u0433\u043E\u0441\u0442\u0438\u043D\u0438\u0446\u0430\u0445, \u0440\u0435\u0441\u0442\u043E\u0440\u0430\u043D\u0430\u0445, \u0443\u0447\u0435\u0431\u043D\u044B\u0445 \u0437\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u044F\u0445, \u0436\u0438\u043B\u044B\u0445 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u044F\u0445.",
+          url: "/vertical"
+        },
+        {
+          name: "\u0420\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B",
+          descr: "\u0421\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u0430\u044F \u0430\u043B\u044C\u0442\u0435\u0440\u043D\u0430\u0442\u0438\u0432\u0430 \u0438\u043B\u0438 \u0434\u043E\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0435 \u043A \u0442\u0440\u0430\u0434\u0438\u0446\u0438\u043E\u043D\u043D\u044B\u043C \u0448\u0442\u043E\u0440\u0430\u043C - \u043B\u0430\u043A\u043E\u043D\u0438\u0447\u043D\u043E\u0441\u0442\u044C \u0444\u043E\u0440\u043C, \u043B\u0435\u0433\u043A\u043E\u0435 \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u0435, \u043C\u043D\u043E\u0433\u043E\u043E\u0431\u0440\u0430\u0437\u0438\u0435 \u0440\u0430\u0441\u0446\u0432\u0435\u0442\u043E\u043A \u0438 \u0444\u0430\u043A\u0442\u0443\u0440 \u0442\u043A\u0430\u043D\u0435\u0439 \u0434\u043B\u044F \u0440\u0443\u043B\u043E\u043D\u043D\u044B\u0445 \u0448\u0442\u043E\u0440 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u0435\u0442 \u043F\u043E\u0434\u043E\u0431\u0440\u0430\u0442\u044C \u0434\u0435\u043A\u043E\u0440 \u0438 \u0441\u0442\u0435\u043F\u0435\u043D\u044C \u0441\u043E\u043B\u043D\u0446\u0435\u0437\u0430\u0449\u0438\u0442\u044B \u0434\u043B\u044F \u043B\u044E\u0431\u043E\u0433\u043E \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u044F \u043D\u0430 \u0441\u0430\u043C\u044B\u0439 \u0432\u0437\u044B\u0441\u043A\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0439 \u0432\u043A\u0443\u0441.",
+          url: "/rolled"
+        },
+        {
+          name: "\u0413\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0435 \u0436\u0430\u043B\u044E\u0437\u0438",
+          descr: "\u0413\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0435 \u0436\u0430\u043B\u044E\u0437\u0438 \u043D\u0430\u0434\u0435\u0436\u043D\u043E, \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E \u0440\u0435\u0433\u0443\u043B\u0438\u0440\u0443\u044E\u0442 \u0441\u0432\u0435\u0442\u043E\u0432\u043E\u0439 \u043F\u043E\u0442\u043E\u043A, \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0430\u044E\u0442 \u043E\u043F\u0442\u0438\u043C\u0430\u043B\u044C\u043D\u0443\u044E \u0441\u043E\u043B\u043D\u0446\u0435\u0437\u0430\u0449\u0438\u0442\u0443 \u0438 \u043F\u0440\u0438\u0432\u0430\u0442\u043D\u043E\u0441\u0442\u044C. \u041F\u0440\u043E\u0441\u0442\u043E\u0442\u0430 \u0432 \u0443\u0445\u043E\u0434\u0435 \u0438 \u043B\u0435\u0433\u043A\u043E\u0441\u0442\u044C \u044D\u043A\u0441\u043F\u043B\u0443\u0430\u0442\u0430\u0446\u0438\u0438 \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u043D\u0435\u043E\u0441\u043F\u043E\u0440\u0438\u043C\u044B\u043C\u0438 \u043F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430\u043C\u0438 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0445 \u0436\u0430\u043B\u044E\u0437\u0438 \u0432 \u043B\u044E\u0431\u044B\u0445 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u044F\u0445.",
+          url: "/horizontal"
+        }
+      ];
+      $$result.css.add(css13);
+      return `<div class="${"container"}"><div class="${"catalog svelte-15dx4eq"}">${each(catalogItems, (item) => {
+        return `<a${add_attribute("href", item.url, 0)} class="${"catalog__item svelte-15dx4eq"}"><div class="${"catalog__item-name svelte-15dx4eq"}">${escape(item.name)}</div>
+                <div class="${"catalog__item-descr svelte-15dx4eq"}">${escape(item.descr)}</div>
+            </a>`;
+      })}</div>
+</div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/7.js
+var __exports7 = {};
+__export(__exports7, {
+  css: () => css14,
+  entry: () => entry7,
+  js: () => js7,
+  module: () => index_svelte_exports5
+});
+var entry7, js7, css14;
+var init__7 = __esm({
+  ".svelte-kit/output/server/nodes/7.js"() {
+    init_index_svelte5();
+    entry7 = "pages/catalog/index.svelte-a2fa5da7.js";
+    js7 = ["pages/catalog/index.svelte-a2fa5da7.js", "chunks/vendor-77a73e11.js"];
+    css14 = ["assets/pages/catalog/index.svelte-19f62f8c.css"];
   }
 });
 
 // .svelte-kit/output/server/entries/pages/gallery/index.svelte.js
-var index_svelte_exports5 = {};
-__export(index_svelte_exports5, {
+var index_svelte_exports6 = {};
+__export(index_svelte_exports6, {
   default: () => Gallery
 });
-var css13, Gallery;
-var init_index_svelte5 = __esm({
+var css15, Gallery;
+var init_index_svelte6 = __esm({
   ".svelte-kit/output/server/entries/pages/gallery/index.svelte.js"() {
     init_index_13c0de55();
-    css13 = {
+    css15 = {
       code: ".gallery__current.svelte-9frpsl.svelte-9frpsl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.gallery__current.svelte-9frpsl img.svelte-9frpsl{border-radius:3px;max-height:calc(60vh - 15px);max-width:95%}.gallery__items.svelte-9frpsl.svelte-9frpsl{border-radius:3px;margin:15px auto 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:100%;overflow-x:scroll;min-height:15vh;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar{width:7px;background-color:rgba(0, 0, 0, 0.5);border-radius:8px;height:19px}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar-thumb{background-color:#ffffff2d;border-radius:8px}.gallery__items.svelte-9frpsl.svelte-9frpsl::-webkit-scrollbar-track{box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;-webkit-box-shadow:5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset}.gallery__items.svelte-9frpsl img.svelte-9frpsl{height:10vh;margin:0 5px;cursor:pointer}.active.svelte-9frpsl.svelte-9frpsl{border:2px solid red}",
       map: null
     };
@@ -6157,7 +6222,7 @@ var init_index_svelte5 = __esm({
         "https://sun9-51.userapi.com/impg/G03OI2SibWNT5wYXwjTQJZabuQGpXfnubhqWJg/gasMCJxd-BM.jpg?size=747x769&quality=95&sign=58064bc35a6c3728a8d4fc19690d75a0&type=album"
       ];
       let current = photos[0];
-      $$result.css.add(css13);
+      $$result.css.add(css15);
       return `<div class="${"container"}"><div class="${"gallery"}"><div class="${"gallery__current svelte-9frpsl"}"><img${add_attribute("src", current, 0)} alt="${""}" class="${"svelte-9frpsl"}"></div>
         <div class="${"gallery__items svelte-9frpsl"}">${each(photos, (photo, i2) => {
         return `<img${add_attribute("src", photo, 0)} alt="${""}" class="${["svelte-9frpsl", current === photos[i2] ? "active" : ""].join(" ").trim()}">`;
@@ -6168,64 +6233,6 @@ var init_index_svelte5 = __esm({
 });
 
 // .svelte-kit/output/server/nodes/8.js
-var __exports7 = {};
-__export(__exports7, {
-  css: () => css14,
-  entry: () => entry7,
-  js: () => js7,
-  module: () => index_svelte_exports5
-});
-var entry7, js7, css14;
-var init__7 = __esm({
-  ".svelte-kit/output/server/nodes/8.js"() {
-    init_index_svelte5();
-    entry7 = "pages/gallery/index.svelte-2cde91ab.js";
-    js7 = ["pages/gallery/index.svelte-2cde91ab.js", "chunks/vendor-77a73e11.js"];
-    css14 = ["assets/pages/gallery/index.svelte-1127529f.css"];
-  }
-});
-
-// .svelte-kit/output/server/entries/pages/rolled/index.svelte.js
-var index_svelte_exports6 = {};
-__export(index_svelte_exports6, {
-  default: () => Rolled
-});
-var zebraSrc2, css15, Rolled;
-var init_index_svelte6 = __esm({
-  ".svelte-kit/output/server/entries/pages/rolled/index.svelte.js"() {
-    init_index_13c0de55();
-    init_catalogItem_ed5c2123();
-    zebraSrc2 = "/_app/assets/zebra__bg-23d49d80.png";
-    css15 = {
-      code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
-      map: null
-    };
-    Rolled = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      const products = [
-        {
-          name: "\u0417\u0435\u0431\u0440\u0430",
-          descr: '\u0420\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B \u0437\u0435\u0431\u0440\u0430 \u0441\u043E\u0447\u0438\u0442\u0430\u044E\u0442 \u0432 \u0441\u0435\u0431\u0435 \u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043B\u043D\u0430\u043B \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0445 \u0436\u0430\u043B\u044E\u0437\u0438 \u043F\u043E \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044E \u0441\u0432\u0435\u0442\u043E\u0432\u044B\u043C \u043F\u043E\u0442\u043E\u043A\u043E\u043C \u0438 \u044D\u0441\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0443\u044E \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E\u0449\u0443\u044E \u043A\u043B\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0440\u0443\u043B\u043E\u043D\u043D\u044B\u0445 \u0448\u0442\u043E\u0440. \u0412 \u0433\u043E\u0442\u043E\u0432\u043E\u043C \u0438\u0437\u0434\u0435\u043B\u0438\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u0434\u0432\u043E\u0439\u043D\u043E\u0435 \u043F\u043E\u043B\u043E\u0442\u043D\u043E \u0442\u043A\u0430\u043D\u0438 "\u0437\u0435\u0431\u0440\u0430", \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0449\u0435\u0435 \u0437\u0430\u043A\u0440\u044B\u0442\u044C\u0441\u044F \u043E\u0442 \u043F\u043E\u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0445 \u0433\u043B\u0430\u0437 \u0438 \u0440\u0435\u0433\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u0441\u0442\u0443\u043F\u043B\u0435\u043D\u0438\u0435 \u0441\u0432\u0435\u0442\u0430 \u0432 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0435 \u0437\u0430 \u0441\u0447\u0435\u0442 \u0441\u043C\u0435\u0449\u0435\u043D\u0438\u044F \u0447\u0435\u0440\u0435\u0434\u0443\u044E\u0449\u0438\u0445\u0441\u044F \u043F\u043E\u043B\u043E\u0441 \u043F\u043B\u043E\u0442\u043D\u043E\u0439 \u0442\u043A\u0430\u043D\u0438 \u0438 \u043F\u0440\u0437\u0440\u0430\u0447\u043D\u043E\u0439 \u0441\u0435\u0442\u043A\u0438-\u0432\u0443\u0430\u043B\u0438 \u043E\u0442\u043D\u043E\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0434\u0440\u0443\u0433 \u0434\u0440\u0443\u0433\u0430.',
-          url: zebraSrc2
-        },
-        {
-          name: "\u042E\u043D\u0438",
-          descr: "\u0420\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B \u044E\u043D\u0438 \u0441\u043B\u0438\u0432\u0430\u044E\u0442\u0441\u044F \u0441 \u043F\u043B\u043E\u0441\u043A\u043E\u0441\u0442\u044C\u044E \u0440\u0430\u043C\u044B \u043E\u043A\u043D\u0430 \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u043B\u0430\u043A\u043E\u043D\u0438\u0447\u043D\u043E\u0439 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438 \u0438 \u0448\u0438\u0440\u043E\u043A\u043E\u0439 \u0446\u0432\u0435\u0442\u043E\u0432\u043E\u0439 \u0433\u0430\u043C\u043C\u0435 \u0444\u0443\u0440\u043D\u0438\u0442\u0443\u0440\u044B. \u042D\u043B\u0435\u0433\u0430\u043D\u0442\u043D\u044B\u0439 \u043A\u043E\u0442\u043E\u0431-\u043A\u0430\u0441\u0441\u0435\u0442\u0430 \u0441\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0442\u043A\u0430\u043D\u0435\u0432\u044B\u0439 \u0440\u0443\u043B\u043E\u043D \u0438 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\u044B, \u0430 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0435 \u043D\u0430\u0434\u0435\u0436\u043D\u043E \u0437\u0430\u0449\u0438\u0449\u0430\u044E\u0442 \u043E\u0442 \u0431\u043E\u043A\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0441\u0432\u0435\u0442\u043E\u0432 \u0438 \u043F\u0440\u043E\u0432\u0438\u0441\u0430\u043D\u0438\u044F \u0442\u043A\u0430\u043D\u0438 \u043D\u0430 \u043E\u0442\u043A\u0438\u0434\u043D\u044B\u0445 \u0441\u0442\u0432\u043E\u0440\u043A\u0430\u0445. \u041C\u043E\u0434\u0435\u043B\u044C\u043D\u044B\u0439 \u0440\u044F\u0434 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D \u0438\u0437\u0434\u0435\u043B\u0438\u044F\u043C\u0438 \u0441 \u0446\u0435\u043F\u043E\u0447\u043D\u044B\u043C \u0438 \u043F\u0440\u0443\u0436\u0438\u043D\u043D\u044B\u043C \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\u043E\u043C \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0430 \u0442\u0430\u043A \u0436\u0435 \u043C\u043E\u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u0435\u0439.",
-          url: zebraSrc2
-        },
-        {
-          name: "\u041A\u043E\u043D\u044C",
-          descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum quae eveniet error eaque voluptate neque eos ea aut cumque maiores quidem expedita, quia velit et repudiandae. Optio, nisi debitis?aLorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illum quae eveniet error eaque voluptate neque eos ea aut cumque maiores quidem expedita, quia velit et repudiandae. Optio, nisi debitis?",
-          url: zebraSrc2
-        }
-      ];
-      $$result.css.add(css15);
-      return `<div class="${"svelte-1gpx614"}">${validate_component(CatalogItem, "CatalogItem").$$render($$result, { name: "\u0420\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0436\u0430\u043B\u044E\u0437\u0438", products }, {}, {})}
-</div>`;
-    });
-  }
-});
-
-// .svelte-kit/output/server/nodes/9.js
 var __exports8 = {};
 __export(__exports8, {
   css: () => css16,
@@ -6235,21 +6242,89 @@ __export(__exports8, {
 });
 var entry8, js8, css16;
 var init__8 = __esm({
-  ".svelte-kit/output/server/nodes/9.js"() {
+  ".svelte-kit/output/server/nodes/8.js"() {
     init_index_svelte6();
-    entry8 = "pages/rolled/index.svelte-9aa1a231.js";
-    js8 = ["pages/rolled/index.svelte-9aa1a231.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-ae493c7a.js"];
-    css16 = ["assets/pages/rolled/index.svelte-be2c813f.css", "assets/catalogItem-5e941fed.css"];
+    entry8 = "pages/gallery/index.svelte-2cde91ab.js";
+    js8 = ["pages/gallery/index.svelte-2cde91ab.js", "chunks/vendor-77a73e11.js"];
+    css16 = ["assets/pages/gallery/index.svelte-1127529f.css"];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/rolled/index.svelte.js
+var index_svelte_exports7 = {};
+__export(index_svelte_exports7, {
+  default: () => Rolled
+});
+var zebraSrc2, css17, Rolled;
+var init_index_svelte7 = __esm({
+  ".svelte-kit/output/server/entries/pages/rolled/index.svelte.js"() {
+    init_index_13c0de55();
+    init_catalogItem_a92fd248();
+    zebraSrc2 = "/_app/assets/zebra__bg-23d49d80.png";
+    css17 = {
+      code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
+      map: null
+    };
+    Rolled = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      const products = [
+        {
+          name: '\u0421\u0438\u0441\u0442\u0435\u043C\u044B "UNI"',
+          descr: '\u0420\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B \u0441\u0438\u0441\u0442\u0435\u043C "UNI" \u0441 \u043A\u043E\u0440\u043E\u0431\u043E\u043C \u0438 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u043C\u0438 \u0441\u043C\u043E\u0442\u0440\u044F\u0442\u0441\u044F \u0435\u0434\u0438\u043D\u044B\u043C \u0446\u0435\u043B\u044B\u043C \u0441 \u0440\u0430\u043C\u043E\u0439 \u0435\u0432\u0440\u043E\u043E\u043A\u043D\u0430 \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F \u043B\u0430\u043A\u043E\u043D\u0438\u0447\u043D\u043E\u0439 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0446\u0438\u0438 \u0432 \u0448\u0438\u0440\u043E\u043A\u043E\u0439 \u0446\u0432\u0435\u0442\u043E\u0432\u043E\u0439 \u0433\u0430\u043C\u043C\u0435 \u0444\u0443\u0440\u043D\u0438\u0442\u0443\u0440\u044B. <br><br> \u042D\u043B\u0435\u0433\u0430\u043D\u0442\u043D\u044B\u0439 \u043A\u043E\u0440\u043E\u0431-\u043A\u0430\u0441\u0441\u0435\u0442\u0430 \u0441\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0442\u043A\u0430\u043D\u0435\u0432\u044B\u0439 \u0440\u0443\u043B\u043E\u043D \u0438 \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\u044B, \u0430 \u043D\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u044E\u0449\u0438\u0435 \u043D\u0430\u0434\u0435\u0436\u043D\u043E \u0437\u0430\u0449\u0438\u0449\u0430\u044E\u0442 \u043E\u0442 \u0431\u043E\u043A\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0441\u0432\u0435\u0442\u043E\u0432 \u0438 \u043F\u0440\u043E\u0432\u0438\u0441\u0430\u043D\u0438\u044F \u0442\u043A\u0430\u043D\u0438 \u043D\u0430 \u043E\u0442\u043A\u0438\u0434\u043D\u044B\u0445 \u0441\u0442\u0432\u043E\u0440\u043A\u0430\u0445. \u041C\u043E\u0434\u0435\u043B\u044C\u043D\u044B\u0439 \u0440\u044F\u0434 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D \u0438\u0437\u0434\u0435\u043B\u0438\u044F\u043C\u0438 \u0441 \u0446\u0435\u043F\u043E\u0447\u043D\u044B\u043C \u0438 \u043F\u0440\u0443\u0436\u0438\u043D\u043D\u044B\u043C \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\u043E\u043C \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F, \u0430 \u0442\u0430\u043A\u0436\u0435 \u043C\u043E\u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u0435\u0439.',
+          url: zebraSrc2
+        },
+        {
+          name: '\u0421\u0438\u0441\u0442\u0435\u043C\u0430 "MINI"',
+          descr: '\u0421\u0438\u0441\u0442\u0435\u043C\u0430 "MINI" - \u0441\u0430\u043C\u0430\u044F \u043B\u0451\u0433\u043A\u0430\u044F \u0438 \u043A\u043E\u043C\u043F\u0430\u043A\u0442\u043D\u0430\u044F \u0440\u0443\u043B\u043E\u043D\u0430\u044F \u0448\u0442\u043E\u0440\u0430 \u0441 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u043C \u0440\u0443\u043B\u043E\u043D\u043E\u043C \u0434\u043B\u044F \u0435\u0432\u0440\u043E\u043E\u043A\u043E\u043D. \u041F\u043E\u043C\u0438\u043C\u043E \u0441\u0432\u0435\u0440\u043B\u0435\u043D\u0438\u044F \u0435\u0451 \u043C\u043E\u0436\u043D\u043E \u0443\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0442\u044C \u043D\u0430 \u043D\u0430\u043A\u0438\u0434\u043D\u044B\u0435 \u043A\u0440\u043E\u043D\u0448\u0442\u0435\u0439\u043D\u044B \u0438\u043B\u0438 \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u044B \u0441 \u043A\u043B\u0435\u0439\u043A\u043E\u0439 \u043B\u0435\u043D\u0442\u043E\u0439. <br><br> \u0414\u043B\u044F \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u043D\u043E-\u043E\u0442\u043A\u0438\u0434\u043D\u044B\u0445 \u0441\u0442\u0432\u043E\u0440\u043E\u043A \u043F\u0440\u0435\u0434\u0443\u0441\u043C\u043E\u0442\u0440\u0435\u043D\u0430 \u0431\u043E\u043A\u043E\u0432\u0430\u044F \u0444\u0438\u043A\u0441\u0430\u0446\u0438\u044F \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u043B\u0435\u0441\u043A\u0438 \u0438\u043B\u0438 \u043C\u0430\u0433\u043D\u0438\u0442\u043E\u0432. \u041C\u043E\u0434\u0435\u043B\u044C "MINI" \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u0430 \u0432 \u0442\u0440\u0451\u0445 \u0446\u0432\u0435\u0442\u0430\u0445 \u0444\u0443\u0440\u043D\u0438\u0442\u0443\u0440\u044B: \u0431\u0435\u043B\u044B\u0439, \u0434\u0443\u0431, \u043A\u043E\u0440\u0438\u0447\u043D\u0435\u0432\u044B\u0439.',
+          url: zebraSrc2
+        },
+        {
+          name: "BLACK-OUT",
+          descr: '\u0420\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B \u0441 \u043F\u043E\u043B\u043E\u0442\u043D\u043E\u043C \u0438\u0437 \u0442\u043A\u0430\u043D\u0435\u0439 \u0442\u0438\u043F\u0430 "BLACK-OUT" \u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u043F\u043E\u043B\u043D\u043E\u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u043C \u0441\u0432\u0435\u0442\u043E\u0444\u0438\u043B\u044C\u0442\u0440\u043E\u043C \u0434\u043B\u044F \u043E\u043A\u043E\u043D \u0438 \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0442 \u043C\u0430\u043A\u0441\u0438\u043C\u0430\u043B\u044C\u043D\u043E \u0437\u0430\u0442\u0435\u043C\u043D\u0438\u0442\u044C \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0435 \u043D\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043C\u043E \u043E\u0442 \u0438\u043D\u0442\u0435\u043D\u0441\u0438\u0432\u043D\u043E\u0441\u0442\u0438 \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0433\u043E \u043F\u043E\u0442\u043E\u043A\u0430 \u0437\u0430 \u043E\u043A\u043D\u043E\u043C. <br><br> \u041E\u043D\u0438 \u043D\u0435\u0437\u0430\u043C\u0435\u043D\u0438\u043C\u044B \u0432 \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u0438 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0439, \u0433\u0434\u0435 \u0432\u0440\u0435\u043C\u044F \u043E\u0442 \u0432\u0440\u0435\u043C\u0435\u043D\u0438 \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0441\u043E\u0437\u0434\u0430\u0442\u044C \u043F\u043E\u043B\u0443\u043C\u0440\u0430\u043A. \u0412 \u043D\u0430\u0441\u0442\u043E\u044F\u0449\u0435\u0435 \u0432\u0440\u0435\u043C\u044F \u043E\u043D\u0438 \u0448\u0438\u0440\u043E\u043A\u043E \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044E\u0442\u0441\u044F \u043F\u0440\u0430\u043A\u0442\u0438\u0447\u0435\u0441\u043A\u0438 \u0432 \u043B\u044E\u0431\u044B\u0445',
+          url: zebraSrc2
+        },
+        {
+          name: '\u0421\u0438\u0441\u0442\u0435\u043C\u0430 "\u041A\u043B\u0430\u0441\u0441\u0438\u043A\u0430 LUX"',
+          descr: `\u0421\u0438\u0441\u0442\u0435\u043C\u0430 "\u041A\u043B\u0430\u0441\u0441\u0438\u043A\u0430 LUX" - \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u043E\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u0435 \u0434\u043B\u044F \u043E\u0444\u043E\u0440\u043C\u043B\u0435\u043D\u0438\u044F \u0441\u0432\u0435\u0442\u043E\u0432\u044B\u0445 \u043F\u0440\u043E\u0451\u043C\u043E\u0432 \u0441\u0440\u0435\u0434\u043D\u0438\u0445 \u0438 \u0431\u043E\u043B\u044C\u0448\u0438\u0445 \u0440\u0430\u0437\u043C\u0435\u0440\u043E\u0432 \u0435\u0434\u0438\u043D\u044B\u043C \u043F\u043E\u043B\u043E\u0442\u043D\u043E\u043C. \u0422\u0430\u043A\u0438\u0435 \u0438\u0437\u0434\u0435\u043B\u0438\u044F \u0434\u0430\u044E\u0442 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E\u0441\u0442\u044C \u043F\u0440\u0438\u043C\u0435\u043D\u0438\u0442\u044C \u0442\u043A\u0430\u043D\u0438 \u0441 \u0431\u043E\u043B\u044C\u0448\u0438\u043C \u0440\u0430\u043F\u043F\u043E\u0440\u0442\u043E\u043C \u0438 \u0432\u043E\u043F\u043B\u043E\u0442\u0438\u0442\u044C \u0432 \u0436\u0438\u0437\u043D\u044C \u0441\u0430\u043C\u044B\u0439 \u0444\u0430\u043D\u0442\u0430\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u0441\u043A\u0438\u0439 \u043F\u0440\u043E\u0435\u043A\u0442. <br><br> \u042D\u0442\u0430 \u043C\u043E\u0434\u0435\u043B\u044C \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043E\u0431\u043E\u0439 \u043E\u0442\u043A\u0440\u044B\u0442\u044B\u0439 \u043A\u043B\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0432\u0430\u0440\u0438\u0430\u043D\u0442 \u0440\u0443\u043B\u043E\u043D\u043D\u043E\u0439 \u0448\u0442\u043E\u0440\u044B \u0441 \u043C\u043E\u043D\u0442\u0430\u0436\u043D\u044B\u043C \u043F\u0440\u043E\u0444\u0438\u043B\u0435\u043C \u0438 \u043F\u0440\u044F\u043C\u043E\u0439 \u043D\u0430\u043C\u043E\u0442\u043A\u043E\u0439 \u0442\u043A\u0430\u043D\u0438 \u043D\u0430 \u0442\u0440\u0443\u0431\u0443. <br><br> \u0412\u0430\u0440\u0438\u0430\u043D\u0442\u044B \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0440\u0435\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u044B \u0441 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0446\u0435\u043F\u043E\u0447\u043D\u043E\u0433\u043E \u0438 \u043F\u0440\u0443\u0436\u0438\u043D\u043D\u043E-\u0438\u043D\u0435\u0440\u0446\u0438\u043E\u043D\u043D\u043E\u0433\u043E \u043C\u0435\u0445\u0430\u043D\u0438\u0437\u043C\u043E\u0432, \u0430 \u0442\u0430\u043A\u0436\u0435 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0435 \u0432 \u043C\u043E\u0442\u043E\u0440\u0438\u0437\u043E\u0432\u0430\u043D\u043D\u043E\u043C \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u0435.`,
+          url: zebraSrc2
+        },
+        {
+          name: "\u0417\u0435\u0431\u0440\u0430",
+          descr: `\u0420\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0448\u0442\u043E\u0440\u044B "\u0417\u0435\u0431\u0440\u0430" \u0441\u043E\u0447\u0435\u0442\u0430\u044E\u0442 \u0432 \u0441\u0435\u0431\u0435 \u0444\u0443\u043D\u043A\u0446\u0438\u043E\u043D\u0430\u043B \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0445 \u0436\u0430\u043B\u044E\u0437\u0438 \u043F\u043E \u0443\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044E \u0441\u0432\u0435\u0442\u043E\u0432\u044B\u043C \u043F\u043E\u0442\u043E\u043A\u043E\u043C \u0438 \u044D\u0441\u0442\u0435\u0442\u0438\u0447\u0435\u0441\u043A\u0443\u044E \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E\u0449\u0443\u044E \u043A\u043B\u0430\u0441\u0441\u0438\u0447\u0435\u0441\u043A\u0438\u0445 \u0440\u0443\u043B\u043E\u043D\u043D\u044B\u0445 \u0448\u0442\u043E\u0440.<br><br> \u0412 \u0433\u043E\u0442\u043E\u0432\u043E\u043C \u0438\u0437\u0434\u0435\u043B\u0438\u0438 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F \u0434\u0432\u043E\u0439\u043D\u043E\u0435 \u043F\u043E\u043B\u043E\u0442\u043D\u043E \u0442\u043A\u0430\u043D\u0438 "\u0417\u0435\u0431\u0440\u0430", \u043F\u043E\u0437\u0432\u043E\u043B\u044F\u044E\u0449\u0435\u0435 \u0437\u0430\u043A\u0440\u044B\u0442\u044C\u0441\u044F \u043E\u0442 \u043F\u043E\u0441\u0442\u043E\u0440\u043E\u043D\u043D\u0438\u0445 \u0433\u043B\u0430\u0437 \u0438 \u0440\u0435\u0433\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u043F\u043E\u0441\u0442\u0443\u043F\u043B\u0435\u043D\u0438\u0435 \u0441\u0432\u0435\u0442\u0430 \u0432 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0435 \u0437\u0430 \u0441\u0447\u0451\u0442 \u0441\u043C\u0435\u0449\u0435\u043D\u0438\u044F \u0447\u0435\u0440\u0435\u0434\u0443\u044E\u0449\u0438\u0445\u0441\u044F \u043F\u043E\u043B\u043E\u0441 \u043F\u043B\u043E\u0442\u043D\u043E\u0439 \u0442\u043A\u0430\u043D\u0438 \u0438 \u043F\u0440\u043E\u0437\u0440\u0430\u0447\u043D\u043E\u0439 \u0441\u0435\u0442\u043A\u0438-\u0432\u0443\u0430\u043B\u0438 \u043E\u0442\u043D\u043E\u0441\u0438\u0442\u0435\u043B\u044C\u043D\u043E \u0434\u0440\u0443\u0433 \u0434\u0440\u0443\u0433\u0430.<br><br> \u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E \u0438\u0441\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u0435 \u0432\u043E \u0432\u0441\u0435\u0445 \u0441\u0438\u0441\u0442\u0435\u043C\u0430\u0445 \u0440\u0443\u043B\u043E\u043D\u043D\u044B\u0445 \u0448\u0442\u043E\u0440.`,
+          url: zebraSrc2
+        }
+      ];
+      $$result.css.add(css17);
+      return `<div class="${"svelte-1gpx614"}">${validate_component(CatalogItem, "CatalogItem").$$render($$result, { name: "\u0420\u0443\u043B\u043E\u043D\u043D\u044B\u0435 \u0436\u0430\u043B\u044E\u0437\u0438", products }, {}, {})}
+</div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/9.js
+var __exports9 = {};
+__export(__exports9, {
+  css: () => css18,
+  entry: () => entry9,
+  js: () => js9,
+  module: () => index_svelte_exports7
+});
+var entry9, js9, css18;
+var init__9 = __esm({
+  ".svelte-kit/output/server/nodes/9.js"() {
+    init_index_svelte7();
+    entry9 = "pages/rolled/index.svelte-b71cb6fa.js";
+    js9 = ["pages/rolled/index.svelte-b71cb6fa.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-f982eba6.js"];
+    css18 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-116fa8b2.css"];
   }
 });
 
 // .svelte-kit/output/server/entries/pages/about/index.svelte.js
-var index_svelte_exports7 = {};
-__export(index_svelte_exports7, {
+var index_svelte_exports8 = {};
+__export(index_svelte_exports8, {
   default: () => About
 });
 var About;
-var init_index_svelte7 = __esm({
+var init_index_svelte8 = __esm({
   ".svelte-kit/output/server/entries/pages/about/index.svelte.js"() {
     init_index_13c0de55();
     About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6259,20 +6334,20 @@ var init_index_svelte7 = __esm({
 });
 
 // .svelte-kit/output/server/nodes/10.js
-var __exports9 = {};
-__export(__exports9, {
-  css: () => css17,
-  entry: () => entry9,
-  js: () => js9,
-  module: () => index_svelte_exports7
+var __exports10 = {};
+__export(__exports10, {
+  css: () => css19,
+  entry: () => entry10,
+  js: () => js10,
+  module: () => index_svelte_exports8
 });
-var entry9, js9, css17;
-var init__9 = __esm({
+var entry10, js10, css19;
+var init__10 = __esm({
   ".svelte-kit/output/server/nodes/10.js"() {
-    init_index_svelte7();
-    entry9 = "pages/about/index.svelte-5f0147da.js";
-    js9 = ["pages/about/index.svelte-5f0147da.js", "chunks/vendor-77a73e11.js"];
-    css17 = [];
+    init_index_svelte8();
+    entry10 = "pages/about/index.svelte-5f0147da.js";
+    js10 = ["pages/about/index.svelte-5f0147da.js", "chunks/vendor-77a73e11.js"];
+    css19 = [];
   }
 });
 
@@ -6592,12 +6667,12 @@ function devalue(value) {
   }
   walk(value);
   var names = new Map();
-  Array.from(counts).filter(function(entry10) {
-    return entry10[1] > 1;
+  Array.from(counts).filter(function(entry11) {
+    return entry11[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry10, i2) {
-    names.set(entry10[0], getName(i2));
+  }).forEach(function(entry11, i2) {
+    names.set(entry11[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -6874,8 +6949,8 @@ async function render_response({
   ssr,
   stuff
 }) {
-  const css18 = new Set(options.manifest._.entry.css);
-  const js10 = new Set(options.manifest._.entry.js);
+  const css20 = new Set(options.manifest._.entry.css);
+  const js11 = new Set(options.manifest._.entry.js);
   const styles = new Map();
   const serialized_data = [];
   let rendered;
@@ -6887,9 +6962,9 @@ async function render_response({
   if (ssr) {
     branch.forEach(({ node, loaded, fetched, uses_credentials }) => {
       if (node.css)
-        node.css.forEach((url2) => css18.add(url2));
+        node.css.forEach((url2) => css20.add(url2));
       if (node.js)
-        node.js.forEach((url2) => js10.add(url2));
+        node.js.forEach((url2) => js11.add(url2));
       if (node.styles)
         Object.entries(node.styles).forEach(([k, v]) => styles.set(k, v));
       if (fetched && page_config.hydrate)
@@ -6965,10 +7040,10 @@ ${rendered.css.code}</style>`;
       head += `
 	<style${options.dev ? " data-svelte" : ""}>${inlined_style}</style>`;
     }
-    head += Array.from(css18).map((dep) => `
+    head += Array.from(css20).map((dep) => `
 	<link${styles.has(dep) ? ' disabled media="(max-width: 0)"' : ""} rel="stylesheet" href="${options.prefix + dep}">`).join("");
     if (page_config.router || page_config.hydrate) {
-      head += Array.from(js10).map((dep) => `
+      head += Array.from(js11).map((dep) => `
 	<link rel="modulepreload" href="${options.prefix + dep}">`).join("");
       head += `
 			<script type="module">
@@ -7791,7 +7866,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-8e58a9ea.js", "js": ["start-8e58a9ea.js", "chunks/vendor-77a73e11.js"], "css": [] },
+    entry: { "file": "start-212c9607.js", "js": ["start-212c9607.js", "chunks/vendor-77a73e11.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
@@ -7801,7 +7876,8 @@ var manifest = {
       () => Promise.resolve().then(() => (init__6(), __exports6)),
       () => Promise.resolve().then(() => (init__7(), __exports7)),
       () => Promise.resolve().then(() => (init__8(), __exports8)),
-      () => Promise.resolve().then(() => (init__9(), __exports9))
+      () => Promise.resolve().then(() => (init__9(), __exports9)),
+      () => Promise.resolve().then(() => (init__10(), __exports10))
     ],
     routes: [
       {
@@ -7838,10 +7914,18 @@ var manifest = {
       },
       {
         type: "page",
+        pattern: /^\/catalog\/?$/,
+        params: null,
+        path: "/catalog",
+        a: [0, 6],
+        b: [1]
+      },
+      {
+        type: "page",
         pattern: /^\/gallery\/?$/,
         params: null,
         path: "/gallery",
-        a: [0, 6],
+        a: [0, 7],
         b: [1]
       },
       {
@@ -7849,7 +7933,7 @@ var manifest = {
         pattern: /^\/rolled\/?$/,
         params: null,
         path: "/rolled",
-        a: [0, 7],
+        a: [0, 8],
         b: [1]
       },
       {
@@ -7863,7 +7947,7 @@ var manifest = {
         pattern: /^\/about\/?$/,
         params: null,
         path: "/about",
-        a: [0, 8],
+        a: [0, 9],
         b: [1]
       }
     ]
