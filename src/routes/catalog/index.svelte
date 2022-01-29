@@ -91,7 +91,7 @@ import { fade } from 'svelte/transition';
                     font-size: 35px;
                 }
                 &-descr {
-                    font-size: 20px;
+                    font-size: 17px;
                 }
             }
         }

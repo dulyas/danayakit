@@ -6017,7 +6017,7 @@ var init__4 = __esm({
     init_index_svelte2();
     entry4 = "pages/horizontal/index.svelte-5616cd84.js";
     js4 = ["pages/horizontal/index.svelte-5616cd84.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-3f12ee0e.css"];
+    css8 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -6127,7 +6127,7 @@ var init__6 = __esm({
     init_index_svelte4();
     entry6 = "pages/vertical/index.svelte-cf9ba8f6.js";
     js6 = ["pages/vertical/index.svelte-cf9ba8f6.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-3f12ee0e.css"];
+    css12 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -6141,7 +6141,7 @@ var init_index_svelte5 = __esm({
   ".svelte-kit/output/server/entries/pages/catalog/index.svelte.js"() {
     init_index_13c0de55();
     css13 = {
-      code: ".catalog.svelte-10u16lm.svelte-10u16lm{margin:0 auto}.catalog__item.svelte-10u16lm.svelte-10u16lm{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:15px 40px;margin-bottom:3vh;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-name.svelte-10u16lm{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;text-align:right}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-descr.svelte-10u16lm{text-align:left}.catalog__item-name.svelte-10u16lm.svelte-10u16lm{width:30%;font-size:50px;color:#FFFFFF}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{font-size:21px;color:#FFFFFF;text-align:right;width:60%}.catalog__item.svelte-10u16lm.svelte-10u16lm:hover{background:rgba(0, 0, 0, 0.75)}@media(max-width: 1400px){.catalog__item-name.svelte-10u16lm.svelte-10u16lm{font-size:35px}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{font-size:20px}}@media(max-width: 1024px){.catalog__item.svelte-10u16lm.svelte-10u16lm{height:25%}.catalog__item-name.svelte-10u16lm.svelte-10u16lm{font-size:25px}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{font-size:14px}}@media(max-width: 768px){.catalog__item.svelte-10u16lm.svelte-10u16lm{margin:5vh auto 0;width:75%;min-height:100px;padding:2%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-name.svelte-10u16lm{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-descr.svelte-10u16lm{display:none}.catalog__item-name.svelte-10u16lm.svelte-10u16lm{font-size:25px;text-align:center;width:100%}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{display:none}}@media(max-width: 320px){.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-name.svelte-10u16lm{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-10u16lm:nth-child(2n) .catalog__item-descr.svelte-10u16lm{display:none}.catalog__item-name.svelte-10u16lm.svelte-10u16lm{font-size:20px;text-align:center;width:100%}.catalog__item-descr.svelte-10u16lm.svelte-10u16lm{display:none}}",
+      code: ".catalog.svelte-1r8pc44.svelte-1r8pc44{margin:0 auto}.catalog__item.svelte-1r8pc44.svelte-1r8pc44{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:15px 40px;margin-bottom:3vh;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-1r8pc44:nth-child(2n) .catalog__item-name.svelte-1r8pc44{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;text-align:right}.catalog__item.svelte-1r8pc44:nth-child(2n) .catalog__item-descr.svelte-1r8pc44{text-align:left}.catalog__item-name.svelte-1r8pc44.svelte-1r8pc44{width:30%;font-size:50px;color:#FFFFFF}.catalog__item-descr.svelte-1r8pc44.svelte-1r8pc44{font-size:21px;color:#FFFFFF;text-align:right;width:60%}.catalog__item.svelte-1r8pc44.svelte-1r8pc44:hover{background:rgba(0, 0, 0, 0.75)}@media(max-width: 1400px){.catalog__item-name.svelte-1r8pc44.svelte-1r8pc44{font-size:35px}.catalog__item-descr.svelte-1r8pc44.svelte-1r8pc44{font-size:17px}}@media(max-width: 1024px){.catalog__item.svelte-1r8pc44.svelte-1r8pc44{height:25%}.catalog__item-name.svelte-1r8pc44.svelte-1r8pc44{font-size:25px}.catalog__item-descr.svelte-1r8pc44.svelte-1r8pc44{font-size:14px}}@media(max-width: 768px){.catalog__item.svelte-1r8pc44.svelte-1r8pc44{margin:5vh auto 0;width:75%;min-height:100px;padding:2%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-1r8pc44:nth-child(2n) .catalog__item-name.svelte-1r8pc44{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-1r8pc44:nth-child(2n) .catalog__item-descr.svelte-1r8pc44{display:none}.catalog__item-name.svelte-1r8pc44.svelte-1r8pc44{font-size:25px;text-align:center;width:100%}.catalog__item-descr.svelte-1r8pc44.svelte-1r8pc44{display:none}}@media(max-width: 320px){.catalog__item.svelte-1r8pc44:nth-child(2n) .catalog__item-name.svelte-1r8pc44{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-1r8pc44:nth-child(2n) .catalog__item-descr.svelte-1r8pc44{display:none}.catalog__item-name.svelte-1r8pc44.svelte-1r8pc44{font-size:20px;text-align:center;width:100%}.catalog__item-descr.svelte-1r8pc44.svelte-1r8pc44{display:none}}",
       map: null
     };
     Catalog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6163,9 +6163,9 @@ var init_index_svelte5 = __esm({
         }
       ];
       $$result.css.add(css13);
-      return `<div class="${"container"}"><div class="${"catalog svelte-10u16lm"}">${each(catalogItems, (item) => {
-        return `<a${add_attribute("href", item.url, 0)} class="${"catalog__item svelte-10u16lm"}"><div class="${"catalog__item-name svelte-10u16lm"}">${escape(item.name)}</div>
-                <div class="${"catalog__item-descr svelte-10u16lm"}">${escape(item.descr)}</div>
+      return `<div class="${"container"}"><div class="${"catalog svelte-1r8pc44"}">${each(catalogItems, (item) => {
+        return `<a${add_attribute("href", item.url, 0)} class="${"catalog__item svelte-1r8pc44"}"><div class="${"catalog__item-name svelte-1r8pc44"}">${escape(item.name)}</div>
+                <div class="${"catalog__item-descr svelte-1r8pc44"}">${escape(item.descr)}</div>
             </a>`;
       })}</div>
 </div>`;
@@ -6185,9 +6185,9 @@ var entry7, js7, css14;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_index_svelte5();
-    entry7 = "pages/catalog/index.svelte-b04885a6.js";
-    js7 = ["pages/catalog/index.svelte-b04885a6.js", "chunks/vendor-77a73e11.js"];
-    css14 = ["assets/pages/catalog/index.svelte-58cae145.css"];
+    entry7 = "pages/catalog/index.svelte-0a351eec.js";
+    js7 = ["pages/catalog/index.svelte-0a351eec.js", "chunks/vendor-77a73e11.js"];
+    css14 = ["assets/pages/catalog/index.svelte-6a9e1a75.css"];
   }
 });
 
@@ -6314,7 +6314,7 @@ var init__9 = __esm({
     init_index_svelte7();
     entry9 = "pages/rolled/index.svelte-42e639b6.js";
     js9 = ["pages/rolled/index.svelte-42e639b6.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js"];
-    css18 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-3f12ee0e.css"];
+    css18 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -7866,7 +7866,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-87a56bd1.js", "js": ["start-87a56bd1.js", "chunks/vendor-77a73e11.js"], "css": [] },
+    entry: { "file": "start-36028a26.js", "js": ["start-36028a26.js", "chunks/vendor-77a73e11.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
