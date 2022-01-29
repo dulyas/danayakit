@@ -62,7 +62,7 @@ error => {
 
     <form class="form">
 
-        <div class="descr">
+        <div class="form__descr">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quam magnam provident? Non, corrupti placeat eum minima numquam fuga accusamus earum voluptatibus quidem quibusdam ab nulla nisi maiores, voluptate tempore?
         </div>
 
@@ -105,27 +105,16 @@ error => {
         -webkit-backdrop-filter: blur(4px);
                 backdrop-filter: blur(4px);
         padding: 20px;
-        border-radius: 8px;
-        width: 280px;
-        min-height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        width: 508px;
+        font-size: 20px;
         color: rgba(255, 255, 255, 0.685);
+        &__descr {
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.9);
+        }
         &-input {
             display: block;
-            text-align: center;
-            margin-top: 5px;
+            margin-top: 17px;
             width: 100%;
             &:focus-within {
                 color: white;
@@ -136,14 +125,15 @@ error => {
                 border: none;
                 color: white;
                 height: 30px;
-                border-radius: 8px;
                 outline:none;
                 padding: 0 5px;
                 width: 100%;
+                background: rgba(143, 143, 143, 0.23);
+                backdrop-filter: blur(50px);
             }
             textarea {
                 resize: none;
-                height: 50px;
+                height: 90px;
                 padding: 5px;
             }
         }
@@ -151,12 +141,14 @@ error => {
             margin: 15px auto 0;
             width: 200px;
             height: 40px;
-            color: white;
-            font-size: 20px;
+            color: rgba(255, 255, 255, 0.774);
+            font-size: 27px;
             border: none;
+            border-radius: 9px;
             cursor: pointer;
             &:hover {
                 background-color: black;
+                color: white;
             }
         }
     }

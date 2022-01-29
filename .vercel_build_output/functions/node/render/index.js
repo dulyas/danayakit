@@ -5769,14 +5769,14 @@ ${validate_component(Menu, "Menu").$$render($$result, { menu, open }, {
       return $$rendered;
     });
     css = {
-      code: '.svelte-qhaye1{padding:0;margin:0;-webkit-transition:1s all;-o-transition:1s all;transition:1s all}.bg.svelte-qhaye1{background:url("../img/bg.jpg") center center/cover no-repeat;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:white}main.svelte-qhaye1{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:24px;color:#FFFFFF;margin-top:2%}.container{max-width:1300px;margin:0 auto;padding:0 4%}a{text-decoration:none;color:white}.button{background:rgba(0, 0, 0, 0.5);border-radius:35px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:1s all;-o-transition:1s all;transition:1s all}.button:hover{background:rgba(0, 0, 0, 0.75)}.content.svelte-qhaye1{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto}.footer.svelte-qhaye1{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto}',
+      code: '.svelte-1h1kg8q{padding:0;margin:0;-webkit-transition:1s all;-o-transition:1s all;transition:1s all}.bg.svelte-1h1kg8q{background:url("../img/bg.jpg") center center/cover no-repeat;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;color:white}main.svelte-1h1kg8q{-webkit-box-sizing:border-box;box-sizing:border-box;font-size:24px;color:#FFFFFF;margin-top:2%}.container{max-width:1300px;margin:0 auto;padding:0 4%}a{text-decoration:none;color:white}.button{background:rgba(0, 0, 0, 0.5);border-radius:35px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:1s all;-o-transition:1s all;transition:1s all}.button:hover{background:rgba(0, 0, 0, 0.75)}.content.svelte-1h1kg8q{-webkit-box-flex:1;-ms-flex:1 0 auto;flex:1 0 auto;padding-bottom:25px}.footer.svelte-1h1kg8q{-webkit-box-flex:0;-ms-flex:0 0 auto;flex:0 0 auto}',
       map: null
     };
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css);
-      return `<div class="${"bg svelte-qhaye1"}"><div class="${"content svelte-qhaye1"}"><header class="${"svelte-qhaye1"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}</header>
-	<main class="${"svelte-qhaye1"}">${slots.default ? slots.default({}) : ``}</main></div>
-<footer class="${"footer svelte-qhaye1"}">${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</footer>
+      return `<div class="${"bg svelte-1h1kg8q"}"><div class="${"content svelte-1h1kg8q"}"><header class="${"svelte-1h1kg8q"}">${validate_component(Header, "Header").$$render($$result, {}, {}, {})}</header>
+	<main class="${"svelte-1h1kg8q"}">${slots.default ? slots.default({}) : ``}</main></div>
+<footer class="${"footer svelte-1h1kg8q"}">${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}</footer>
 </div>`;
     });
   }
@@ -5794,9 +5794,9 @@ var entry, js, css2;
 var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     init_layout_svelte();
-    entry = "pages/__layout.svelte-06a319e0.js";
-    js = ["pages/__layout.svelte-06a319e0.js", "chunks/vendor-77a73e11.js", "chunks/inst-46799f41.js"];
-    css2 = ["assets/pages/__layout.svelte-1c9163eb.css"];
+    entry = "pages/__layout.svelte-658fbd4e.js";
+    js = ["pages/__layout.svelte-658fbd4e.js", "chunks/vendor-77a73e11.js", "chunks/inst-46799f41.js"];
+    css2 = ["assets/pages/__layout.svelte-666da6ef.css"];
   }
 });
 
@@ -5860,22 +5860,22 @@ var init_index_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/vyzov-zamershika/index.svelte.js"() {
     init_index_13c0de55();
     css4 = {
-      code: ".call.svelte-1ax76j3.svelte-1ax76j3{max-width:1400px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:left;font-size:15px}.form.svelte-1ax76j3.svelte-1ax76j3{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:20px;border-radius:8px;width:280px;min-height:250px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:rgba(255, 255, 255, 0.685)}.form-input.svelte-1ax76j3.svelte-1ax76j3{display:block;text-align:center;margin-top:5px;width:100%}.form-input.svelte-1ax76j3.svelte-1ax76j3:focus-within{color:white}.form-input.svelte-1ax76j3 input.svelte-1ax76j3,.form-input.svelte-1ax76j3 textarea.svelte-1ax76j3{margin-top:5px;background-color:rgba(255, 255, 255, 0.295);border:none;color:white;height:30px;border-radius:8px;outline:none;padding:0 5px;width:100%}.form-input.svelte-1ax76j3 textarea.svelte-1ax76j3{resize:none;height:50px;padding:5px}.form__button.svelte-1ax76j3.svelte-1ax76j3{margin:15px auto 0;width:200px;height:40px;color:white;font-size:20px;border:none;cursor:pointer}.form__button.svelte-1ax76j3.svelte-1ax76j3:hover{background-color:black}",
+      code: ".call.svelte-1434po2.svelte-1434po2{max-width:1400px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:left;font-size:15px}.form.svelte-1434po2.svelte-1434po2{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:20px;width:508px;font-size:20px;color:rgba(255, 255, 255, 0.685)}.form__descr.svelte-1434po2.svelte-1434po2{margin-bottom:10px;color:rgba(255, 255, 255, 0.9)}.form-input.svelte-1434po2.svelte-1434po2{display:block;margin-top:17px;width:100%}.form-input.svelte-1434po2.svelte-1434po2:focus-within{color:white}.form-input.svelte-1434po2 input.svelte-1434po2,.form-input.svelte-1434po2 textarea.svelte-1434po2{margin-top:5px;background-color:rgba(255, 255, 255, 0.295);border:none;color:white;height:30px;outline:none;padding:0 5px;width:100%;background:rgba(143, 143, 143, 0.23);backdrop-filter:blur(50px)}.form-input.svelte-1434po2 textarea.svelte-1434po2{resize:none;height:90px;padding:5px}.form__button.svelte-1434po2.svelte-1434po2{margin:15px auto 0;width:200px;height:40px;color:rgba(255, 255, 255, 0.774);font-size:27px;border:none;border-radius:9px;cursor:pointer}.form__button.svelte-1434po2.svelte-1434po2:hover{background-color:black;color:white}",
       map: null
     };
     Vyzov_zamershika = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let mail = { name: null, phone: null, message: null };
       $$result.css.add(css4);
-      return `<div class="${"call svelte-1ax76j3"}"><form class="${"form svelte-1ax76j3"}"><div class="${"descr"}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quam magnam provident? Non, corrupti placeat eum minima numquam fuga accusamus earum voluptatibus quidem quibusdam ab nulla nisi maiores, voluptate tempore?
+      return `<div class="${"call svelte-1434po2"}"><form class="${"form svelte-1434po2"}"><div class="${"form__descr svelte-1434po2"}">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora quam magnam provident? Non, corrupti placeat eum minima numquam fuga accusamus earum voluptatibus quidem quibusdam ab nulla nisi maiores, voluptate tempore?
         </div>
 
-        <label class="${"form-input svelte-1ax76j3"}" for="${"name"}">\u0412\u0430\u0448\u0435 \u0438\u043C\u044F *<br>
-            <input name="${"name"}" id="${"name"}" type="${"text"}" required class="${"svelte-1ax76j3"}"${add_attribute("value", mail.name, 0)}></label>
-        <label class="${"form-input svelte-1ax76j3"}" for="${"phone"}">\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D *<br>
-            <input name="${"phone"}" id="${"phone"}" type="${"text"}" required class="${"svelte-1ax76j3"}"${add_attribute("value", mail.phone, 0)}></label>
-        <label class="${"form-input svelte-1ax76j3"}" for="${"message"}">\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439<br>
-            <textarea name="${"message"}" id="${"message"}" cols="${"30"}" rows="${"10"}" class="${"svelte-1ax76j3"}">${""}</textarea></label>
-        <button class="${"form__button button svelte-1ax76j3"}">\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C</button>
+        <label class="${"form-input svelte-1434po2"}" for="${"name"}">\u0412\u0430\u0448\u0435 \u0438\u043C\u044F *<br>
+            <input name="${"name"}" id="${"name"}" type="${"text"}" required class="${"svelte-1434po2"}"${add_attribute("value", mail.name, 0)}></label>
+        <label class="${"form-input svelte-1434po2"}" for="${"phone"}">\u041A\u043E\u043D\u0442\u0430\u043A\u0442\u043D\u044B\u0439 \u0442\u0435\u043B\u0435\u0444\u043E\u043D *<br>
+            <input name="${"phone"}" id="${"phone"}" type="${"text"}" required class="${"svelte-1434po2"}"${add_attribute("value", mail.phone, 0)}></label>
+        <label class="${"form-input svelte-1434po2"}" for="${"message"}">\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0439<br>
+            <textarea name="${"message"}" id="${"message"}" cols="${"30"}" rows="${"10"}" class="${"svelte-1434po2"}">${""}</textarea></label>
+        <button class="${"form__button button svelte-1434po2"}">\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C</button>
         ${``}</form>
 </div>`;
     });
@@ -5894,16 +5894,16 @@ var entry3, js3, css5;
 var init__3 = __esm({
   ".svelte-kit/output/server/nodes/3.js"() {
     init_index_svelte();
-    entry3 = "pages/vyzov-zamershika/index.svelte-fc7eb387.js";
-    js3 = ["pages/vyzov-zamershika/index.svelte-fc7eb387.js", "chunks/vendor-77a73e11.js"];
-    css5 = ["assets/pages/vyzov-zamershika/index.svelte-a8bbb583.css"];
+    entry3 = "pages/vyzov-zamershika/index.svelte-692b3ad3.js";
+    js3 = ["pages/vyzov-zamershika/index.svelte-692b3ad3.js", "chunks/vendor-77a73e11.js"];
+    css5 = ["assets/pages/vyzov-zamershika/index.svelte-95ef0a66.css"];
   }
 });
 
-// .svelte-kit/output/server/chunks/catalogItem-a92fd248.js
+// .svelte-kit/output/server/chunks/catalogItem-88fb8c16.js
 var css$22, PrevButton, css$12, NextButton, css6, CatalogItem;
-var init_catalogItem_a92fd248 = __esm({
-  ".svelte-kit/output/server/chunks/catalogItem-a92fd248.js"() {
+var init_catalogItem_88fb8c16 = __esm({
+  ".svelte-kit/output/server/chunks/catalogItem-88fb8c16.js"() {
     init_index_13c0de55();
     css$22 = {
       code: ".arrow-6.svelte-1vjjrx5.svelte-1vjjrx5{margin:20px}.arrow-6.svelte-1vjjrx5 svg.svelte-1vjjrx5{width:80px;height:auto;margin:0 2rem;cursor:pointer;overflow:visible}.arrow-6.svelte-1vjjrx5 svg polygon.svelte-1vjjrx5,.arrow-6.svelte-1vjjrx5 svg path.svelte-1vjjrx5{-webkit-transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);-o-transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);transition:all 0.5s cubic-bezier(0.2, 1, 0.3, 1);fill:rgba(255, 255, 255, 0.5)}.arrow-6.svelte-1vjjrx5 svg:hover polygon.svelte-1vjjrx5,.arrow-6.svelte-1vjjrx5 svg:hover path.svelte-1vjjrx5{-webkit-transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);-o-transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);transition:all 1s cubic-bezier(0.2, 1, 0.3, 1);fill:rgb(255, 255, 255, 0.9)}.arrow-6.svelte-1vjjrx5 svg:hover .arrow-6-pl.svelte-1vjjrx5{-webkit-animation:svelte-1vjjrx5-arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;animation:svelte-1vjjrx5-arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite}.arrow-6.svelte-1vjjrx5 svg:hover .arrow-6-pl-fixed.svelte-1vjjrx5{-webkit-animation:svelte-1vjjrx5-arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;animation:svelte-1vjjrx5-arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite}@-webkit-keyframes svelte-1vjjrx5-arrow-6-anim{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}5%{-webkit-transform:translateX(-0.1rem);transform:translateX(-0.1rem)}100%{-webkit-transform:translateX(1rem);transform:translateX(1rem);opacity:0}}@keyframes svelte-1vjjrx5-arrow-6-anim{0%{opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}5%{-webkit-transform:translateX(-0.1rem);transform:translateX(-0.1rem)}100%{-webkit-transform:translateX(1rem);transform:translateX(1rem);opacity:0}}@-webkit-keyframes svelte-1vjjrx5-arrow-6-fixed-anim{5%{opacity:0}20%{opacity:0.4}100%{opacity:1}}@keyframes svelte-1vjjrx5-arrow-6-fixed-anim{5%{opacity:0}20%{opacity:0.4}100%{opacity:1}}@media(max-width: 768px){.arrow-6.svelte-1vjjrx5 svg.svelte-1vjjrx5{width:50px}}",
@@ -5924,7 +5924,7 @@ var init_catalogItem_a92fd248 = __esm({
 </div>`;
     });
     css6 = {
-      code: ".product.svelte-1706ijh{transition:1s all;width:100%;display:flex;justify-content:space-between;margin:0 auto;position:relative;padding:30px;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);text-shadow:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)}.product__text.svelte-1706ijh{width:43%}.product__img.svelte-1706ijh{width:100%}.product__name.svelte-1706ijh{font-size:40px}.product__subname.svelte-1706ijh{margin-top:15px;font-size:30px}.product__descr.svelte-1706ijh{margin-top:25px;font-size:23px}.product__buttons.svelte-1706ijh{position:absolute;display:flex;bottom:0;left:50%;transform:translateX(-50%);justify-content:center}.product__wrapper.svelte-1706ijh{position:relative;width:53%;align-self:center}@media(max-width: 1060px){.product.svelte-1706ijh{flex-direction:column;align-items:center}.product__text.svelte-1706ijh{width:95%}.product__name.svelte-1706ijh{font-size:30px}.product__subname.svelte-1706ijh{font-size:20px}.product__descr.svelte-1706ijh{font-size:15px}.product__wrapper.svelte-1706ijh{margin-top:2%;width:95%}}@media(max-width: 450px){.product.svelte-1706ijh{flex-direction:column;align-items:center;padding:5px}.product__text.svelte-1706ijh{width:95%}.product__wrapper.svelte-1706ijh{margin-top:5%;width:95%}}",
+      code: ".product.svelte-3qryee{transition:1s all;width:100%;display:flex;justify-content:space-between;margin:0 auto;position:relative;padding:30px;background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}.product__text.svelte-3qryee{width:43%}.product__img.svelte-3qryee{width:100%}.product__name.svelte-3qryee{font-size:40px}.product__subname.svelte-3qryee{margin-top:15px;font-size:30px}.product__descr.svelte-3qryee{margin-top:25px;font-size:23px}.product__buttons.svelte-3qryee{position:absolute;display:flex;bottom:0;left:50%;transform:translateX(-50%);justify-content:center}.product__wrapper.svelte-3qryee{position:relative;width:53%;align-self:center}@media(max-width: 1060px){.product.svelte-3qryee{flex-direction:column;align-items:center}.product__text.svelte-3qryee{width:95%}.product__name.svelte-3qryee{font-size:30px}.product__subname.svelte-3qryee{font-size:20px}.product__descr.svelte-3qryee{font-size:15px}.product__wrapper.svelte-3qryee{margin-top:2%;width:95%}}@media(max-width: 450px){.product.svelte-3qryee{flex-direction:column;align-items:center;padding:5px}.product__text.svelte-3qryee{width:95%}.product__wrapper.svelte-3qryee{margin-top:5%;width:95%}}",
       map: null
     };
     CatalogItem = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5937,11 +5937,11 @@ var init_catalogItem_a92fd248 = __esm({
         $$bindings.name(name);
       $$result.css.add(css6);
       return `${each(products, (product, i2) => {
-        return `<div class="${"container"}"><div style="${"display: " + escape(i2 === index ? "flex" : "none")}" class="${"product svelte-1706ijh"}"><div class="${"product__text svelte-1706ijh"}"><div class="${"product__name svelte-1706ijh"}">${escape(name)}</div>
-                    <div class="${"product__subname svelte-1706ijh"}">${escape(product.name)}</div>
-                    <div class="${"product__descr svelte-1706ijh"}"><!-- HTML_TAG_START -->${product.descr}<!-- HTML_TAG_END --></div></div>
-                <div class="${"product__wrapper svelte-1706ijh"}"><img class="${"product__img svelte-1706ijh"}"${add_attribute("src", product.url, 0)} alt="${""}">
-                    <div class="${"product__buttons svelte-1706ijh"}">${validate_component(PrevButton, "PrevButton").$$render($$result, {}, {}, {})}
+        return `<div class="${"container"}"><div style="${"display: " + escape(i2 === index ? "flex" : "none")}" class="${"product svelte-3qryee"}"><div class="${"product__text svelte-3qryee"}"><div class="${"product__name svelte-3qryee"}">${escape(name)}</div>
+                    <div class="${"product__subname svelte-3qryee"}">${escape(product.name)}</div>
+                    <div class="${"product__descr svelte-3qryee"}"><!-- HTML_TAG_START -->${product.descr}<!-- HTML_TAG_END --></div></div>
+                <div class="${"product__wrapper svelte-3qryee"}"><img class="${"product__img svelte-3qryee"}"${add_attribute("src", product.url, 0)} alt="${""}">
+                    <div class="${"product__buttons svelte-3qryee"}">${validate_component(PrevButton, "PrevButton").$$render($$result, {}, {}, {})}
                         ${validate_component(NextButton, "NextButton").$$render($$result, {}, {}, {})}
                     </div></div>
             </div>
@@ -5972,7 +5972,7 @@ var css7, Horizontal;
 var init_index_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/horizontal/index.svelte.js"() {
     init_index_13c0de55();
-    init_catalogItem_a92fd248();
+    init_catalogItem_88fb8c16();
     init_zebra_bg_png();
     css7 = {
       code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
@@ -6015,9 +6015,9 @@ var entry4, js4, css8;
 var init__4 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_index_svelte2();
-    entry4 = "pages/horizontal/index.svelte-f3fb9a48.js";
-    js4 = ["pages/horizontal/index.svelte-f3fb9a48.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-f982eba6.js", "chunks/zebra__bg-b755d45f.js"];
-    css8 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-116fa8b2.css"];
+    entry4 = "pages/horizontal/index.svelte-5616cd84.js";
+    js4 = ["pages/horizontal/index.svelte-5616cd84.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js", "chunks/zebra__bg-b755d45f.js"];
+    css8 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -6082,7 +6082,7 @@ var css11, Vertical;
 var init_index_svelte4 = __esm({
   ".svelte-kit/output/server/entries/pages/vertical/index.svelte.js"() {
     init_index_13c0de55();
-    init_catalogItem_a92fd248();
+    init_catalogItem_88fb8c16();
     init_zebra_bg_png();
     css11 = {
       code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
@@ -6125,9 +6125,9 @@ var entry6, js6, css12;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/6.js"() {
     init_index_svelte4();
-    entry6 = "pages/vertical/index.svelte-9ec9e5cd.js";
-    js6 = ["pages/vertical/index.svelte-9ec9e5cd.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-f982eba6.js", "chunks/zebra__bg-b755d45f.js"];
-    css12 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-116fa8b2.css"];
+    entry6 = "pages/vertical/index.svelte-cf9ba8f6.js";
+    js6 = ["pages/vertical/index.svelte-cf9ba8f6.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js", "chunks/zebra__bg-b755d45f.js"];
+    css12 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -6141,7 +6141,7 @@ var init_index_svelte5 = __esm({
   ".svelte-kit/output/server/entries/pages/catalog/index.svelte.js"() {
     init_index_13c0de55();
     css13 = {
-      code: ".catalog.svelte-15dx4eq.svelte-15dx4eq{margin:0 auto}.catalog__item.svelte-15dx4eq.svelte-15dx4eq{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:15px 40px;margin-top:5vh;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-name.svelte-15dx4eq{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;text-align:right}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-descr.svelte-15dx4eq{text-align:left}.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{width:30%;font-size:50px;color:#FFFFFF}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{font-size:23px;color:#FFFFFF;text-align:right;width:60%}.catalog__item.svelte-15dx4eq.svelte-15dx4eq:hover{background:rgba(0, 0, 0, 0.75)}@media(max-width: 1400px){.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{font-size:35px}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{font-size:20px}}@media(max-width: 1024px){.catalog__item.svelte-15dx4eq.svelte-15dx4eq{height:25%}.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{font-size:25px}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{font-size:14px}}@media(max-width: 768px){.catalog__item.svelte-15dx4eq.svelte-15dx4eq{margin:5vh auto 0;width:75%;min-height:100px;padding:2%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-name.svelte-15dx4eq{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-descr.svelte-15dx4eq{display:none}.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{font-size:25px;text-align:center;width:100%}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{display:none}}@media(max-width: 320px){.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-name.svelte-15dx4eq{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-15dx4eq:nth-child(2n) .catalog__item-descr.svelte-15dx4eq{display:none}.catalog__item-name.svelte-15dx4eq.svelte-15dx4eq{font-size:20px;text-align:center;width:100%}.catalog__item-descr.svelte-15dx4eq.svelte-15dx4eq{display:none}}",
+      code: ".catalog.svelte-1hyf4zs.svelte-1hyf4zs{margin:0 auto}.catalog__item.svelte-1hyf4zs.svelte-1hyf4zs{background:rgba(0, 0, 0, 0.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);padding:15px 40px;margin-bottom:3vh;-webkit-transition:1s all;-o-transition:1s all;transition:1s all;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-name.svelte-1hyf4zs{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;text-align:right}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-descr.svelte-1hyf4zs{text-align:left}.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{width:30%;font-size:50px;color:#FFFFFF}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{font-size:23px;color:#FFFFFF;text-align:right;width:60%}.catalog__item.svelte-1hyf4zs.svelte-1hyf4zs:hover{background:rgba(0, 0, 0, 0.75)}@media(max-width: 1400px){.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{font-size:35px}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{font-size:20px}}@media(max-width: 1024px){.catalog__item.svelte-1hyf4zs.svelte-1hyf4zs{height:25%}.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{font-size:25px}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{font-size:14px}}@media(max-width: 768px){.catalog__item.svelte-1hyf4zs.svelte-1hyf4zs{margin:5vh auto 0;width:75%;min-height:100px;padding:2%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-name.svelte-1hyf4zs{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-descr.svelte-1hyf4zs{display:none}.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{font-size:25px;text-align:center;width:100%}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{display:none}}@media(max-width: 320px){.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-name.svelte-1hyf4zs{-webkit-box-ordinal-group:1;-ms-flex-order:0;order:0;text-align:center}.catalog__item.svelte-1hyf4zs:nth-child(2n) .catalog__item-descr.svelte-1hyf4zs{display:none}.catalog__item-name.svelte-1hyf4zs.svelte-1hyf4zs{font-size:20px;text-align:center;width:100%}.catalog__item-descr.svelte-1hyf4zs.svelte-1hyf4zs{display:none}}",
       map: null
     };
     Catalog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -6163,9 +6163,9 @@ var init_index_svelte5 = __esm({
         }
       ];
       $$result.css.add(css13);
-      return `<div class="${"container"}"><div class="${"catalog svelte-15dx4eq"}">${each(catalogItems, (item) => {
-        return `<a${add_attribute("href", item.url, 0)} class="${"catalog__item svelte-15dx4eq"}"><div class="${"catalog__item-name svelte-15dx4eq"}">${escape(item.name)}</div>
-                <div class="${"catalog__item-descr svelte-15dx4eq"}">${escape(item.descr)}</div>
+      return `<div class="${"container"}"><div class="${"catalog svelte-1hyf4zs"}">${each(catalogItems, (item) => {
+        return `<a${add_attribute("href", item.url, 0)} class="${"catalog__item svelte-1hyf4zs"}"><div class="${"catalog__item-name svelte-1hyf4zs"}">${escape(item.name)}</div>
+                <div class="${"catalog__item-descr svelte-1hyf4zs"}">${escape(item.descr)}</div>
             </a>`;
       })}</div>
 </div>`;
@@ -6185,9 +6185,9 @@ var entry7, js7, css14;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/7.js"() {
     init_index_svelte5();
-    entry7 = "pages/catalog/index.svelte-a2fa5da7.js";
-    js7 = ["pages/catalog/index.svelte-a2fa5da7.js", "chunks/vendor-77a73e11.js"];
-    css14 = ["assets/pages/catalog/index.svelte-19f62f8c.css"];
+    entry7 = "pages/catalog/index.svelte-53208f49.js";
+    js7 = ["pages/catalog/index.svelte-53208f49.js", "chunks/vendor-77a73e11.js"];
+    css14 = ["assets/pages/catalog/index.svelte-4cee9209.css"];
   }
 });
 
@@ -6259,7 +6259,7 @@ var zebraSrc2, css17, Rolled;
 var init_index_svelte7 = __esm({
   ".svelte-kit/output/server/entries/pages/rolled/index.svelte.js"() {
     init_index_13c0de55();
-    init_catalogItem_a92fd248();
+    init_catalogItem_88fb8c16();
     zebraSrc2 = "/_app/assets/zebra__bg-23d49d80.png";
     css17 = {
       code: "div.svelte-1gpx614{display:flex;flex-direction:column;min-height:74vh;justify-content:center;align-items:center}",
@@ -6312,9 +6312,9 @@ var entry9, js9, css18;
 var init__9 = __esm({
   ".svelte-kit/output/server/nodes/9.js"() {
     init_index_svelte7();
-    entry9 = "pages/rolled/index.svelte-b71cb6fa.js";
-    js9 = ["pages/rolled/index.svelte-b71cb6fa.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-f982eba6.js"];
-    css18 = ["assets/pages/horizontal/index.svelte-c381877b.css", "assets/catalogItem-116fa8b2.css"];
+    entry9 = "pages/rolled/index.svelte-42e639b6.js";
+    js9 = ["pages/rolled/index.svelte-42e639b6.js", "chunks/vendor-77a73e11.js", "chunks/catalogItem-521fdd1e.js"];
+    css18 = ["assets/pages/vertical/index.svelte-0b91f264.css", "assets/catalogItem-3f12ee0e.css"];
   }
 });
 
@@ -7866,7 +7866,7 @@ var manifest = {
   assets: new Set([]),
   _: {
     mime: {},
-    entry: { "file": "start-212c9607.js", "js": ["start-212c9607.js", "chunks/vendor-77a73e11.js"], "css": [] },
+    entry: { "file": "start-869707dd.js", "js": ["start-869707dd.js", "chunks/vendor-77a73e11.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

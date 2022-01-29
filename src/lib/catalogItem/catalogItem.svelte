@@ -64,8 +64,7 @@ if (index > 0) {
     background: rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    &__text {
+  &__text {
         width: 43%;
     } 
     &__img {

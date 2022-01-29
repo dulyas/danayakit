@@ -42,7 +42,7 @@ import { fade } from 'svelte/transition';
             -webkit-backdrop-filter: blur(4px);
                     backdrop-filter: blur(4px);
             padding: 15px 40px;
-            margin-top: 5vh;
+            margin-bottom: 3vh;
             -webkit-transition: 1s all;
             -o-transition: 1s all;
             transition: 1s all;
