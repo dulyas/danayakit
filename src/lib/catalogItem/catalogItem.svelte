@@ -1,69 +1,81 @@
 <script>
-import { fade, blur, fly, slide, scale, draw, crossfade } from 'svelte/transition';
-import PrevButton from './prevButton.svelte';
-import NextButton from './nextButton.svelte';
-
-
+import { fade } from 'svelte/transition';
+import { Swiper, SwiperSlide } from 'swiper/svelte';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/autoplay';
 export let products;
 export let name;
-let index = 0;
 
-function next() {
 
-if (index < products.length-1) {
-        index++;
-    } else {
-        index = 0;
-    }
-}
+let swiper;
 
-function prev() {
-
-if (index > 0) {
-        index--;
-    } else {
-    index = products.length-1;
-    }
+function getImage(url) {
+    return new Promise(function(resolve, reject){
+        const img = new Image()
+        img.onload = function(){
+            resolve(url)
+        }
+        img.src = url
+    })
 }
 
 </script>
 
-{#each products as product, i}
-    <div class="container">
-        {#key index}
-            <div in:fade style='display: {i === index ? "flex" : "none"}' class="product">
+
+
+<div class="container wrapper">
+    <Swiper
+    spaceBetween={0}
+    modules={[Autoplay]}
+    autoplay={{delay: 2000, pauseOnMouseEnter: false, disableOnInteraction: true}}
+    slidesPerView={1}
+    centeredSlides={true}
+    centeredSlidesBounds={true}
+    on:slideChange={() => console.log('slide change')}
+    on:swiper={(e) => swiper = e.detail[0]}
+    >
+    {#each products as product, i}
+        <SwiperSlide>
+            <div in:fade="{{duration: 200}}" class="product">
                 <div class="product__text">
                     <div class="product__name">{name}</div>
                     <div class="product__subname">{product.name}</div>
                     <div class="product__descr">{@html product.descr}</div>
                 </div>
-                <div class="product__wrapper">
-                    <img class="product__img" src={product.url} alt="">
-                    <div class="product__buttons">
-                        <PrevButton on:click={prev}/>
-                        <NextButton on:click={next}/>
+                {#await getImage(product.url)}                      
+                    <div class="product__wrapper">
+                        123
                     </div>
-                </div>
+                {:then url} 
+                    <div class="product__wrapper">
+                        <img class="product__img" src={url} alt="">
+                    </div>
+                {/await}
             </div>
-        {/key}
-    </div>
-{/each}
+        </SwiperSlide>
+    {/each}
+    </Swiper>
+</div>
 
 
 <style lang='scss'>
 
-
 .product {
-    transition: 1s all;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0 auto;
     position: relative;
     padding: 30px;
     background: rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
+    will-change: transform;
   &__text {
         width: 43%;
     } 
@@ -79,29 +91,99 @@ if (index > 0) {
     }
     &__descr {
         margin-top: 25px;
-        font-size: 23px;
+        font-size: 18px;
     }
     &__buttons {
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
-        justify-content: center;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     &__wrapper {
     position: relative;
     width: 53%;
-    align-self: center;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     }
 }
+
+@media (max-width: 1440px) {
+    .product {
+    width: 100%;
+    max-height: 68vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 35px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+  &__text {
+        width: 48%;
+    } 
+    &__img {
+        // width: 100%;
+    }
+    &__name {
+        font-size: 35px;
+    }
+    &__subname {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    &__descr {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    &__buttons {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    &__wrapper {
+    position: relative;
+    width: 47%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    }
+}
+}
+
 @media (max-width: 1060px) {
     
 .product {
-    flex-direction: column;
-    align-items: center;
+    max-height: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     &__text {
-        width: 95%;
+        width: 100%;
     } 
     &__img {
 
@@ -120,7 +202,7 @@ if (index > 0) {
     }
     &__wrapper {
         margin-top: 2%;
-        width: 95%;
+        width: 100%;
     }
 }
 }
@@ -128,9 +210,14 @@ if (index > 0) {
 @media (max-width: 450px) {
     
     .product {
-        flex-direction: column;
-        align-items: center;
-        padding: 5px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 15px;
         &__text {
             width: 95%;
         } 
@@ -152,9 +239,14 @@ if (index > 0) {
         &__wrapper {
             margin-top: 5%;
             width: 95%;
+            align-self: center;
+            -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         }
     }
     }
     
+
+
 
 </style>

@@ -3,17 +3,15 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Svelte demo app" />
-		<!-- <link rel="icon" href="/favicon.ico" /> -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-		<link href="https://db.onlinewebfonts.com/c/a163d087c4bfdff182eb1b4fcc595798?family=Sansation" rel="stylesheet" type="text/css"/>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/base.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/types/spin.css" />	
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#ff8248">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<title>Жалюзи Даная</title>
 		%svelte.head%
 	</head>
-	<body>
-		<div id="svelte">%svelte.body%</div>
-	</body>
+	<div id="body-wrapper">
+		<body>
+			<div id="svelte">%svelte.body%</div>
+		</body>
+	</div>
 </html>

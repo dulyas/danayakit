@@ -1,101 +1,209 @@
-<script>
-    import { fade, blur, fly, slide, scale, draw, crossfade } from 'svelte/transition';
-    let visible = true;
-    const photos = [
-        'https://sun9-26.userapi.com/impg/BELZohA348Lq-TCPzs1m2IGN5czLFUy8MzSyOw/gzwxZ2OMToI.jpg?size=900x675&quality=95&sign=7f581d4fe4e73f6a4593db72039c16fe&type=album',
-        'https://sun9-38.userapi.com/impg/bYImssiEfAMydiKmIAxp8Kfw0ng14gdECN9JAQ/xgKcoRuLHlY.jpg?size=900x675&quality=95&sign=c10a29b5dff5063ea472f9e04b9f7778&type=album',
-        'https://sun9-26.userapi.com/impg/BELZohA348Lq-TCPzs1m2IGN5czLFUy8MzSyOw/gzwxZ2OMToI.jpg?size=900x675&quality=95&sign=7f581d4fe4e73f6a4593db72039c16fe&type=album',
-        'https://sun9-38.userapi.com/impg/bYImssiEfAMydiKmIAxp8Kfw0ng14gdECN9JAQ/xgKcoRuLHlY.jpg?size=900x675&quality=95&sign=c10a29b5dff5063ea472f9e04b9f7778&type=album',
-        'https://sun9-26.userapi.com/impg/BELZohA348Lq-TCPzs1m2IGN5czLFUy8MzSyOw/gzwxZ2OMToI.jpg?size=900x675&quality=95&sign=7f581d4fe4e73f6a4593db72039c16fe&type=album',
-        'https://sun9-38.userapi.com/impg/bYImssiEfAMydiKmIAxp8Kfw0ng14gdECN9JAQ/xgKcoRuLHlY.jpg?size=900x675&quality=95&sign=c10a29b5dff5063ea472f9e04b9f7778&type=album',
-        'https://sun9-26.userapi.com/impg/BELZohA348Lq-TCPzs1m2IGN5czLFUy8MzSyOw/gzwxZ2OMToI.jpg?size=900x675&quality=95&sign=7f581d4fe4e73f6a4593db72039c16fe&type=album',
-        'https://sun9-38.userapi.com/impg/bYImssiEfAMydiKmIAxp8Kfw0ng14gdECN9JAQ/xgKcoRuLHlY.jpg?size=900x675&quality=95&sign=c10a29b5dff5063ea472f9e04b9f7778&type=album',
-        'https://sun9-26.userapi.com/impg/BELZohA348Lq-TCPzs1m2IGN5czLFUy8MzSyOw/gzwxZ2OMToI.jpg?size=900x675&quality=95&sign=7f581d4fe4e73f6a4593db72039c16fe&type=album',
-        'https://sun9-38.userapi.com/impg/bYImssiEfAMydiKmIAxp8Kfw0ng14gdECN9JAQ/xgKcoRuLHlY.jpg?size=900x675&quality=95&sign=c10a29b5dff5063ea472f9e04b9f7778&type=album',
-        'https://sun9-26.userapi.com/impg/BELZohA348Lq-TCPzs1m2IGN5czLFUy8MzSyOw/gzwxZ2OMToI.jpg?size=900x675&quality=95&sign=7f581d4fe4e73f6a4593db72039c16fe&type=album',
-        'https://sun9-38.userapi.com/impg/bYImssiEfAMydiKmIAxp8Kfw0ng14gdECN9JAQ/xgKcoRuLHlY.jpg?size=900x675&quality=95&sign=c10a29b5dff5063ea472f9e04b9f7778&type=album',
-        'https://sun9-51.userapi.com/impg/G03OI2SibWNT5wYXwjTQJZabuQGpXfnubhqWJg/gasMCJxd-BM.jpg?size=747x769&quality=95&sign=58064bc35a6c3728a8d4fc19690d75a0&type=album',
-        'https://sun9-51.userapi.com/impg/G03OI2SibWNT5wYXwjTQJZabuQGpXfnubhqWJg/gasMCJxd-BM.jpg?size=747x769&quality=95&sign=58064bc35a6c3728a8d4fc19690d75a0&type=album',
-    ];
-    let current = photos[0];
-    function handleClick(i) {
-        current = photos[i];
+<script>  
+import { Swiper, SwiperSlide } from 'swiper/svelte';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import 'swiper/css';
+import Loading from "./loading.svelte";
+import { fade } from 'svelte/transition';
+import { onMount } from 'svelte';
+import { browser } from '$app/env';
+// import full from './full.svg';
+import full2 from './full.png';
+
+
+let slides = [];
+let originals = [];
+let photos;
+let active;
+
+
+let isMobile;
+let width;
+let swiper;
+
+
+
+$: if (browser && width < 600) {
+    isMobile = true;
+} else {
+    isMobile = false;
+
+};
+
+
+
+async function getPhotos() {
+	const photos = await fetch('https://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=667d78debe6b95018e501bf32f827313&user_id=194992154%40N08&extras=url_o&format=json&nojsoncallback=1');
+	if (photos.ok) {
+		return photos.json();
+	}
+}
+
+onMount(async () => {
+    const result = await getPhotos();
+    photos = result.photos.photo;
+    getPhotosUrls('All');
+
+});
+
+
+
+let rerender = false
+
+
+function getPhotosUrls(type) {
+    rerender = !rerender
+    slides = []
+    originals = []
+    if (type === 'All') {
+        slides = photos.map(item => `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_b.jpg`);
+        originals = photos.map(item => item.url_o);
+        active = 'All';
+    } else {
+        const sorted = photos.filter(photo => photo.title === type);
+        slides = sorted.map(item => `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_b.jpg`);
+        originals = sorted.map( item => item.url_o);
+        active = type;
     }
+    console.log(slides, originals)
+
+
+
+
+}
+
+
 </script>
 
+<svelte:window bind:innerWidth={width}/>
 
-<div class="container">
-    <div in:fade="{{duration: 1000}}" class="gallery">
-        {#key current}
-        <div in:fade class="gallery__current">
-            <img  src={current} alt="">
-        </div>
-        {/key}
-        <div class="gallery__items">
-            {#each photos as photo, i}
-            <img 
-            class:active="{current === photos[i]}"
-            on:click={() => handleClick(i)} src={photo} alt="">
-            {/each}
-        </div>
+
+{#if !slides.length}
+    <Loading/>
+{:else}
+{#key rerender}
+    <div in:fade={{duration: 200}} class="container">
+            <div class="slider_big">
+                <Swiper
+                spaceBetween={isMobile ? 15 : 0}
+                slidesPerView={1}
+                centeredSlides={true}
+                on:swiper={(e) => swiper = e.detail[0]}
+                modules={[Autoplay]}
+                autoplay={{delay: 2000, pauseOnMouseEnter: false, disableOnInteraction: true}}
+                >
+                {#each slides as slide, i}
+                    <SwiperSlide>
+                        <div class="slide__wrapper">
+                            <div class="img-wrapper">
+                                <div 
+                                class="left"
+                                on:click={() => swiper.slideTo(i - 1)}
+                                >лево</div>
+                                <div 
+                                class="right"
+                                on:click={() => swiper.slideTo(i + 1)}
+                                >право</div>
+                                <a href={originals[i]}
+                                style={'position: absolute; z-index: 99; right: 0; top: 0;'}
+                                class='full'>
+                                    <img src={full2} alt="full" style="width: 30px;">
+                                </a>
+                                <img src={slide} alt="slide">
+                            </div>
+                        
+                        </div>
+                    </SwiperSlide>
+                {/each}
+                </Swiper>
+            </div>
+    </div> 
+    <div class="sort-buttons">
+        <button class='button sort-buttons-item'
+        class:active-button="{active === 'All'}"
+        on:click={() => getPhotosUrls('All')}>Показать все</button>
+        <button class='button sort-buttons-item'
+        class:active-button="{active === 'H'}"
+        on:click={() => getPhotosUrls('H')}>Показать только горизонатльные</button>
+        <button class='button sort-buttons-item'
+        class:active-button="{active === 'V'}"
+        on:click={() => getPhotosUrls('V')}>Показать только вертикальные</button>
+        <button class='button sort-buttons-item'
+        class:active-button="{active === 'R'}"
+        on:click={() => getPhotosUrls('R')}>Показать только рулонные</button>
     </div>
-</div>
+{/key}
+{/if}
 
-<style lang='scss'>
-    .gallery {
-        &__current {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            img {
-                border-radius: 3px;
-                max-height: calc(60vh - 35px);
-                max-width: 95%;
-            }
+
+
+
+<style lang="scss">
+
+    .slide__wrapper {
+        max-height: 62vh;
+        position: relative;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        will-change: transform;
+        .img-wrapper {
+            position: relative;
         }
-        &__items {
-            border-radius: 3px;
-            margin: 15px auto 0;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+        .left {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            z-index: 98;
+            opacity: 0;
+        }
+        .right {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            z-index: 98;
+            opacity: 0;
+        }
+        img {
+            max-height: 61vh;
+            align-self: center;
             max-width: 100%;
-            overflow-x: scroll;
-            min-height: 15vh;
-            background: rgba(0, 0, 0, 0.5);
-        -webkit-backdrop-filter: blur(4px);
-                backdrop-filter: blur(4px);
-            &::-webkit-scrollbar {
-                width: 7px;
-                background-color: rgba(0, 0, 0, 0.5);
-                border-radius: 8px;
-                height: 19px;
-            }
-            &::-webkit-scrollbar-thumb {
-                background-color: #ffffff2d;
-                border-radius: 8px;
-            }
-            &::-webkit-scrollbar-track {
-                box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-                -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
-            }
-            img {
-                height: 10vh;
-                margin: 0 5px;
-                cursor: pointer;
+        }
+        // margin-left: 15%;
+        .full {
+            opacity: 0.5;
+            transition: opacity .5s;
+            &:hover {
+                opacity: 1;
             }
         }
     }
-    .active {
-		border: 2px solid rgb(255, 0, 0);
-	}
+
+
+
+.sort-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto 0;
+    &-item {
+        margin: 5px 15px;
+        padding: 15px;
+        height: 25px;
+        color: white;
+        width: 240px;
+        cursor: pointer;
+    }
+    .active-button {
+        background: black;
+        transform: scale(1.03);
+    }
+}
+
+
 </style>

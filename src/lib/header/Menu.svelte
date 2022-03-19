@@ -3,18 +3,18 @@
     import { quadOut } from 'svelte/easing';
     import vkSrc from '$lib/footer/vk.svg';
     import instSrc from '$lib/footer/inst.svg';
+    import { browser } from '$app/env';
+    import { getContext } from 'svelte';
 
     export let open;
     export let menu;
 
-
-    
-    //  $: document.body.style.overflow = open ? 'hidden': '';
-    
 </script>
 
+
 {#if open}
-    <div transition:scale>
+    <div
+    transition:scale>
         {#each menu as link, i}
             <p>
                 <a on:click={() => open = !open} href={link.url} transition:fly={{ y: -15, delay: 50 * i }}>
@@ -39,10 +39,11 @@
 
 <style lang="scss">
 
+
 div {
         z-index: 999;
         width: 100vw;
-        height: 10%;
+        height: 75px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -55,12 +56,11 @@ div {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        -webkit-transition: 1s all;
-        -o-transition: 1s all;
-        transition: 1s all;
         border-bottom: black;
         -webkit-backdrop-filter: blur(44px);
                 backdrop-filter: blur(44px);
+        touch-action: none;
+        -ms-touch-action: none;
     }
 
     .soc-items {
@@ -69,20 +69,19 @@ div {
 
     @media (max-width: 1000px) {
         div {
-            font-size: 1.3rem;
-            height: 10%;
-            -webkit-backdrop-filter: blur(44px);
-                    backdrop-filter: blur(44px);
+            font-size: 1rem;
+                    -webkit-backdrop-filter: blur(44px);
+                            backdrop-filter: blur(44px);
         }
     }
 
  
     @media (max-width: 500px) {
         div {
+            position: absolute;
             left: 50%;
             font-size: 1.5rem;
             -webkit-transform: translateX(-50%);
-                -ms-transform: translateX(-50%);
                     transform: translateX(-50%);
             width: 100%;
             height: 100vh;
@@ -108,10 +107,22 @@ div {
         }
         
         .soc-items {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 8vh;
         width: 30vw;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     }   
+
+    @media (max-width: 350px) {
+        p {
+            font-size: 0.9rem;
+        }
+    }   
+
+
 </style>

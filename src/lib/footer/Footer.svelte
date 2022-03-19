@@ -25,7 +25,7 @@
 
 <style lang='scss'>
 .footer {
-    height: 8vh;
+    height: 65px;
     background: rgba(0, 0, 0, 0.5);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -39,10 +39,7 @@
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
     &-info {
-        font-style: normal;
-        font-weight: normal;
         font-size: 15px;
-        line-height: 18px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -81,6 +78,9 @@
     }
 
     @media (max-width: 1400px) {
+        .footer {
+            height: 55px;
+        }
         .footer-info {
             display: none;
         }
@@ -88,7 +88,7 @@
     @media (max-width: 480px) {
         .footer {
             display: none;
-            height: 12vh;
         }
     }
+
 </style>

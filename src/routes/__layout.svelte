@@ -1,9 +1,21 @@
 <script>
 	import Footer from '$lib/footer/Footer.svelte';
 	import Header from '$lib/header/Header.svelte';
-	import '../app.css';
+	import favicon from '../favicon.ico';
+	import { browser } from '$app/env';
+	import { writable } from 'svelte/store';
+	import { setContext } from 'svelte';
+
+
+
+
 
 </script>
+
+
+<svelte:head>
+	<link rel="icon" href={favicon} />
+</svelte:head>
 
 <div class="bg">
 	<div class="content">
@@ -21,79 +33,83 @@
 
 <style lang="scss">
 
+@import '../app.css';
 
-
-* {
-	padding: 0;
+:global(*) {
 	margin: 0;
-	-webkit-transition: 1s all;
-	-o-transition: 1s all;
-	transition: 1s all;
+	padding: 0;
+	font-family: 'Sansation Light', sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+			touch-action: manipulation;	
+		
 }
 
 
-	.bg {
-		background: url('../img/bg.jpg') center center / cover no-repeat;
-		min-height: 100vh;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
-		color: white;
-	}
+.bg {
+	background: url('../img/bg.jpg') center center / cover no-repeat;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	color: white;
+}
 
-	main {
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
-		font-size: 24px;
-		color: #FFFFFF;
-		margin-top: 2%;
+main {
+	font-size: 24px;
+	color: #FFFFFF;
+}
 
-	}
+:global(.container) {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2%;
+}
 
+@media (max-width: 1450px) {
 	:global(.container) {
-    max-width: 1300px;
-    margin: 0 auto;
-	padding: 0 4%;
+		max-width: 1000px;
 	}
+}
 
-	:global(a) {
-		text-decoration: none;
-		color: white;
+:global(a) {
+	text-decoration: none;
+	color: white;
+}
+
+:global(.button) {
+	background: rgba(0, 0, 0, 0.50);
+	border-radius: 35px;
+	border: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-transition: .5s;
+	transition: .5s;
+	&:hover {
+		background: rgba(0, 0, 0, 0.75);
 	}
+}
 
-	:global(.button) {
-		background: rgba(0, 0, 0, 0.50);
-		border-radius: 35px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
-		-webkit-transition: 1s all;
-		-o-transition: 1s all;
-		transition: 1s all;
-		&:hover {
-			background: rgba(0, 0, 0, 0.75);
-		}
+.content {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+	padding-bottom: 15px;
 	}
-
-	.content {
-		-webkit-box-flex: 1;
-		    -ms-flex: 1 0 auto;
-		        flex: 1 0 auto;
-				padding-bottom: 15px;
-		}
-	.footer {
-		-webkit-box-flex: 0;
-		    -ms-flex: 0 0 auto;
-		        flex: 0 0 auto;
-		}
+.footer {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 auto;
+	        flex: 0 0 auto;
+	}
 </style>

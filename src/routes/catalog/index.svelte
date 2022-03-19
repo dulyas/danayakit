@@ -23,7 +23,7 @@ import { fade } from 'svelte/transition';
 
 
 <div class="container">
-    <div in:fade="{{duration: 1000}}" class="catalog">
+    <div in:fade|local="{{duration: 200}}" class="catalog">
 
         {#each catalogItems as item}
             <a href={item.url} class="catalog__item">
@@ -43,12 +43,12 @@ import { fade } from 'svelte/transition';
                     backdrop-filter: blur(4px);
             padding: 15px 40px;
             margin-bottom: 3vh;
-            -webkit-transition: 1s all;
-            -o-transition: 1s all;
-            transition: 1s all;
+            -webkit-transition: .5s background;
+            transition: .5s background;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
+            min-height: 20vh;
             -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                     justify-content: space-between;
@@ -57,9 +57,9 @@ import { fade } from 'svelte/transition';
                     align-items: center; 
             &:nth-child(2n) {
                 .catalog__item-name {
-                    -webkit-box-ordinal-group: 2;
-                        -ms-flex-order: 1;
-                            order: 1;
+                            -webkit-box-ordinal-group: 2;
+                                -ms-flex-order: 1;
+                                    order: 1;
                     text-align: right;
                 }
                 .catalog__item-descr {
@@ -91,7 +91,7 @@ import { fade } from 'svelte/transition';
                     font-size: 35px;
                 }
                 &-descr {
-                    font-size: 17px;
+                    font-size: 15px;
                 }
             }
         }
@@ -180,5 +180,4 @@ import { fade } from 'svelte/transition';
             }
         }
     }
-
 </style>

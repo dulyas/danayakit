@@ -7,13 +7,13 @@
 </script>
 
 
-<div in:fade="{{duration: 1000}}" class="container home">
+<div in:fade="{{duration: 200}}" class="container home">
     <h1>Жалюзи в Челябинске</h1>
     <div class="buttons">
         <a href="/catalog" class="button main-btn-item">
             Перейти в каталог
         </a>
-        <a href="/vyzov-zamershika" class="button main-btn-item">
+        <a href="/call" class="button main-btn-item">
             Вызвать замерщика
         </a>
     </div>
@@ -23,15 +23,13 @@
 
 <style lang='scss'>
 
-.home {
-
-}
-
 h1 {
     font-size: 120px;
     margin-top: 15vh;
+    @media (max-width: 1400px) {
+        margin-top: 10vh;
+    }
 }
-
 
 .buttons {
     margin-top: 8vh;
@@ -55,9 +53,9 @@ h1 {
         font-size: 100px;
         width: 70%;
     }
-    .home {
-    }
-
+    .buttons {
+    width: 100%;
+}
 }
 
 
@@ -93,6 +91,7 @@ h1 {
             font-size: 25px;
         }
         .buttons {
+            width: 80%;
         .main-btn-item {
             height: 55px;
         }
@@ -100,11 +99,6 @@ h1 {
 }
 
 @media (max-width: 350px) {
-
-    .home {
-
-    }
-
     h1 {
         font-size: 35px;
         text-align: center;

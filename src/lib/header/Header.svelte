@@ -3,9 +3,14 @@ import Hamburger from 'svelte-hamburgers';
 let open = false;
 import Menu from './Menu.svelte';
 import { browser } from '$app/env';
+import { loop_guard } from 'svelte/internal';
 
 $:  if (browser) {
         if (open) {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = '';
@@ -14,8 +19,6 @@ $:  if (browser) {
 
 
 const menu = [
-        {name: 'Главная',
-        url: '/'},
         {name: 'Контакты',
         url: '/contacts'},
         {name: 'Каталог',
@@ -25,7 +28,7 @@ const menu = [
         {name: 'Галерея',
         url: '/gallery'},
         {name: 'Вызвать замерщика',
-        url: '/vyzov-zamershika'},
+        url: '/call'},
         ]
 
 
@@ -33,13 +36,9 @@ const menu = [
 
 </script>
 
-<svelte:head>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/base.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/types/spin.css" />
-</svelte:head>
 
 <div class="header">
-    <a href="/" class="">
+    <a on:click={() => open = false} href="/" class="">
         <h2 class="nav__logo">Фирма <span>Даная</span></h2>
     </a>
     <div class="burger">
@@ -59,13 +58,16 @@ const menu = [
 
 <style lang="scss">
 
+
 .header {
-		min-height: 8vh;
+		min-height: 75px;
 		background: rgba(0, 0, 0, 0.5);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -77,8 +79,8 @@ const menu = [
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        -ms-flex-align: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
                 align-items: center;
         position: relative;
         right: 15%;
@@ -102,7 +104,6 @@ const menu = [
                 background-color: #ffffff; /*задаём цвет линии*/
                 content: "";
                 -webkit-transition: width 0.3s ease-out;
-                -o-transition: width 0.3s ease-out;
                 transition: width 0.3s ease-out; /*задаём время анимации*/
             }
                 &:hover:after, &:focus:after {
@@ -114,11 +115,10 @@ const menu = [
     .nav__logo {
     position: relative;
     bottom: 15px;
-    left: 110%;
+    left: 40%;
     font-size: 25px;
     font-weight: normal;
     -webkit-transition: 1s all;
-    -o-transition: 1s all;
     transition: 1s all;
     span {
         font-family: "CorridaCTT";
@@ -127,9 +127,8 @@ const menu = [
         top: 22px;
     }
     &:hover {
-        -webkit-transform: scale(1.05);
-            -ms-transform: scale(1.05);
-                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                        transform: scale(1.05);
     }
 }
 
@@ -140,12 +139,17 @@ const menu = [
 
 @media (max-width: 1470px) {
     .header {
+        height: 75px;
+        min-height: 45px;
         .nav {
             right: 0;
+            &-item {
+                font-size: 16px;
+            }
         }
         .nav__logo {
         position: relative;
-        left: 5%;
+        left: 15%;
         }
     }
 }
@@ -169,7 +173,4 @@ const menu = [
         font-size: 0;
     }
 }
-
-
-
 </style>
