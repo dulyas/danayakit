@@ -1,10 +1,15 @@
 
 import sveltePreprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
+import svg from '@poppanator/sveltekit-svg'
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: sveltePreprocess(),
 	kit: {
+		prerender: {
+			default: true,
+		},
 		adapter: adapter({
 			// default options are shown
 			pages: 'build',
@@ -18,6 +23,10 @@ const config = {
 			allowed: ['PATCH', 'DELETE']
 		},
 		trailingSlash: 'always',
+		vite: {
+			// Options are optional
+			plugins: [svg()]
+		  }
 	}
 };
 

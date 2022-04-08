@@ -7,11 +7,23 @@
 	import { setContext } from 'svelte';
 
 
+	const isMobile = writable('')
+	let 
+	width = writable(''), 
+	height = writable('')
+	
+	setContext('isMobile', isMobile)
+	setContext('width', width)
+	
+
+	$: if ($width > 600) $isMobile = false
+	else $isMobile = true
 
 
 
 </script>
 
+<svelte:window bind:innerWidth={$width} bind:innerHeight={$height}/>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
@@ -34,6 +46,9 @@
 <style lang="scss">
 
 @import '../app.css';
+
+
+
 
 :global(*) {
 	margin: 0;
@@ -70,6 +85,9 @@ margin: 0 auto;
 padding: 2%;
 }
 
+:global(.container > div, a, section, form) {
+	border-radius: 5px;
+}
 @media (max-width: 1450px) {
 	:global(.container) {
 		max-width: 1000px;

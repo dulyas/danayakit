@@ -1,5 +1,5 @@
 <script>
-  import ship from '../../img/ship.svg';
+  import Ship from '../../img/ship.svg';
 </script>
 
 
@@ -7,7 +7,7 @@
 <template>
     <div class="main-preloader">
       <div class="main-preloader__ship">
-        <img src={ship} alt="starship">
+        <Ship/>
         <div class="main-preloader__boost">
           <div class="main-preloader__boost-B"></div>
           <div class="main-preloader__boost-M"></div>

@@ -1,8 +1,8 @@
 <script>
     import { fly, scale } from 'svelte/transition';
     import { quadOut } from 'svelte/easing';
-    import vkSrc from '$lib/footer/vk.svg';
-    import instSrc from '$lib/footer/inst.svg';
+    import Vk from '$lib/footer/vk.svg';
+    import Inst from '$lib/footer/inst.svg';
     import { browser } from '$app/env';
     import { getContext } from 'svelte';
 
@@ -24,10 +24,10 @@
         {/each}
         <span class='soc-items'>
             <a href="https://vk.com/danayajaluzi">
-                <img src={vkSrc} class="header__icon" alt="vk">
+                <Vk/>
             </a>
             <a href="https://vk.com/danayajaluzi">
-                <img src={instSrc} class="header__icon" alt="instagram">
+                <Inst/>
             </a>
         </span>
     </div>

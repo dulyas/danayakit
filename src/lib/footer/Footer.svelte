@@ -1,23 +1,22 @@
 <script>
-    import vkSrc from '$lib/footer/vk.svg';
-    import instSrc from '../../img/icons/inst.svg';
+    import Vk from '$lib/footer/vk.svg';
+    import Inst from '../../img/icons/inst.svg';
 </script>
 
 
 <div class="footer">
     <div class="footer-info">
-        ИНН: 212411347999 ОГРНИП: 318774600060521 ООО “Даная” г. Челябинск, ул. Клары Цеткин, д. 11 тел.: +7 900 555 35 35  © 2020-2022
+        ИНН: 7453151875 ОГРН: 1057424606249 ООО “Даная” г. Челябинск, ул. Клары Цеткин, д. 11 тел.: 8 (351) 231-55-00 © 2020-2022
     </div>
     <div class="soc__items">
         <div class="soc__items-worktime">
-            пн-пт, 9:00-21:00 <br>
-            сб-вс, 9:00-19:00
+            пн-пт 10:00-19:00
         </div>
         <a href="https://vk.com/danayajaluzi">
-            <img src={vkSrc} class="header__icon" alt="vk">
+            <Vk/>
         </a>
         <a href="https://vk.com/danayajaluzi">
-            <img src={instSrc} class="header__icon" alt="instagram">
+            <Inst/>
         </a>
     </div>
 </div>
@@ -67,6 +66,13 @@
             justify-content: center;
         a {
             margin: 0 2px;
+            transition: .6s;
+            &:hover {
+                :global(svg path) {
+                    fill-opacity: 1;
+                    transition: .6s;
+                }
+            }
         }
         &-worktime {
             font-style: normal;

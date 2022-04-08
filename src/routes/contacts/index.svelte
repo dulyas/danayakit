@@ -1,7 +1,7 @@
 <script>
     import { fade } from 'svelte/transition';
-    import vkSrc from '$lib/footer/vk.svg';
-    import instSrc from '$lib/footer/inst.svg';
+    import Vk from '$lib/footer/vk.svg';
+    import Inst from '$lib/footer/inst.svg';
 
 </script>
 
@@ -22,10 +22,10 @@
             с 9:00 до 18:00
         </div>
         <a href="https://vk.com/danayajaluzi" class="contacts__soc">
-            <img src={vkSrc} alt=""><span>/danayajaluzi</span>
+            <Vk/>
         </a>
         <a href="https://www.instagram.com/jaluzi174" class="contacts__soc">
-            <img src={instSrc} alt=""><span>/jaluzi174</span>
+            <Inst/>
         </a>
     </div>
         <div class="contacts__map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/danaya/1072479778/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Даная</a><a href="https://yandex.ru/maps/56/chelyabinsk/category/jalousies_shutters_and_roller_blinds/184107989/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Жалюзи и рулонные шторы в Челябинске</a><a href="https://yandex.ru/maps/56/chelyabinsk/category/shutters/184107733/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Рольставни в Челябинске</a><iframe title='map' src="https://yandex.ru/map-widget/v1/-/CCU5ILU6CC" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
@@ -65,9 +65,18 @@
             }
         }
         &__map {
-            height: 700px;
+            height: 66vh;
             width: 650px;
         }
+        a {
+            &:hover {
+                :global(svg path) {
+                    transition: .6s;
+                    fill-opacity: 1;
+                }
+            }
+        }
+        
     }
 
     @media (max-width: 1470px) {

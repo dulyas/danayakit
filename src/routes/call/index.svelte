@@ -97,16 +97,17 @@ const submitForm = async (data) => {
     }
 
     .call {
-        font-size: 20px;
+        font-size: 18px;
         background: rgba(0, 0, 0, 0.5);
             -webkit-backdrop-filter: blur(4px);
                     backdrop-filter: blur(4px);
                     padding: 26px;
         &-form {
+            border-radius: 5px;
             font-style: normal;
-            
         }
         &-descr {
+            border-radius: 5px;
             width: 650px;
             color: rgba(255, 255, 255, 0.9);
             &__title {
@@ -117,7 +118,7 @@ const submitForm = async (data) => {
             &__text {
                 color: rgba(255, 255, 255, 0.9);
                 margin-top: 10px;
-                font-size: 20px;
+                font-size: 18px;
             }
         }
     }
@@ -133,7 +134,7 @@ const submitForm = async (data) => {
     }
     &-input {
         display: block;
-        margin-top: 17px;
+        margin-top: 15px;
         width: 100%;
         
         &:focus-within {
