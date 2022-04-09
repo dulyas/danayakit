@@ -139,7 +139,7 @@ const menu = [
 
 @media (max-width: 1470px) {
     .header {
-        height: 75px;
+        height: 67px;
         min-height: 45px;
         .nav {
             right: 0;

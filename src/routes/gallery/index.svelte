@@ -10,7 +10,7 @@
     import { onMount } from 'svelte';
     import { browser } from '$app/env';
     import Vk from '../../img/icons/vk.svg'
-
+    import Full from './fullscreen.svg'
 
 
 
@@ -73,6 +73,15 @@
         }
     }
 
+
+
+
+
+
+
+
+
+
     onMount(async () => {
         const result = await getPhotos();
         photos = result.photos.photo;
@@ -99,15 +108,13 @@
     // }
 
 
-
-
 </script>
 
 {#if !$isMobile}
 
 <div 
 in:fade={{duration: 200}} 
-class="container mobile">
+class="container">
     <div class="gallery-container">
         <div class="gallery-top">
             <div class="gallery-filter">
@@ -127,7 +134,11 @@ class="container mobile">
                 </div>
             </div>
             <div class="gallery-icon">
-
+                {#if originals.length && swiper}
+                    <span in:fade={{duration:200}} on:click={() => window.open(originals[swiper.activeIndex], '_blank')}>
+                        <Full/>
+                    </span>
+                {/if}
             </div>
         </div>
         {#key rerender}
@@ -151,7 +162,7 @@ class="container mobile">
                     >
                     {#each slides as slide, i}
                         <SwiperSlide>
-                            <Image src={slide} height="auto" width="100%"/>
+                            <Image src={slide} height="auto" width="100%" borderRadius="5px"/>
                         </SwiperSlide>
                     {/each}
                 </Swiper>
@@ -163,6 +174,68 @@ class="container mobile">
 
 
 
+{:else if $isMobile}
+
+<div class="container"
+in:fade={{duration: 200}} >
+    <div 
+    class="gallery-mobile">
+        <div class="gallery-mobile__top">
+            <button 
+            class:active-button-mobile="{filter.H && filter.V && filter.R}"
+            on:click={() => clickOnFilterAll()}
+            class="gallery-mobile__button">
+                Все
+            </button>
+            <button 
+            class:active-button-mobile="{filter.H}"
+            on:click={() => clickOnFilter('H')}
+            class="gallery-mobile__button">
+                Горизонатльные
+            </button>
+            <button class="gallery-mobile__button"
+            class:active-button-mobile="{filter.R}"
+            on:click={() => clickOnFilter('R')}>
+                Рулонные
+            </button>
+            <button class="gallery-mobile__button"
+            class:active-button-mobile="{filter.V}"
+            on:click={() => clickOnFilter('V')}>
+                Вертикальные
+            </button>
+        </div>
+        <div class="gallery-mobile__bottom">
+            {#key rerender}
+                <div in:fade={{duration: 200}} class="gallery-bottom" >
+                    {#if !slides.length}
+                        <Skeleton 
+                        width={'100%'}
+                        height={'40vh'}
+                        baseColor="#D1BC8A" 
+                        highlightColor="#FFFFFF" 
+                        animationLength="1.2s" 
+                        />  
+                    {:else}
+                    <Swiper
+                        spaceBetween={5}
+                        slidesPerView={1}
+                        centeredSlides={true}
+                        on:swiper={(e) => swiper = e.detail[0]}
+                        modules={[Autoplay]}
+                        autoplay={{delay: 2000, pauseOnMouseEnter: false, disableOnInteraction: true}}
+                        >
+                        {#each slides as slide, i}
+                            <SwiperSlide>
+                                <Image src={slide} height="auto" width="100%" border-radius="5px"/>
+                            </SwiperSlide>
+                        {/each}
+                    </Swiper>
+                    {/if}
+                </div>
+            {/key}
+        </div>
+    </div>
+</div>
 
 {/if}
 
@@ -187,7 +260,6 @@ class="container mobile">
 
 .gallery {
     &-container {
-
         max-width: calc(70vh * 1.3333);
         margin: 0 auto;
         height: 70vh;
@@ -195,6 +267,10 @@ class="container mobile">
         -webkit-backdrop-filter: blur(4px);
                     backdrop-filter: blur(4px);
                     overflow: hidden;
+        @media (max-width: 1400px) {
+            max-width: calc(68vh * 1.3333);
+            height: 68vh;
+        }
     }
     &-top {
         height: 10%;
@@ -215,13 +291,18 @@ class="container mobile">
 
 
     &-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         :global(svg path) {
+            cursor: pointer;
+            fill: #FFFFFF;
             transition: .6s;
-            fill-opacity: .75;
+            fill-opacity: .55;
         }
         &:hover {
             :global(svg path) {
-            fill-opacity: 1;
+            fill-opacity: .85;
         }
         }
     }
@@ -232,7 +313,7 @@ class="container mobile">
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px auto 0;
+    margin: 0 auto ;
     &-item {
         margin: 5px 15px;
         padding: 15px;
@@ -246,4 +327,38 @@ class="container mobile">
     }
 }
 
+
+
+// mobile 
+
+.gallery {
+    &-mobile {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 5px;
+        button {
+            background: transparent;
+            border: none;
+            font-weight: 300;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #ffffff85;
+            &.active-button-mobile {
+                color: #FFFFFF;
+            }
+            }  
+        &__top {
+            min-height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &__bottom {
+            min-height: 35vh;
+        }
+    }
+}
 </style>
