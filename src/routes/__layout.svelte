@@ -2,7 +2,6 @@
 	import Footer from '$lib/footer/Footer.svelte';
 	import Header from '$lib/header/Header.svelte';
 	import favicon from '../favicon.ico';
-	import { browser } from '$app/env';
 	import { writable } from 'svelte/store';
 	import { setContext } from 'svelte';
 
@@ -112,8 +111,8 @@ padding: 2%;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	-webkit-transition: .5s;
-	transition: .5s;
+	-webkit-transition: .5s background;
+	transition: .5s background;
 	&:hover {
 		background: rgba(0, 0, 0, 0.75);
 	}

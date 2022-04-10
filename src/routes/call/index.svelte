@@ -11,7 +11,6 @@ let mail = {
 }
 let submitStatus;
 const submitForm = async (data) => {
-    console.log('отправка запроса')
     submitStatus = 'Отправка...'
     const formData = new FormData(data.currentTarget);
 

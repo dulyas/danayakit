@@ -1,43 +1,17 @@
 <script>
 import { fade } from 'svelte/transition';
 import { Swiper, SwiperSlide } from 'swiper/svelte';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+import { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 export let products;
 export let name;
-// import 'css-skeletons'
 import { browser } from '$app/env';
 import { Skeleton } from 'svelte-loading-skeleton';
+import Image from '$lib/Image.svelte'
 
-let swiper;
-
-let isMobile;
 let width;
 
-
-
-
-$: if (browser && width < 600) {
-    isMobile = true;
-} else {
-    isMobile = false;
-
-};
-
-
-
-function getImage(url) {
-    return new Promise(function(resolve, reject){
-        const img = new Image()
-        img.onload = function(){
-
-                resolve(img.src)
-
-        }
-        img.src = url
-    })
-}
 
 
 </script>
@@ -50,11 +24,10 @@ function getImage(url) {
     <Swiper
     spaceBetween={0}
     modules={[Autoplay]}
-    autoplay={{delay: 2000, pauseOnMouseEnter: false, disableOnInteraction: true}}
+    autoplay={{delay: 5000, pauseOnMouseEnter: false, disableOnInteraction: true}}
     slidesPerView={1}
     centeredSlides={true}
     centeredSlidesBounds={true}
-    on:swiper={(e) => swiper = e.detail[0]}
     >
     {#each products as product, i}
         <SwiperSlide>
@@ -64,22 +37,17 @@ function getImage(url) {
                     <div class="product__subname">{product.name}</div>
                     <div class="product__descr">{@html product.descr}</div>
                 </div>
-                {#await getImage(product.url)}             
-                        <div class="product__wrapper">
-                            <Skeleton 
-                            width="100%"
-                            height="60vh" 
-                            baseColor="#D1BC8A" 
-                            highlightColor="#FFFFFF" 
-                            animationLength="1.2s" 
-                            />
-                        </div>
-
-                {:then url} 
-                    <div class="product__wrapper">
-                        <img class="product__img" src={url} alt="">
-                    </div>
-                {/await}
+                <div class="product__wrapper">
+                    <Image src={product.url} height="auto">
+                        <Skeleton 
+                        width="100%"
+                        height="60vh" 
+                        baseColor="#BAA07D" 
+                        highlightColor="#F9D5A6" 
+                        animationLength="1.2s" 
+                        />
+                    </Image>
+                </div>
             </div>
         </SwiperSlide>
     {/each}
@@ -90,6 +58,7 @@ function getImage(url) {
 <style lang='scss'>
 
 .product {
+    cursor: grab;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -120,19 +89,7 @@ function getImage(url) {
     &__descr {
         margin-top: 25px;
         font-size: 18px;
-    }
-    &__buttons {
-        position: absolute;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        bottom: 0;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        pointer-events: none;
     }
     &__wrapper {
     position: relative;
@@ -162,9 +119,6 @@ function getImage(url) {
   &__text {
         width: 50%;
     } 
-    &__img {
-        // width: 100%;
-    }
     &__name {
         font-size: 35px;
     }
@@ -176,27 +130,9 @@ function getImage(url) {
         margin-top: 15px;
         font-size: 16px;
     }
-    &__buttons {
-        position: absolute;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        bottom: 0;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-    }
     &__wrapper {
     position: relative;
     width: 47%;
-    // display: flex;
-    // justify-content: end;
-    //     .product__img {
-    //         max-width: 90%;
-    //     }
     }
 }
 }
@@ -204,21 +140,10 @@ function getImage(url) {
 @media (max-width: 1060px) {
     
 .product {
-
     max-height: none;
-    // -webkit-box-orient: vertical;
-    // -webkit-box-direction: normal;
-    //     -ms-flex-direction: column;
-    //         flex-direction: column;
-    // -webkit-box-align: center;
-    //     -ms-flex-align: center;
-    //         align-items: center;
     &__text {
         width: 100%;
     } 
-    &__img {
-
-    }
     &__name {
         font-size: 30px;
     }
@@ -227,9 +152,6 @@ function getImage(url) {
     }
     &__descr {
         font-size: 15px;
-    }
-    &__buttons {
-
     }
     &__wrapper {
         margin-top: 2%;
@@ -257,9 +179,6 @@ function getImage(url) {
         &__text {
             width: 100%;
         } 
-        &__img {
-    
-        }
         &__name {
             font-size: 30px;
         }
@@ -268,9 +187,6 @@ function getImage(url) {
         }
         &__descr {
             font-size: 15px;
-        }
-        &__buttons {
-    
         }
         &__wrapper {
             margin-top: 2%;
@@ -297,21 +213,6 @@ function getImage(url) {
         &__text {
             width: 95%;
         } 
-        &__img {
-    
-        }
-        &__name {
-    
-        }
-        &__subname {
-    
-        }
-        &__descr {
-    
-        }
-        &__buttons {
-    
-        }
         &__wrapper {
             margin-top: 5%;
             width: 95%;

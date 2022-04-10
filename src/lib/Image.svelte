@@ -4,13 +4,15 @@
     export let width = '100%'
     export let height = '100%'
     export let borderRadius = 'none';
-    import { fade } from 'svelte/transition';
     const imageReady = (src) => {
         return new Promise((resolve, reject) => {
             const img = new Image()
             img.src = src
             img.onload = () => {
                resolve(src)
+            }
+            img.onerror = () => {
+                reject(console.log("Image not loaded"))
             }
         })
     }

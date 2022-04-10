@@ -3,7 +3,7 @@ import Hamburger from 'svelte-hamburgers';
 let open = false;
 import Menu from './Menu.svelte';
 import { browser } from '$app/env';
-import { loop_guard } from 'svelte/internal';
+
 
 $:  if (browser) {
         if (open) {

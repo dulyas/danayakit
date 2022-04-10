@@ -3,13 +3,11 @@
     import { Skeleton } from 'svelte-loading-skeleton';
     import Image from "$lib/Image.svelte";
     import { Swiper, SwiperSlide } from 'swiper/svelte';
-    import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+    import { Autoplay } from 'swiper';
     import 'swiper/css';
-    import Loading from "./loading.svelte";
+
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
-    import { browser } from '$app/env';
-    import Vk from '../../img/icons/vk.svg'
     import Full from './fullscreen.svg'
 
 
@@ -17,7 +15,6 @@
     let slides = [];
     let originals = [];
     let photos;
-    let active;
     let rerender = true
   
     let swiper;
@@ -46,7 +43,6 @@
 
     }
 
-
     const clickOnFilter = (key) => {
 
         if (filter[key]) filter[key] = false
@@ -64,8 +60,6 @@
         getPhotosUrls(filter)
     }
 
-
-
     const getPhotos = async () => {
         const photos = await fetch('https://www.flickr.com/services/rest/?method=flickr.people.getPublicPhotos&api_key=667d78debe6b95018e501bf32f827313&user_id=194992154%40N08&extras=url_o&format=json&nojsoncallback=1');
         if (photos.ok) {
@@ -73,40 +67,12 @@
         }
     }
 
-
-
-
-
-
-
-
-
-
     onMount(async () => {
         const result = await getPhotos();
         photos = result.photos.photo;
         getPhotosUrls(filter);
 
     });
-
-
-
-    // function getPhotosUrls(type) {
-    //     rerender = !rerender
-    //     slides = []
-    //     originals = []
-    //     if (type === 'All') {
-    //         slides = photos.map(item => `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_b.jpg`);
-    //         originals = photos.map(item => item.url_o);
-    //         active = 'All';
-    //     } else {
-    //         const sorted = photos.filter(photo => photo.title === type);
-    //         slides = sorted.map(item => `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_b.jpg`);
-    //         originals = sorted.map( item => item.url_o);
-    //         active = type;
-    //     }
-    // }
-
 
 </script>
 
@@ -147,8 +113,8 @@ class="container">
                     <Skeleton 
                     width={'100%'}
                     height={'100%'}
-                    baseColor="#D1BC8A" 
-                    highlightColor="#FFFFFF" 
+                    baseColor="#BAA07D" 
+                    highlightColor="#F9D5A6" 
                     animationLength="1.2s" 
                     />  
                 {:else}
@@ -211,8 +177,8 @@ in:fade={{duration: 200}} >
                         <Skeleton 
                         width={'100%'}
                         height={'40vh'}
-                        baseColor="#D1BC8A" 
-                        highlightColor="#FFFFFF" 
+                        baseColor="#BAA07D" 
+                        highlightColor="#F9D5A6" 
                         animationLength="1.2s" 
                         />  
                     {:else}
@@ -222,11 +188,11 @@ in:fade={{duration: 200}} >
                         centeredSlides={true}
                         on:swiper={(e) => swiper = e.detail[0]}
                         modules={[Autoplay]}
-                        autoplay={{delay: 2000, pauseOnMouseEnter: false, disableOnInteraction: true}}
+                        autoplay={{delay: 5000, pauseOnMouseEnter: false, disableOnInteraction: true}}
                         >
                         {#each slides as slide, i}
                             <SwiperSlide>
-                                <Image src={slide} height="auto" width="100%" border-radius="5px"/>
+                                <Image src={slide} height="auto" width="100%" borderRadius="5px"/>
                             </SwiperSlide>
                         {/each}
                     </Swiper>
@@ -249,12 +215,14 @@ in:fade={{duration: 200}} >
 :global(.swiper) {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
 
 :global(.swiper-slide) {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: grab;
 }
 
 

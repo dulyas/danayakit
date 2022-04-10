@@ -26,7 +26,7 @@
             <a href="https://vk.com/danayajaluzi">
                 <Vk/>
             </a>
-            <a href="https://vk.com/danayajaluzi">
+            <a href="https://www.instagram.com/jaluzi174">
                 <Inst/>
             </a>
         </span>

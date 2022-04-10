@@ -15,7 +15,7 @@
         <a href="https://vk.com/danayajaluzi">
             <Vk/>
         </a>
-        <a href="https://vk.com/danayajaluzi">
+        <a href="https://www.instagram.com/jaluzi174">
             <Inst/>
         </a>
     </div>
@@ -38,6 +38,7 @@
     -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
     &-info {
+        pointer-events: none;
         font-size: 15px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -79,7 +80,8 @@
             font-weight: normal;
             font-size: 15px;
             line-height: 18px;
-     margin-right: 15px;
+            margin-right: 15px;
+            pointer-events: none;
         }
     }
 

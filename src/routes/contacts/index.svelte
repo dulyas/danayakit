@@ -2,14 +2,14 @@
     import { fade } from 'svelte/transition';
     import Vk from '$lib/footer/vk.svg';
     import Inst from '$lib/footer/inst.svg';
-    let loadedMap = false
+
 </script>
 
 <div in:fade|local="{{duration: 200}}" class="container contacts-wrapper">
     <div class="contacts">
-        <div class="contacts__phone contacts__item">
+        <a href="tel:+73512315500" class="contacts__phone contacts__item">
             +7 (351) 231 55 00
-        </div>
+        </a>
         <div class="contacts__email contacts__item">
             danaya.74@mail.ru
         </div>
@@ -19,7 +19,7 @@
         <div class="contacts__worktime contacts__item">
             График работы:
             Пн-Пт
-            с 9:00 до 18:00
+            с 10:00 до 19:00
         </div>
         <a href="https://vk.com/danayajaluzi" class="contacts__soc">
             <Vk/> /danayajaluzi
@@ -29,7 +29,7 @@
         </a>
     </div>
         <div
-        class="contacts__map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/danaya/1072479778/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Даная</a><a href="https://yandex.ru/maps/56/chelyabinsk/category/jalousies_shutters_and_roller_blinds/184107989/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Жалюзи и рулонные шторы в Челябинске</a><a href="https://yandex.ru/maps/56/chelyabinsk/category/shutters/184107733/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Рольставни в Челябинске</a><iframe on:load={() => loadedMap = true} title='map' src="https://yandex.ru/map-widget/v1/-/CCU5ILU6CC" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+        class="contacts__map" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/danaya/1072479778/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Даная</a><a href="https://yandex.ru/maps/56/chelyabinsk/category/jalousies_shutters_and_roller_blinds/184107989/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Жалюзи и рулонные шторы в Челябинске</a><a href="https://yandex.ru/maps/56/chelyabinsk/category/shutters/184107733/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Рольставни в Челябинске</a><iframe title='map' src="https://yandex.ru/map-widget/v1/-/CCU5ILU6CC" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
         </div>
 </div>
 
