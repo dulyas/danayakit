@@ -29,7 +29,7 @@ let width;
     centeredSlides={true}
     centeredSlidesBounds={true}
     >
-    {#each products as product, i}
+    {#each products as product}
         <SwiperSlide>
             <div in:fade="{{duration: 200}}" class="product">
                 <div class="product__text">
@@ -38,7 +38,7 @@ let width;
                     <div class="product__descr">{@html product.descr}</div>
                 </div>
                 <div class="product__wrapper">
-                    <Image src={product.url} height="auto">
+                    <Image src={product.url} height="auto" borderRadius="5px">
                         <Skeleton 
                         width="100%"
                         height="60vh" 
@@ -92,6 +92,7 @@ let width;
         pointer-events: none;
     }
     &__wrapper {
+    border-radius: 5px;
     position: relative;
     width: 53%;
     height: 100%;

@@ -9,6 +9,10 @@
     import { fade } from 'svelte/transition';
     import { onMount } from 'svelte';
     import Full from './fullscreen.svg'
+    import Horizontal from './horizontal.svg'
+    import Vertical from './vertical.svg'
+    import Rolled from './rolled.svg'
+
 
 
 
@@ -74,7 +78,10 @@
 
     });
 
+
 </script>
+
+
 
 {#if !$isMobile}
 
@@ -85,23 +92,29 @@ class="container">
         <div class="gallery-top">
             <div class="gallery-filter">
                 <div class="sort-buttons">
-                    <button class='button sort-buttons-item'
+                    <div class='sort-buttons-item all'
                     class:active-button="{filter.H && filter.V && filter.R}"
-                    on:click={() => clickOnFilterAll()}>Все</button>
-                    <button class='button sort-buttons-item'
+                    on:click={() => clickOnFilterAll()}>Все</div>
+                    <div class='sort-buttons-item h'
                     class:active-button="{filter.H}"
-                    on:click={() => clickOnFilter('H')}>Горизонатльные</button>
-                    <button class='button sort-buttons-item'
+                    on:click={() => clickOnFilter('H')}>
+                        <Horizontal/>
+                    </div>
+                    <div class='sort-buttons-item v '
                     class:active-button="{filter.V}"
-                    on:click={() => clickOnFilter('V')}>Вертикальные</button>
-                    <button class='button sort-buttons-item'
+                    on:click={() => clickOnFilter('V')}>
+                        <Vertical/>
+                    </div>
+                    <div class='sort-buttons-item r'
                     class:active-button="{filter.R}"
-                    on:click={() => clickOnFilter('R')}>Рулонные</button>
+                    on:click={() => clickOnFilter('R')}>
+                        <Rolled/>
+                    </div>
                 </div>
             </div>
             <div class="gallery-icon">
                 {#if originals.length && swiper}
-                    <span in:fade={{duration:200}} on:click={() => window.open(originals[swiper.activeIndex], '_blank')}>
+                    <span transition:fade|local={{duration:200}} on:click={() => window.open(originals[swiper.activeIndex], '_blank')}>
                         <Full/>
                     </span>
                 {/if}
@@ -124,7 +137,7 @@ class="container">
                     centeredSlides={true}
                     on:swiper={(e) => swiper = e.detail[0]}
                     modules={[Autoplay]}
-                    autoplay={{delay: 2000, pauseOnMouseEnter: false, disableOnInteraction: true}}
+                    autoplay={{delay: 5000, pauseOnMouseEnter: false, disableOnInteraction: true}}
                     >
                     {#each slides as slide, i}
                         <SwiperSlide>
@@ -154,6 +167,7 @@ in:fade={{duration: 200}} >
                 Все
             </button>
             <button 
+            transition:fade|local={{duration:2000}}
             class:active-button-mobile="{filter.H}"
             on:click={() => clickOnFilter('H')}
             class="gallery-mobile__button">
@@ -227,6 +241,8 @@ in:fade={{duration: 200}} >
 
 
 .gallery {
+    z-index: 1;
+    position: relative;
     &-container {
         max-width: calc(70vh * 1.3333);
         margin: 0 auto;
@@ -234,13 +250,14 @@ in:fade={{duration: 200}} >
         background: rgba(0, 0, 0, 0.5);
         -webkit-backdrop-filter: blur(4px);
                     backdrop-filter: blur(4px);
-                    overflow: hidden;
+                    // overflow: hidden;
         @media (max-width: 1400px) {
             max-width: calc(68vh * 1.3333);
             height: 68vh;
         }
     }
     &-top {
+        min-height: 40px;
         height: 10%;
         display: flex;
         justify-content: space-between;
@@ -262,12 +279,14 @@ in:fade={{duration: 200}} >
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         :global(svg path) {
             cursor: pointer;
             fill: #FFFFFF;
             transition: .6s;
             fill-opacity: .55;
         }
+
         &:hover {
             :global(svg path) {
             fill-opacity: .85;
@@ -282,16 +301,112 @@ in:fade={{duration: 200}} >
     align-items: center;
     justify-content: center;
     margin: 0 auto ;
+    height: 100%;
+    z-index: 99;
     &-item {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
         margin: 5px 15px;
         padding: 15px;
-        height: 25px;
-        color: white;
+        color: rgba(255, 255, 255, 0.3);
         cursor: pointer;
+        position: relative;
+        transition: .4s;
+        z-index: 99;
+        will-change: transform;
+        @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+         }
+        }
+        &.h {
+            &:hover::after {
+                content: 'Горизонтальные';
+                overflow: visible;
+                position: absolute;
+                font-size: 15px;
+                padding: 5px 15px;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 32px;
+                transform: translateY(-49px);
+                animation: opacity .4s forwards;
+            }
+            &:hover::before {
+                content: '';
+                position: absolute;
+                border: 8px solid transparent; 
+                border-top: 8px solid rgba(0, 0, 0, 0.5);
+                animation: opacity .4s forwards;
+                transform: translateY(-27px);
+            }
+        }
+        &.v {
+            &:hover::after {
+                content: 'Вертикальные';
+                overflow: visible;
+                position: absolute;
+                font-size: 15px;
+                padding: 5px 15px;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 32px;
+                transform: translateY(-49px);
+                animation: opacity .4s forwards;
+            }
+            &:hover::before {
+                content: '';
+                position: absolute;
+                border: 8px solid transparent; 
+                border-top: 8px solid rgba(0, 0, 0, 0.5);
+                animation: opacity .4s forwards;
+                transform: translateY(-27px);
+            }
+        }
+        &.r {
+            &:hover::after {
+                content: 'Рулонные';
+                overflow: visible;
+                position: absolute;
+                font-size: 15px;
+                padding: 5px 15px;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 32px;
+                transform: translateY(-49px);
+                animation: opacity .4s forwards;
+            }
+            &:hover::before {
+                content: '';
+                position: absolute;
+                border: 8px solid transparent; 
+                border-top: 8px solid rgba(0, 0, 0, 0.5);
+                animation: opacity .4s forwards;
+                transform: translateY(-27px);
+            }
+        }
+        :global(svg) {
+            height: 40px;
+            width: 40px;
+        }
+        :global(svg path) {
+            transition: .5s;
+            fill-opacity: .4;
+        }
+        &:hover {
+            :global(svg path) {
+            fill-opacity: .6;
+        }
+        }
     }
     .active-button {
-        background: black;
-        transform: scale(1.03);
+        transform: scale(1.06);
+        color: rgba(255, 255, 255, 0.8);
+        :global(svg path) {
+            fill-opacity: .75;
+        }
     }
 }
 

@@ -21,5 +21,5 @@
 {#await imageReady(src)}
     <slot/>
 {:then src} 
-    <img src={src} style="width: {width}; height: {height}; border-radius={borderRadius}" alt={alt}>
+    <img src={src} style="width: {width}; height: {height}; border-radius:{borderRadius}" alt={alt}>
 {/await}

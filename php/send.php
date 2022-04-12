@@ -36,7 +36,7 @@ try {
     $mail->setFrom('anime.stepanovna@yandex.ru', 'Anime'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('d.str1ke@yandex.ru');  
+    $mail->addAddress('strizhak.arseny@yandex.ru');  
 
 // Отправка сообщения
 if ($phone) {

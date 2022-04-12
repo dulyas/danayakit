@@ -6,7 +6,7 @@
 	import { setContext } from 'svelte';
 
 
-	const isMobile = writable('')
+	const isMobile = writable(false)
 	let 
 	width = writable(''), 
 	height = writable('')
