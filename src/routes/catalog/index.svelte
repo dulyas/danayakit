@@ -19,7 +19,10 @@ import { fade } from 'svelte/transition';
     ]
 
 </script>
-
+<svelte:head>
+	<meta name="description" content="Продукция фирмы «Даная». Разновидности систем управления и тканей и изделий." />
+    <title>Каталог жалюзи и рулонных штор – Фирма Даная</title>
+</svelte:head>
 
 
 <div class="container">

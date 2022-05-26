@@ -4,6 +4,10 @@
     import { fade } from 'svelte/transition';
 </script>
 
+<svelte:head>
+    <meta name="description" content="Жалюзи и рулонные шторы по индивидуальным размерам. Срок изготовления 3-5 дней. Звоните и заказывайте!" />
+	<title>Жалюзи в Челябинске от производителя – Фирма Даная</title>
+</svelte:head>
 
 <div in:fade="{{duration: 200}}" class="container home">
     <h1>Жалюзи в Челябинске</h1>

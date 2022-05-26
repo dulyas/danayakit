@@ -13,7 +13,7 @@ let submitStatus;
 const submitForm = async (data) => {
     submitStatus = 'Отправка...'
     const formData = new FormData(data.currentTarget);
-
+    console.log(formData)
     let res = await fetch('./send.php', {
         method: 'POST',
         body: formData
@@ -43,6 +43,10 @@ const submitForm = async (data) => {
 </script>
 
 
+<svelte:head>
+	<meta name="description" content="Оставьте заявку на вызов замерщика или на предварительный расчёт стоимости заказа." />
+    <title>Заявка на вызов замерщика – Фирма Даная</title>
+</svelte:head>
 
 
 <div class="container">

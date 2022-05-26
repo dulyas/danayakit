@@ -6,7 +6,10 @@ const isMobile = getContext('isMobile')
 
 </script>
 
-
+<svelte:head>
+    <meta name="description" content="Жалюзи и рулонные шторы по индивидуальным размерам. Срок изготовления 3-5 дней. Звоните и заказывайте!" />
+	<title>Жалюзи в Челябинске от производителя – Фирма Даная</title>
+</svelte:head>
 
 <div 
 class:mobile={$isMobile}

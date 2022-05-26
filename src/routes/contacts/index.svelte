@@ -4,7 +4,10 @@
     import Inst from '$lib/footer/inst.svg';
 
 </script>
-
+<svelte:head>
+    <meta name="description" content="Жалюзи и рулонные шторы по индивидуальным размерам. Срок изготовления 3-5 дней. Звоните и заказывайте!" />
+	<title>Жалюзи в Челябинске от производителя – Фирма Даная</title>
+</svelte:head>
 <div in:fade|local="{{duration: 200}}" class="container contacts-wrapper">
     <div class="contacts">
         <a href="tel:+73512315500" class="contacts__phone contacts__item">

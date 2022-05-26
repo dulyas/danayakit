@@ -32,6 +32,14 @@
         R: true,
     }
 
+    const calcActiveFilter = () => {
+        let counter = 0
+        for (const key in filter) {
+            if (filter[key]) counter++
+        }
+        return counter
+    }
+
      
     const getPhotosUrls = (filterObject) => {
         rerender = !rerender
@@ -48,9 +56,9 @@
     }
 
     const clickOnFilter = (key) => {
-
-        if (filter[key]) filter[key] = false
-        else filter[key] = true
+        
+        if (filter[key] && calcActiveFilter() > 1) filter[key] = false
+        else if (!filter[key]) filter[key] = true
 
         getPhotosUrls(filter)
     }
@@ -81,7 +89,10 @@
 
 </script>
 
-
+<svelte:head>
+    <meta name="description" content="Жалюзи и рулонные шторы по индивидуальным размерам. Срок изготовления 3-5 дней. Звоните и заказывайте!" />
+	<title>Жалюзи в Челябинске от производителя – Фирма Даная</title>
+</svelte:head>
 
 {#if !$isMobile}
 
