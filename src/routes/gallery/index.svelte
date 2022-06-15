@@ -1,3 +1,7 @@
+<script context="module">
+    export const prerender = false;
+</script>
+
 <script>
     import { getContext } from "svelte/internal";
     import { Skeleton } from 'svelte-loading-skeleton';
@@ -182,7 +186,7 @@ in:fade={{duration: 200}} >
             class:active-button-mobile="{filter.H}"
             on:click={() => clickOnFilter('H')}
             class="gallery-mobile__button">
-                Горизонатльные
+                Горизонтaльные
             </button>
             <button class="gallery-mobile__button"
             class:active-button-mobile="{filter.R}"
